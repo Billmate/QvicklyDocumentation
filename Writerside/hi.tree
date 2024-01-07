@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE instance-profile
+        SYSTEM "https://resources.jetbrains.com/writerside/1.0/product-profile.dtd">
+
+<instance-profile id="hi"
+                 name="Qvickly API Documentation"
+                 start-page="Default-topic.md">
+
+    <toc-element topic="Default-topic.md"/>
+    <toc-element topic="Qvickly-API.md">
+        <toc-element topic="API-Credentials.md"/>
+        <toc-element topic="Authentication.md"/>
+        <toc-element topic="Data-types.md"/>
+        <toc-element topic="Status.md"/>
+        <toc-element topic="Errors.md">
+            <toc-element topic="API-Error-codes.md"/>
+        </toc-element>
+        <toc-element topic="Functions.md">
+            <toc-element topic="getAddress.md"/>
+            <toc-element topic="addPayment.md"/>
+            <toc-element topic="activatePayment.md"/>
+            <toc-element topic="updatePayment.md"/>
+            <toc-element topic="cancelPayment.md"/>
+            <toc-element topic="creditPayment.md"/>
+            <toc-element topic="getAccountinfo.md"/>
+            <toc-element topic="getTerms.md"/>
+            <toc-element topic="getPaymentplans.md"/>
+            <toc-element topic="getPaymentinfo.md"/>
+            <toc-element topic="getDuePayments.topic"/>
+            <toc-element topic="getSettlements.md"/>
+            <toc-element topic="getSettlementsWithDetails.md"/>
+            <toc-element topic="getAuthorizedPeople.md"/>
+            <toc-element topic="getCustomersByName.md"/>
+            <toc-element topic="getMerchantByOrgnum.md"/>
+            <toc-element topic="getInvoicesByPno.md"/>
+            <toc-element topic="getInvoicesByCustomer.md"/>
+            <toc-element topic="getExchangeRate.md"/>
+            <toc-element topic="getVatrate.md"/>
+            <toc-element topic="getFees.md"/>
+            <toc-element topic="crediflowSearchParty.md"/>
+        </toc-element>
+        <toc-element topic="Examples.md">
+            <toc-element topic="Get-address.md"/>
+            <toc-element topic="Get-due-payments.md"/>
+            <toc-element topic="Get-payment-info.md"/>
+            <toc-element topic="Get-payment-plans.md"/>
+            <toc-element topic="Get-terms.md"/>
+            <toc-element topic="Cancel-payment.md"/>
+            <toc-element topic="Add-payment.md"/>
+            <toc-element topic="Credit-payment.md"/>
+            <toc-element topic="Update-payment.md">
+            </toc-element>
+            <toc-element topic="Get-account-info.md"/>
+            <toc-element topic="Activate-payment.md"/>
+            <toc-element topic="New-examples.md">
+                <toc-element topic="Get-settlements.md"/>
+                <toc-element topic="Get-settlements-with-details.md"/>
+                <toc-element topic="Get-authorized-people.md"/>
+                <toc-element topic="Get-customers-by-name.md"/>
+                <toc-element topic="Get-merchant-by-orgnum.md"/>
+                <toc-element topic="Get-invoices-by-pno.md"/>
+                <toc-element topic="Get-invoices-by-customer.md"/>
+                <toc-element topic="Get-exchange-rate.md"/>
+                <toc-element topic="Get-vat-rate.md"/>
+                <toc-element topic="Get-fees.md"/>
+                <toc-element topic="Crediflow-search-party.md"/>
+            </toc-element>
+            <toc-element topic="Init-checkout.md"/>
+            <toc-element topic="Update-checkout.md"/>
+        </toc-element>
+        <toc-element topic="Test.md"/>
+        <toc-element topic="API-changelog.md"/>
+    </toc-element>
+    <toc-element topic="Checkout-API.md">
+        <toc-element topic="Credentials.md"/>
+        <toc-element topic="Checkout-Functions.md">
+            <toc-element topic="initCheckout.md"/>
+            <toc-element topic="updateCheckout.md"/>
+        </toc-element>
+        <toc-element topic="Example-flow.md"/>
+        <toc-element topic="Javascript-events.md">
+            <toc-element topic="update.md"/>
+            <toc-element topic="purchase-initialized.md"/>
+            <toc-element topic="purchase-complete.md"/>
+            <toc-element topic="lock.md"/>
+            <toc-element topic="unlock.md"/>
+            <toc-element topic="go-to.md"/>
+            <toc-element topic="address-selected.md"/>
+            <toc-element topic="content-height.md"/>
+            <toc-element topic="content-scroll-position.md"/>
+            <toc-element topic="checkout-loaded.md"/>
+            <toc-element topic="show-overlay.md"/>
+            <toc-element topic="hide-overlay.md"/>
+        </toc-element>
+    </toc-element>
+    <toc-element topic="Auth-API.md">
+        <toc-element topic="Checkout-API-Credentials.md"/>
+    </toc-element>
+    <toc-element topic="Paylink.md">
+        <toc-element topic="Paylink-Credentials.md"/>
+        <toc-element topic="Create-a-paylink.md"/>
+    </toc-element>
+    <toc-element topic="Portal-API.md">
+        <toc-element topic="Portal-Credentials.md"/>
+        <toc-element topic="Invoices.md"/>
+        <toc-element topic="Articles.md"/>
+        <toc-element topic="Orders.md"/>
+    </toc-element>
+</instance-profile>

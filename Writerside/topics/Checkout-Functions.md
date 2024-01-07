@@ -1,0 +1,6 @@
+# Functions
+
+
+## initCheckout
+
+## updateCheckout

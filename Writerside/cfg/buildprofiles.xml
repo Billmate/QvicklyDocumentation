@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<buildprofiles xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/build-profiles.xsd"
+               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+    <variables></variables>
+    <build-profile instance="hi">
+        <variables>
+            <header-logo>Qvickly.svg</header-logo>
+            <noindex-content>true</noindex-content>
+        </variables>
+    </build-profile>
+    <footer>
+        <copyright>Qvickly 2024</copyright>
+        <social type="facebook" href="https://www.facebook.com/qvicklyofficial"></social>
+        <social type="linkedin" href="https://www.linkedin.com/company/qvicklyofficial/"></social>
+        <social type="instagram" href="https://www.instagram.com/qvickly.io/"></social>
+        <link href="https://www.tiktok.com/@qvickly.io">Tiktok</link>
+    </footer>
+</buildprofiles>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE rules SYSTEM "https://resources.jetbrains.com/writerside/1.0/redirection-rules.dtd">
+<rules>
+    <!-- format is as follows
+    <rule id="<unique id>">
+        <accepts>page.html</accepts>
+    </rule>
+    -->
+    <rule id="18c0420b">
+        <description>Created after removal of "getAuthorizedPeople" from Qvickly API Documentation</description>
+        <accepts>api-getAuthorizedPeople.html</accepts>
+    </rule>
+    <rule id="60843a4e">
+        <description>Created after removal of "Update checkout" from Qvickly API Documentation</description>
+        <accepts>Update-checkout.html</accepts>
+    </rule>
+    <rule id="22414345">
+        <description>Created after removal of "Init checkout" from Qvickly API Documentation</description>
+        <accepts>Init-checkout.html</accepts>
+    </rule>
+</rules>

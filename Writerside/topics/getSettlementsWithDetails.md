@@ -1,0 +1,3 @@
+# getSettlementsWithDetails
+
+Start typing here...
