@@ -1,3 +1,3 @@
-# Payment API
+# merchant
 
 Start typing here...

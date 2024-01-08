@@ -1,3 +1,3 @@
-# Payment API
+# currencies
 
 Start typing here...

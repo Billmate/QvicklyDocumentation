@@ -1,3 +1,3 @@
-# Payment API
+# noauth
 
 Start typing here...
