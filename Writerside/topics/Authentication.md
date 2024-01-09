@@ -12,6 +12,7 @@ The credentials consist of three elements:
 
 
 
+## Credentials in payload
 
 <code-block lang="json">
 {
@@ -31,17 +32,25 @@ The credentials consist of three elements:
 }
 </code-block>
 
+### Credentials
 | Property   | Required | Type    | Description                                                                                                                                                                                                                                                                        |
 |------------|----------|---------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| key        | true     | int     | The secret key from Qvickly. Being used for generating the hash key.                                                                                                                                                                                                               |
 | id         | true     | int     | The store ID from Qvickly.                                                                                                                                                                                                                                                         |
-| hash       | true     | string  | Hash key using the HMAC method with SHA-512. This is used for verifying that the request is correct and fom a valid server. Key Qvickly key. Argument Data array as json encoded string.                                                                                           |
+| hash       | true     | string  | Hash key using the HMAC method with SHA-512. This is used for verifying that the request is correct and fom a valid server. <br/>Key - Qvickly key.<br/>Argument Data - array as json encoded string.                                                                              |
 | version    | false    | string  | Version of the Qvickly API. Currently 2.1.7. Currently not mandatory, but helps when debugging in logs.                                                                                                                                                                            |
 | client     | false    | string  | A unique name to identify client and version of client. Can be set by a plugin developer.                                                                                                                                                                                          |
 | language   | false    | string  | This is the language of the api, this will decide what language we will return for example error messages. Language codes used according to ISO 639-1, Currently supported sv, en.                                                                                                 |
 | serverdata | false    | string  | Web shop server data. For example user agent of the customer browser. Very useful for debugging.                                                                                                                                                                                   |
 | time       | false    | decimal | Time when request was submitted. Time format is “PHP microtime”, which is seconds since the Unix Epoch (00000 January 1, 1970 GMT). If used, then logs will show “client time”, which is the time it takes for the request to reach Qvickly servers. Good for debugging of delays. |
 | test       | false    | boolean | If test mode, a real credit check will not be made. Default is false.                                                                                                                                                                                                              |
+
+**key** The secret key from Qvickly. Is being used for generating the hash key.
+
+### Data
+The data in the payload can be different depending on which method is being called. See the documentation for each method for more information.
+
+> **Note:** The data in the payload is mandatory and can NOT be empty. If there is no data to send, send a timestamp or any other undefined property (such as 'dummy').
+> {style="warning"}
 
 ## Generate hash key
 <tabs>

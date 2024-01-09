@@ -17,7 +17,7 @@
 | 2552   | Pricelist variable is invalid                                                                                     |
 | 2553   | The date format is wrong.                                                                                         |
 | 4100   | Recurring number is not found                                                                                     |
-| 4102   | We were not able to debit the card. Please try again later or contact billmate support.                           |
+| 4102   | We were not able to debit the card. Please try again later or contact %brand% support.                            |
 | 4103   | Debiting the recurring payment is failed                                                                          |
 | 5000   | Invalid method                                                                                                    |
 | 5001   | Factoring is not activated for this account. Payment could not be made.                                           |
@@ -57,7 +57,7 @@
 | 5219   | Error has returned while crediting:                                                                               |
 | 5220   | Can not cancel an already cancelled payment.                                                                      |
 | 5221   | Can not activate a payment that is related with a test person in live mode                                        |
-| 5222   | Your account needs to be activated by Billmate. Please contact us!                                                |
+| 5222   | Your account needs to be activated by %brand%. Please contact us!                                                 |
 | 5223   | Cannot activate a credit invoice.                                                                                 |
 | 5224   | Swedbankpay key is not found                                                                                      |
 | 5250   | An error occurred when splitting the invoice. You can not have a negative value in delivered.                     |
