@@ -13,7 +13,7 @@ $debug = false;
 
 $id = "12345";
 $key = "1234567890";
-define("BILLMATE_SERVER", "2.1.6");    /* API version */
+define("BILLMATE_SERVER", "%API_VERSION%");    /* API version */
 define("BILLMATE_CLIENT", "Pluginname:BillMate:1.0");
 define("BILLMATE_LANGUAGE", "sv");
 $bm = new BillMate($id,$key,$ssl,$test,$debug);
@@ -61,7 +61,7 @@ namespace ActivatePayment
                 referrer["HTTP_X_REAL_IP"] = "127.0.0.1";
                 Billmate bm = new Billmate("12345", "1234567890",ssl,true,false,referrer);
                 bm.Client = "Pluginname:BillMate:1.0";
-                bm.Server = "2.1.6";
+                bm.Server = "%API_VERSION%";
                 bm.Language = "sv";
                 Dictionary<string, object> parameters = new Dictionary<string, object>();
                 parameters["number"] = "1000235";

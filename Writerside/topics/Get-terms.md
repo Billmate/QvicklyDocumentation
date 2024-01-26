@@ -71,7 +71,7 @@ namespace GetTerms
                 referrer["HTTP_X_REAL_IP"] = "127.0.0.1";
                 Billmate bm = new Billmate("12345", "1234567890",ssl,%(test),false,referrer);
                 bm.Client = "Pluginname:BillMate:1.0";
-                bm.Server = "2.1.6";
+                bm.Server = "%API_VERSION%";
                 bm.Language = "sv";
                 Dictionary<string, object> Paymentdata = new Dictionary<string, object>();
                 paymentdata["method"] = "1";

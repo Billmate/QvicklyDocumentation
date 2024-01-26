@@ -1,0 +1,3 @@
+# getPaymentMethods
+
+Start typing here...

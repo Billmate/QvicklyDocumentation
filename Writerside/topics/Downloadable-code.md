@@ -5,7 +5,7 @@ The code examples are provided as-is and are not supported by Qvickly.
 If you have any questions regarding the code examples, please contact us at [support@qvickly.io](mailto:support@qvickly.io)
 
 ## Simple vs module
-The simple code is a bare minumum example of how to use the API.
+The simple code is a bare minimum example of how to use the API.
 
 The module code is a more advanced example of how to use the API and is more or less a wrapper based on the simple code.
 

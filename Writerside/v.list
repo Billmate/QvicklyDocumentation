@@ -3,4 +3,8 @@
 <vars>
     <var name="product" value="Qvickly Product Documentation"/>
     <var name="brand" value="Qvickly"/>
+    <var name="product-short" value="Qvickly"/>
+    <var name="API_VERSION" value="2.2.2"/>
+    <var name="CLIENT_NAME" value="Pluginname:Qvickly:1.0"/>
+    <var name="DEVELOPER_MAIL_ADDRESS" value="support@qvickly.io"/>
 </vars>

@@ -1,6 +1,14 @@
 # Data types
 This section contains the different data types that are related to the API.
 
+## Character encoding
+The API is using UTF-8 as character encoding.
+But there is one limitation and that is that the character encoding is limited characters available in ISO 8859-1.
+
+Any character that is not available in ISO 8859-1 will be replaced with a question mark (?).
+
+This will create a problem when creating a HMAC signature since the signature will be different from the one that is created by the API.
+
 ## string
 Strings have a maximum character length of 255 characters, otherwise it is noted in the description of the property.
 <code-block lang="json">
