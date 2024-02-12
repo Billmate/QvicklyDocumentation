@@ -1,13 +1,14 @@
 # Examples
 
 
-| Platform | Verified | Complete | Description                                                                    |
-|----------|----------|----------|--------------------------------------------------------------------------------|
-| PHP5     | 0/22     | 11/22    | Old PHP code moved from our old API documentation. This code is based on PHP5. |
-| PHP8     | 0/22     | 0/22     | New PHP code. Updated 2024 and is currently a work in progress.                |
-| C#       | 0/22     | 11/22    | C# code moved from our old API documentation.                                  |
-| Python   | 0/22     | 7/22     | Python3 code. Updated 2024 and is currently a work in progress.                |
-| Node.JS  | 0/22     | 0/22     | Node.JS code. Updated 2024 and is currently a work in progress.                |
+| Platform      | Verified                | Complete                 | Description                                                                    |
+|---------------|-------------------------|--------------------------|--------------------------------------------------------------------------------|
+| %code-json%   | 0/%NUMBER_OF_EXAMPLES%  | 0/%NUMBER_OF_EXAMPLES%   | JSON basic example payloads.                                                   |
+| %code-php5%   | 0/%NUMBER_OF_EXAMPLES%  | 11/%NUMBER_OF_EXAMPLES%  | Old PHP code moved from our old API documentation. This code is based on PHP5. |
+| %code-php8%   | 0/%NUMBER_OF_EXAMPLES%  | 0/%NUMBER_OF_EXAMPLES%   | New PHP code. Updated 2024 and is currently a work in progress.                |
+| %code-csharp% | 0/%NUMBER_OF_EXAMPLES%  | 11/%NUMBER_OF_EXAMPLES%  | C# code moved from our old API documentation.                                  |
+| %code-python% | 0/%NUMBER_OF_EXAMPLES%  | 7/%NUMBER_OF_EXAMPLES%   | Python3 code. Updated 2024 and is currently a work in progress.                |
+| %code-node%   | 0/%NUMBER_OF_EXAMPLES%  | 0/%NUMBER_OF_EXAMPLES%   | Node.JS code. Updated 2024 and is currently a work in progress.                |
 
 > **Platform** - The programming language used.
 > 

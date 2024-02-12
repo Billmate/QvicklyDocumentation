@@ -1,13 +1,21 @@
 # getAddress
 
+getAddress is used for retrieving a person/company’s address from a personal or organization number. getAddress API is only permitted to be used together with Billmate payments. The return is an array in JSON format with the values of the person/company details or an error. You can find all the possible errors in below. To use addPayment methods factoring or part payment, the person/company who purchase the product must have the same invoice address and delivery address as the address returned from getAddress.
+
 ## Request
+
+| Property | Required | Type   | Description                                                                                                                                                                                   |
+|----------|----------|--------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| pno      | true     | string | National identification number (NIN) or organisation number. Sweden Sent as YYMMDD-XXXX, it can be sent with or without “-” and with or without the two first numbers (19 or 20) in the year. |
+| country  | false    | string | Country code for the pno according to ISO 3166-1 alpha-2, e.g. SE, DK, NO, GB. Default is SE if not submitted.                                                                                |
+
 ```json
 {
   "credentials": {
-    "id": "12345",
+    "id": "%MERCHANT_ID%",
     "hash": "d12fffb30cc76ebf7ba5c5bc496188cea46c1cf09ebaa4421391f9571bd4df6920223222e87b6bf0dcb7fa8867410851e148f84f9dec6d94b1fddf9f66dc1307",
-    "version": "2.1.7",
-    "client": "Pluginname:BillMate:1.0",
+    "version": "%API_VERSION%",
+    "client": "%CLIENT_NAME%",
     "language": "sv",
     "test": "true"
   },
@@ -20,6 +28,17 @@
 ```
 
 ## Response for swedish national identification number
+| Property  | Type   | Description                  |
+|-----------|--------|------------------------------|
+| firstname | string | The first name of the entity |
+| lastname  | string | The last name of the entity  |
+| street    | string | The street for the entity    |
+| zip       | string | The zip code for the entity  |
+| city      | string | The city for the entity      |
+| country   | string | The country for the entity   |
+| phone     | string | The phone for the entity     |
+| email     | string | The email for the entity     |
+
 ```json
 {
   "credentials": {
@@ -39,6 +58,16 @@
 ```
 
 ## Response for swedish organisation number
+| Property | Type   | Description                     |
+|----------|--------|---------------------------------|
+| company  | string | The company name for the entity |
+| street   | string | The street for the entity       |
+| zip      | string | The zip code for the entity     |
+| city     | string | The city for the entity         |
+| country  | string | The country for the entity      |
+| phone    | string | The phone for the entity        |
+| email    | string | The email for the entity        |
+
 ```json
 {
   "credentials": {
@@ -56,19 +85,3 @@
 }
 ```
 
-## Examples
-
-<tabs>
-<tab title="PHP">
-<code-block lang="php">
-$connection = new QvicklyAPI($eid, $secret, true, $ssl);
-$address = $connection->GetAddress($pno, $country);
-</code-block>
-</tab>
-<tab title="Python">
-<code-block lang="python">
-connection = QvicklyAPI(eid, secret, True, ssl)
-address = connection->GetAddress(pno, country)
-</code-block>
-</tab>
-</tabs>

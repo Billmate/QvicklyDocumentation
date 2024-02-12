@@ -5,10 +5,10 @@ The request payload is a JSON object that contains the credentials, data and fun
 ```json
 {
   "credentials": {
-    "id": "12345",
+    "id": "%MERCHANT_ID%",
     "hash": "d12fffb30cc76ebf7ba5c5bc496188cea46c1cf09ebaa4421391f9571bd4df6920223222e87b6bf0dcb7fa8867410851e148f84f9dec6d94b1fddf9f66dc1307",
     "version": "2.1.7",
-    "client": "Pluginname:BillMate:1.0",
+    "client": "%CLIENT_NAME%",
     "language": "sv",
     "test": "true"
   },
@@ -37,13 +37,13 @@ The request payload is a JSON object that contains the credentials, data and fun
 
 ### Generate hash key
 <tabs>
-  <tab title="PHP">
+  <tab title="%code-php%">
     <code-block lang="php">
       $hash = hash_hmac('sha512', json_encode($data), $key);
     </code-block>
   </tab>
 
-  <tab title="Python">
+  <tab title="%code-python%">
     <code-block lang="python">
       dataString = simplejson.dumps(data, separators=(',', ':'))
       dataString = dataString.replace('/', '\\/')

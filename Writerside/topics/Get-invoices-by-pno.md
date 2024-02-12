@@ -1,28 +1,28 @@
 # Get invoices by pno
 
 <tabs>
-  <tab title="PHP5">
+  <tab title="%code-php5%">
 <code-block lang="PHP">
 <![CDATA[
 // Work in progress
 ]]>
 </code-block>
   </tab>
-  <tab title="PHP8">
+  <tab title="%code-php8%">
 <code-block lang="PHP">
 <![CDATA[
 // Work in progress
 ]]>
 </code-block>
   </tab>
-  <tab title="C#">
+  <tab title="%code-csharp%">
 <code-block lang="c#">
 <![CDATA[
 // Work in progress
 ]]>
 </code-block>
   </tab>
-  <tab title="Python">
+  <tab title="%code-python%">
 <code-block lang="Python">
 <![CDATA[
 # Work in progress

@@ -1,7 +1,7 @@
 # Add payment
 
 <tabs>
-  <tab title="PHP Old">
+  <tab title="%code-php5%">
 <code-block lang="PHP">
 <![CDATA[
 <?php
@@ -11,9 +11,9 @@ $debug = false;
 
 /* Credentials for Auth */
 
-$id = "12345";
-$key = "1234567890";
-define("BILLMATE_SERVER", "2.1.7"); // API version
+$id = "%MERCHANT_ID%";
+$key = "%MERCHANT_KEY%";
+define("BILLMATE_SERVER", "%API_VERSION%"); // API version
 define("BILLMATE_CLIENT", "%CLIENT_NAME%");
 define("BILLMATE_LANGUAGE", "sv");
 $bm = new BillMate($id, $key, $ssl, $test, $debug);
@@ -140,14 +140,14 @@ $bm->addPayment($values);
 ]]>
 </code-block>
   </tab>
-  <tab title="PHP New">
+  <tab title="%code-php8%">
 <code-block lang="PHP">
 <![CDATA[
 // Work in progress
 ]]>
 </code-block>
   </tab>
-  <tab title="C#">
+  <tab title="%code-csharp%">
 <code-block lang="c#">
 <![CDATA[
 using System;
@@ -167,7 +167,7 @@ namespace AddPayment
                 Boolean ssl = false;
                 Dictionary referrer = new Dictionary();
                 referrer["HTTP_X_REAL_IP"] = "127.0.0.1";
-                Billmate bm = new Billmate("12345", "1234567890",ssl,true,false,referrer);
+                Billmate bm = new Billmate("%MERCHANT_ID%", "%MERCHANT_KEY%",ssl,true,false,referrer);
                 bm.Client = "%CLIENT_NAME%";
                 bm.Server = "%API_VERSION%";
                 bm.Language = "sv";
@@ -293,7 +293,7 @@ namespace AddPayment
 ]]>
 </code-block>
   </tab>
-  <tab title="Python">
+  <tab title="%code-python%">
 <code-block lang="Python">
 <![CDATA[
 # Work in progress

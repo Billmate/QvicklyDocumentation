@@ -20,14 +20,14 @@ The module code is a more advanced example of how to use the API and is more or 
 # Node.js
 
 # Downloadable code comparison
-| Code / Product       | Payment API | Checkout API | Auth API | Paylink | Portal API |
-|----------------------|-------------|--------------|----------|---------|------------|
-| Simple PHP5          | Yes         | Yes          | No       | n/a     | No         |
-| Simple PHP8          | In progress | No           | No       | n/a     | No         |
-| Simple C#            | Yes         | Yes          | No       | n/a     | No         |
-| Simple Python3       | Yes         | Yes          | Yes      | n/a     | Yes        |
-| Simple Node.js (v21) | Yes         | Yes          | Yes      | n/a     | Yes        |
-| Module PHP8          | Yes         | Yes          | Yes      | n/a     | Yes        |
-| Module C#            | Yes         | Yes          | Yes      | n/a     | Yes        |
-| Module Python3       | Yes         | Yes          | Yes      | n/a     | Yes        |
-| Module Node.js (v21) | Yes         | Yes          | Yes      | n/a     | Yes        |
+| Code / Product       | Payment API | Checkout API | Auth API | Paylink | Portal API | MyQvickly API |
+|----------------------|-------------|--------------|----------|---------|------------|---------------|
+| Simple PHP5          | Yes         | Yes          | No       | n/a     | No         | No            |
+| Simple PHP8          | In progress | No           | No       | n/a     | No         | No            |
+| Simple C#            | Yes         | Yes          | No       | n/a     | No         | No            |
+| Simple Python3       | Yes         | Yes          | Yes      | n/a     | Yes        | No            |
+| Simple Node.js (v21) | Yes         | Yes          | Yes      | n/a     | Yes        | No            |
+| Module PHP8          | Yes         | Yes          | Yes      | n/a     | Yes        | No            |
+| Module C#            | Yes         | Yes          | Yes      | n/a     | Yes        | No            |
+| Module Python3       | Yes         | Yes          | Yes      | n/a     | Yes        | No            |
+| Module Node.js (v21) | Yes         | Yes          | Yes      | n/a     | Yes        | No            |

@@ -15,10 +15,10 @@ InitCheckout is used for initiating a Checkout payment through Qvickly Checkout 
 <code-block lang="json">
 {
     "credentials": {
-        "id": "12345",
+        "id": "%MERCHANT_ID%",
         "hash": "080ed3cec93c064b62afb6390a247efbfc821c1585ac16b93bd4cee780b8b5e6ec4ba79d0ed7fc9b575ff5892c9999de31bcdbc74a8957a5b32bfc8d9e1881d1",
         "version": "%API_VERSION%",
-        "client": "Pluginname:BillMate:1.0",
+        "client": "%CLIENT_NAME%",
         "language": "sv",
         "serverdata": { "..." },
         "time": "1417004339.9291 ",

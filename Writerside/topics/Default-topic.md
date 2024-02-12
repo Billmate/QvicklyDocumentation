@@ -15,4 +15,5 @@ The purpose of this documentation is to provide you with a quick and easy way to
 | [Auth API](Auth-API.md)         | JSON | Yes     | The Auth API is an API that handles authentication for various other APIs.                                   |
 | [Paylink](Paylink.md)           | JSON | No      | The Paylink is a specialized part of the Payment API that allows you to accept payments from your customers. |
 | [Portal API](Portal-API.md)     | JSON | Yes     | The Portal API is an API that allows you to manage payments from your customers.                             |
+| [MyQvickly API](MyQvickly-API.md) | JSON | Yes     | The MyQvickly API is an API that allows customers to see and pay their invoices.                             |
 
