@@ -1,3 +1,3 @@
 # Checkout API
 
-Start typing here...
+![Qvickly Checkout](../images/checkout.png)

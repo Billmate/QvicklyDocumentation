@@ -4,12 +4,17 @@ getPaymentinfo is used for getting info about a payment.
 
 ## Request
 
+### Data
 | Property | Required | Type | Description                                                           | 
 |----------|----------|------|-----------------------------------------------------------------------|
 | number   | true     | int  | The payment number of the payment/invoice you wish to get info about. |
 
-<code-block lang="json">
-<![CDATA[
+### Function
+| Property | Required | Type   | Description                                                     |
+|----------|----------|--------|-----------------------------------------------------------------|
+| function | true     | string | The function name to be used, for this page it’s getPaymentinfo |
+
+```json
 {
     "credentials": {
         "id": "%MERCHANT_ID%",
@@ -26,8 +31,7 @@ getPaymentinfo is used for getting info about a payment.
     },
     "function": "getPaymentinfo"
 }
-]]>
-</code-block>
+```
 
 ## Response
 

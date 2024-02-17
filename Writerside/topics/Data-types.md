@@ -60,3 +60,16 @@ A list with a set of data.
 }
 </code-block>
 
+## Special notes on data types
+
+### Inconsistent data types
+Due to some earlier sins in the API, some data types are not consistent.
+
+Ths most common problem is [int](#int) and [dec](#dec) that should be strings but in some cases are numeric values.
+
+This affects implementations in languages that uses strict typing.
+
+This is something that we are working on to fix, but it is not a quick fix.
+
+### Boolean
+The API does not use the boolean data type, instead it uses a mix of string and integers with the values "true", "false", "0" and "1".

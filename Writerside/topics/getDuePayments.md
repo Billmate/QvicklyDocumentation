@@ -4,8 +4,18 @@ getDuePayments is used for retrieving a list of due payments which can have the 
 
 
 ## Request
-<code-block lang="json">
-<![CDATA[
+
+### Data
+| Property | Required | Type | Description                                                                                                                  |
+|----------|----------|------|------------------------------------------------------------------------------------------------------------------------------|
+| dueDate  | false    | date | Due date to be used for filtering (in format Y-m-d) and can maximum go 3 months back in history, which is the default value. |
+
+### Function
+| Property | Required | Type   | Description                                  |
+|----------|----------|--------|----------------------------------------------|
+| function | true     | string | The function name to be used, getDuePayments |
+
+```json
 {
     "credentials": {
         "id": "%MERCHANT_ID%",
@@ -22,13 +32,20 @@ getDuePayments is used for retrieving a list of due payments which can have the 
     },
     "function": "getDuePayments"
 }
-]]>
-</code-block>
+```
 
 ## Response
 
-<code-block lang="json">
-<![CDATA[
+| Property      | Type   | Description                                                                   |
+|---------------|--------|-------------------------------------------------------------------------------|
+| number        | string | The invoice number                                                            |
+| orderid       | string | The order id for the Invoice                                                  |
+| invoiceDate   | date   | The invoice date for the Invoice                                              |
+| invoiceStatus | string | The status for the Invoice either "Collection" (Inkasso) or "Due" (Förfallen) |
+| dueDate       | date   | The due date for the Invoice                                                  |
+| topay         | string | The amount left to pay                                                        |
+
+```json
 {
     "credentials": {
         "hash": "edbbb1411422ac0d1cbc5e3a1b8948d01edaa4553ea7a78c1aad823db9f49acbc0b6f9d02769cae8975fe5f44bba13050a5b9c2e19f0f488b9faa7df66029520"
@@ -52,5 +69,4 @@ getDuePayments is used for retrieving a list of due payments which can have the 
         }
     ]
 }
-]]>
-</code-block>
+```

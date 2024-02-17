@@ -6,7 +6,9 @@ addPayment is used for creating payments.
 
 > Note: For Factoring and Part Payment, billing and shipping address must be same as registered address (swedish: bokföringsadress) to be approved.
 
-## Request parameters
+## Request
+
+### Parameters
 The data section of the payload has the following sub-sections:
 * PaymentData
 * PaymentInfo
@@ -14,6 +16,7 @@ The data section of the payload has the following sub-sections:
 * Customer
 * Articles
 * Cart
+
 Please note that not all sections are mandatory. See the documentation for each section for more information.
 
 ### PaymentData
@@ -43,6 +46,16 @@ Please note that not all sections are mandatory. See the documentation for each 
 ### Articles
 
 <include from="Snippets-Request.md" element-id="snippet-articles" />
+
+### Cart
+
+<include from="Snippets-Request.md" element-id="snippet-cart" />
+
+### Function
+
+| Property | Required | Type   | Description                                                 |
+|----------|----------|--------|-------------------------------------------------------------|
+| function | true     | string | The function name to be used, for this page it’s addPayment |
 
 ## Request example
 ```json
@@ -156,16 +169,7 @@ Please note that not all sections are mandatory. See the documentation for each 
 ```
 
 ## Response example
-```json
-{
-    "credentials": {
-        "hash":"0b2d1c4d31228a6dc845a16d57b782b97a5e111db2348324be42f5a91e88c8bd35fa62f0e6240b5680e17da03bb9301c5bd0ed755db7fa62ba6054ee21cdde88"
-    }
-    "data": {
-        "number":"12345",
-        "status":"Created",
-        "orderid":"P123456789",
-        "url":"https://api.qvickly.io/invoice/140544658153c38f1cdf279"
-    }
-}
-```
+
+<include from="Snippets-Response.md" element-id="snippet-payment"></include>
+
+<include from="Snippets-Response.md" element-id="snippet-payment-json"></include>

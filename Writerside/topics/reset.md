@@ -1,7 +1,17 @@
 # reset
 
-## Endpoint
-/\{eid}/\{hash}/reset
+> This is an internal function used by the checkout
+{style="warning"}
 
-## Endpoint used for test mode
-/\{eid}/\{hash}/test/reset
+{type="narrow"}
+Endpoint
+: /\{eid}/\{hash}/reset
+: /\{eid}/\{hash}/test/reset (Test mode)
+
+Method
+: GET
+
+
+## Response
+
+No response will be returned, but the order will be reset.
