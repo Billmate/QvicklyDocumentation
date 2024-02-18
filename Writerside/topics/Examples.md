@@ -1,14 +1,18 @@
 # Examples
 
 
-| Platform      | Verified                | Complete                 | Description                                                                    |
-|---------------|-------------------------|--------------------------|--------------------------------------------------------------------------------|
-| %code-json%   | 0/%NUMBER_OF_EXAMPLES%  | 0/%NUMBER_OF_EXAMPLES%   | JSON basic example payloads.                                                   |
-| %code-php5%   | 0/%NUMBER_OF_EXAMPLES%  | 11/%NUMBER_OF_EXAMPLES%  | Old PHP code moved from our old API documentation. This code is based on PHP5. |
-| %code-php8%   | 0/%NUMBER_OF_EXAMPLES%  | 0/%NUMBER_OF_EXAMPLES%   | New PHP code. Updated 2024 and is currently a work in progress.                |
-| %code-csharp% | 0/%NUMBER_OF_EXAMPLES%  | 11/%NUMBER_OF_EXAMPLES%  | C# code moved from our old API documentation.                                  |
-| %code-python% | 0/%NUMBER_OF_EXAMPLES%  | 7/%NUMBER_OF_EXAMPLES%   | Python3 code. Updated 2024 and is currently a work in progress.                |
-| %code-node%   | 0/%NUMBER_OF_EXAMPLES%  | 0/%NUMBER_OF_EXAMPLES%   | Node.JS code. Updated 2024 and is currently a work in progress.                |
+| Platform      | Verified                | Complete                 | Description                                                                                                                                             |
+|---------------|-------------------------|--------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------|
+| %code-json%   | 0/%NUMBER_OF_EXAMPLES%  | 0/%NUMBER_OF_EXAMPLES%   | JSON basic example payloads.                                                                                                                            |
+| %code-php5%   | 0/%NUMBER_OF_EXAMPLES%  | 11/%NUMBER_OF_EXAMPLES%  | Old PHP code moved from our old API documentation. This code is based on PHP5.                                                                          |
+| %code-php8%   | 0/%NUMBER_OF_EXAMPLES%  | 0/%NUMBER_OF_EXAMPLES%   | New PHP code. Updated 2024 and is currently a work in progress.                                                                                         |
+| %code-python% | 0/%NUMBER_OF_EXAMPLES%  | 7/%NUMBER_OF_EXAMPLES%   | Python3 code. Updated 2024 and is currently a work in progress.                                                                                         |
+| %code-node%   | 0/%NUMBER_OF_EXAMPLES%  | 0/%NUMBER_OF_EXAMPLES%   | Node.JS code. Updated 2024 and is currently a work in progress.                                                                                         |
+| %code-csharp% | 0/%NUMBER_OF_EXAMPLES%  | 11/%NUMBER_OF_EXAMPLES%  | C# code moved from our old API documentation.                                                                                                           |
+| %code-go%     | 0/%NUMBER_OF_EXAMPLES%  | 11/%NUMBER_OF_EXAMPLES%  | Go has some issues with the strict typing. The solution will probably be based on interface and that might not be a favorite amongst hard core purists. |
+| %code-java%   | 0/%NUMBER_OF_EXAMPLES%  | 0/%NUMBER_OF_EXAMPLES%   | Java is not a prioritized language and will ba added at a later stage.                                                                                  |
+| %code-rust%   | 0/%NUMBER_OF_EXAMPLES%  | 0/%NUMBER_OF_EXAMPLES%   | Rust is coming soon when we managed to learn best practices.                                                                                            |
+| %code-perl%   | 0/%NUMBER_OF_EXAMPLES%  | 0/%NUMBER_OF_EXAMPLES%   | Perl has some issues with HMAC_SHA512 end will be postponed until we find a viable solution.                                                            |
 
 > **Platform** - The programming language used.
 > 
@@ -25,3 +29,4 @@ The old PHP examples will be updated to PHP8.
 The Python code will be based on a new package.
 
 The Node.JS code will be based on a new package.
+

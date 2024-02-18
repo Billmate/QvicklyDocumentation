@@ -13,9 +13,9 @@ $debug = false;
 
 $id = "%MERCHANT_ID%";
 $key = "%MERCHANT_KEY%";
-define("BILLMATE_SERVER", "%API_VERSION%"); // API version
-define("BILLMATE_CLIENT", "%CLIENT_NAME%");
-define("BILLMATE_LANGUAGE", "sv");
+define("QVICKLY_SERVER", "%API_VERSION%"); // API version
+define("QVICKLY_CLIENT", "%CLIENT_NAME%");
+define("QVICKLY_LANGUAGE", "sv");
 $bm = new BillMate($id, $key, $ssl, $test, $debug);
 $values = array();
 
@@ -171,8 +171,8 @@ Personuppgifter hanteras i enlighet med gällande lagstiftning. Billmate AB beha
 Billmate AB
 Organisationsnummer: 556918-4129
 Telefonnummer: 040-30 35 00
-Email: info@developer.billmate.se
-Webb: www.developer.billmate.se
+Email: info@developer.qvickly.io
+Webb: www.developer.qvickly.io
 
 * Gäller ej för alla varor och tjänster, t ex. flygresor, evenemang och specialtillverkade varor.
 ]]>

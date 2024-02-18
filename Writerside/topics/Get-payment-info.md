@@ -13,9 +13,9 @@ $debug = false;
 
 $id = "%MERCHANT_ID%";
 $key = "%MERCHANT_KEY%";
-define("BILLMATE_SERVER", "%API_VERSION%"); // API version
-define("BILLMATE_CLIENT", "%CLIENT_NAME%");
-define("BILLMATE_LANGUAGE", "sv");
+define("QVICKLY_SERVER", "%API_VERSION%"); // API version
+define("QVICKLY_CLIENT", "%CLIENT_NAME%");
+define("QVICKLY_LANGUAGE", "sv");
 $bm = new BillMate($id, $key, $ssl, $test, $debug);
 $values = array();
 
@@ -157,7 +157,7 @@ paymentinfo = api_connection.getPaymentinfo("12913")
             "city":"Lund",
             "country":"SE",
             "phone":"0712-345678",
-            "email":"test@developer.billmate.se"
+            "email":"test@developer.qvickly.io"
          },
          "Shipping":{
             "firstname":"Firstname",

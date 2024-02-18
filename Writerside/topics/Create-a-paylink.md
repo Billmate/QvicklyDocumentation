@@ -84,7 +84,7 @@
         "number": "123456",
         "status": "WaitingForBankIDIdentification",
         "orderid": "1234567890-a2",
-        "url": "https://api.development.billmate.se/bankid/12345/202401010d281c6dad5090a05548e3483c503aa5"
+        "url": "https://api.development.qvickly.io/bankid/12345/202401010d281c6dad5090a05548e3483c503aa5"
     }
 }
 </code-block>

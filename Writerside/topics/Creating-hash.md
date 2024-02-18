@@ -298,3 +298,6 @@ This should result in the following hash value:
 ```text
 8dde708fea8cfcee68d6817975f37bf9b0c5412f3edfbd1d1d2bca629bd49f06a57bddcaac465ebe8306d25d6e1ff32e8a225c6b58ebef2ea39f51a6777f037a
 ```
+
+> Please note that the hash value requires that the order of the keys in the JSON string is the same as in the payload. If the order is different, the hash value will be different. Languages such as Perl does not guarantee the order of the keys in the JSON string.
+{style="warning"}

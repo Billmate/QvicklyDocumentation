@@ -69,8 +69,8 @@
 | 5290   | Credit failed: Could not refund payment. Please try again later.                                                  |
 | 5291   | Credit failed: Could not refund payment. Please try again later.                                                  |
 | 5292   | Credit failed: Could not refund payment. Please try again later.                                                  |
-| 5297   | Refunding can not be made. Please contact Billmate support.                                                       |
-| 5298   | Batch could not be created. Please contact Billmate support.                                                      |
+| 5297   | Refunding can not be made. Please contact Qvickly support.                                                        |
+| 5298   | Batch could not be created. Please contact Qvickly support.                                                       |
 | 5301   | No payment plans found.                                                                                           |
 | 5302   | Currency, Country and Language are mandatory.                                                                     |
 | 6009   | Order id can not be empty                                                                                         |

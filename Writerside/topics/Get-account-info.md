@@ -13,9 +13,9 @@ $debug = false;
 
 $id = "%MERCHANT_ID%";
 $key = "%MERCHANT_KEY%";
-define("BILLMATE_SERVER", "%API_VERSION%"); // API version
-define("BILLMATE_CLIENT", "%CLIENT_NAME%");
-define("BILLMATE_LANGUAGE", "sv");
+define("QVICKLY_SERVER", "%API_VERSION%"); // API version
+define("QVICKLY_CLIENT", "%CLIENT_NAME%");
+define("QVICKLY_LANGUAGE", "sv");
 $bm = new BillMate($id, $key, $ssl, $test, $debug);
 $values = array();
 
@@ -95,7 +95,7 @@ namespace GetAccountInfo
         "city": "MALMÖ",
         "country": "Sweden",
         "phone": "040 - 30 35 00",
-        "email": "support@developer.billmate.se",
+        "email": "support@developer.qvickly.io",
         "orgregnr": "556918-4129",
         "vatregnr": "SE556918412901",
         "language": "sv",

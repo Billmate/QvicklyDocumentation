@@ -17,6 +17,7 @@
     <var name="code-csharp" value="C#"/>
     <var name="code-node" value="Node.JS"/>
     <var name="code-go" value="Go"/>
+    <var name="code-perl" value="Perl"/>
     <var name="code-rust" value="Rust"/>
     <var name="code-java" value="Java"/>
     <var name="NUMBER_OF_EXAMPLES" value="22"/>
