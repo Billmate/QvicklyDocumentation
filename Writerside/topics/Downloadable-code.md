@@ -29,12 +29,12 @@ The newer PHP code examples are adopted for PHP 8.x. They are however based on t
 |--------|------------------------------------------------------------------------|---------|-------------|
 | Simple | [GitHub](https://github.com/Billmate/QvicklyAPISamples/tree/main/PHP)  | Started |             |
 
-### PHP Old
+### PHP Legacy
 The original PHP code example was written in early PHP 5.x. It is still available for download for reference purposes.
 
-| Type   | Link                                                                      | Status | Description |
-|--------|---------------------------------------------------------------------------|--------|-------------|
-| Simple | [GitHub](https://github.com/Billmate/QvicklyAPISamples/tree/main/PHP.Old) | As-is  |             |
+| Type   | Link                                                                         | Status | Description |
+|--------|------------------------------------------------------------------------------|--------|-------------|
+| Simple | [GitHub](https://github.com/Billmate/QvicklyAPISamples/tree/main/PHP.Legacy) | As-is  |             |
 
 ### .NET
 There is one DLL-file for the .NET code examples. The DLL-file is a wrapper for the Qvickly API but the origin is unknown and can most likely only serve as a reference.
@@ -79,7 +79,7 @@ Go implementations are unfortunately all but pretty. This is due to the fact tha
 | Code / Product                   | Payment API | Checkout API | Auth API | Paylink | Portal API | MyQvickly API |
 |----------------------------------|-------------|--------------|----------|---------|------------|---------------|
 | [Simple PHP](#php)               | Yes         | No           | No       | n/a     | No         | No            |
-| [Simple PHP Old](#php-old)       | Yes         | No           | No       | n/a     | No         | No            |
+| [Simple PHP Legacy](#php-legacy) | Yes         | No           | No       | n/a     | No         | No            |
 | [Simple .NET](#net)              | Nah         | No           | No       | n/a     | No         | No            |
 | [Simple Python](#python)         | Yes         | No           | No       | n/a     | No         | No            |
 | [Simple Node.js (v21)](#node-js) | Yes         | No           | No       | n/a     | No         | No            |

@@ -1,7 +1,7 @@
 # Get due payments
 
 <tabs>
-  <tab title="%code-php5%">
+  <tab title="%code-phplegacy%">
 <code-block lang="PHP">
 <![CDATA[
 <?php
@@ -34,7 +34,7 @@ $bm->getDuePayments($values);
   </tab>
 
 
-  <tab title="%code-php8%">
+  <tab title="%code-php%">
 <code-block lang="PHP">
 <![CDATA[
 // Work in progress
