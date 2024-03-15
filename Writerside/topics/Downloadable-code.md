@@ -59,6 +59,20 @@ The Node.js code examples are based on Node.js v21.x.
 |--------|---------------------------------------------------------------------------|---------|-------------|
 | Simple | [GitHub](https://github.com/Billmate/QvicklyAPISamples/tree/main/Node.JS) | Started |             |
 
+### Deno
+The Deno code examples are based on Deno v1.4.x.
+
+| Type   | Link                                                                   | Status  | Description |
+|--------|------------------------------------------------------------------------|---------|-------------|
+| Simple | [GitHub](https://github.com/Billmate/QvicklyAPISamples/tree/main/Deno) | Started |             |
+
+### Bun
+The Bun code examples are based on Bun v1.0.x.
+
+| Type   | Link                                                                  | Status  | Description |
+|--------|-----------------------------------------------------------------------|---------|-------------|
+| Simple | [GitHub](https://github.com/Billmate/QvicklyAPISamples/tree/main/Bun) | Started |             |
+
 ### Rust
 The Rust code examples are based on Rust 1.76.
 
