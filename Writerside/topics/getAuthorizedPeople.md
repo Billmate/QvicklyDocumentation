@@ -1,3 +1,0 @@
-# getAuthorizedPeople
-
-Start typing here...

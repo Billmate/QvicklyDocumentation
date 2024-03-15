@@ -96,6 +96,48 @@ console.log(hash);
 </code-block>
 </tab>
 
+<tab title="Deno">
+<code-block title="%code-deno%" language="typescript">
+<![CDATA[
+import { hmac } from "https://denopkg.com/chiefbiiko/hmac/mod.ts";
+
+const data = {
+    "data": {
+        "id": "123456",
+        "amount": 100,
+        "currency": "SEK"
+    }
+};
+const content = JSON.stringify(data["data"]);
+const secret = "1234567890123456";
+
+const hash = hmac("sha512", secret, content, "utf-8", "hex")
+
+console.log(hash);
+]]>
+</code-block>
+</tab>
+
+<tab title="Bun">
+<code-block title="%code-bun%" language="typescript">
+<![CDATA[
+import { createHmac } from "crypto";
+
+const data = {
+    "data": {
+        "id": "123456",
+        "amount": 100,
+        "currency": "SEK"
+    }
+};
+const content = JSON.stringify(data["data"]);
+const secret = "1234567890123456";
+const hash = createHmac('sha512', secret).update(content).digest('hex');
+console.log(hash);
+]]>
+</code-block>
+</tab>
+
 <tab title="%code-go%">
 
 > Please note that this is a quick and dirty example and should not be used in production.

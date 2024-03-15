@@ -32,6 +32,8 @@ $bm->getPaymentinfo($values);
 ]]>
 </code-block>
   </tab>
+
+
   <tab title="%code-php8%">
 <code-block lang="PHP">
 <![CDATA[
@@ -39,6 +41,8 @@ $bm->getPaymentinfo($values);
 ]]>
 </code-block>
   </tab>
+
+
   <tab title="%code-csharp%">
 <code-block lang="c#">
 <![CDATA[
@@ -80,6 +84,8 @@ namespace GetPaymentInfo
 }]]>
 </code-block>
   </tab>
+
+
   <tab title="%code-python%">
 <code-block lang="Python">
 <![CDATA[

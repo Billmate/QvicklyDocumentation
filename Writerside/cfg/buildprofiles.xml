@@ -3,10 +3,11 @@
                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 
     <variables></variables>
-    <build-profile instance="hi">
+    <build-profile instance="apidocumentation">
         <variables>
             <header-logo>Qvickly.svg</header-logo>
             <noindex-content>true</noindex-content>
+            <primary-color>iris</primary-color>
         </variables>
     </build-profile>
     <footer>

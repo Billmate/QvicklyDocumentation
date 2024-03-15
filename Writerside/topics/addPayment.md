@@ -2,9 +2,6 @@
 
 addPayment is used for creating payments.
 
-> Note: For card and bank payment, a payment url is returned to which the customer must be redirected to finalize the payment.
-
-> Note: For Factoring and Part Payment, billing and shipping address must be same as registered address (swedish: bokföringsadress) to be approved.
 
 ## Request
 
@@ -32,6 +29,8 @@ Please note that not all sections are mandatory. See the documentation for each 
 <include from="Snippets-Request.md" element-id="snippet-card" />
 
 ### Customer
+
+> Note: For Factoring and Part Payment, billing and shipping address must be same as registered address (swedish: bokföringsadress) to be approved.
 
 <include from="Snippets-Request.md" element-id="snippet-customer" />
 
@@ -169,6 +168,8 @@ Please note that not all sections are mandatory. See the documentation for each 
 ```
 
 ## Response example
+
+> Note: For card and bank payment, a payment url is returned to which the customer must be redirected to finalize the payment.
 
 <include from="Snippets-Response.md" element-id="snippet-payment"></include>
 

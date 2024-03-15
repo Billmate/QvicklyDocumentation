@@ -25,6 +25,11 @@ Int´s are numeric based values but acts as strings.
 }
 </code-block>
 
+> Please note that the API sometimes returns int´s as strings and sometimes as numbers. This is a known issue and is being worked on.
+> 
+> Currently it is possible to send int´s as both strings and numbers, but it is recommended to use strings to avoid problems. **Observe that this might change without prior notice.**
+> {style="warning"}
+
 ## dec
 Dec´s are decimal numeric value, but acts as strings. Note that it uses the point (.) as a separator.
 <code-block lang="json">

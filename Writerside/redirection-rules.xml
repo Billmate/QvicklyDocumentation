@@ -22,4 +22,8 @@
         <description>Created after removal of "createCredentialsKey" from Qvickly Product Documentation</description>
         <accepts>createCredentialsKey.html</accepts>
     </rule>
+    <rule id="543a24ff">
+        <description>Created after removal of "getAuthorizedPeople" from Qvickly Product Documentation</description>
+        <accepts>getAuthorizedPeople.html</accepts>
+    </rule>
 </rules>

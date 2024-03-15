@@ -16,6 +16,8 @@
     <var name="code-python" value="Python"/>
     <var name="code-csharp" value="C#"/>
     <var name="code-node" value="Node.JS"/>
+    <var name="code-deno" value="Deno"/>
+    <var name="code-bun" value="Bun"/>
     <var name="code-go" value="Go"/>
     <var name="code-perl" value="Perl"/>
     <var name="code-rust" value="Rust"/>
