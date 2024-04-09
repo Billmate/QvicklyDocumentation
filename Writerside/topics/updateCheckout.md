@@ -4,6 +4,8 @@ UpdateCheckout is used for updating an ongoing session for Qvickly Checkout paym
 
 > This function is a part of [Qvickly Payment API](Qvickly-API.md)
 
+For an example please see the [updateCheckout example](Update-checkout.md) page.
+
 ## Request
 
 ### PaymentData

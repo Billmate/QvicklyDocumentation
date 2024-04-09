@@ -4,6 +4,9 @@ InitCheckout is used for initiating a Checkout payment through Qvickly Checkout 
 
 > This function is a part of [Qvickly Payment API](Qvickly-API.md)
 
+ 
+For an example please see the [initCheckout example](Init-checkout.md) page.
+
 ## Request
 
 ### Header
@@ -14,6 +17,10 @@ InitCheckout is used for initiating a Checkout payment through Qvickly Checkout 
 | Content-Length | The string length of the json array |
 
 ### Body
+
+credentials
+data
+function
 
 #### checkoutdata
 | Property             | Required | Type    | Description                                                                       |
@@ -97,14 +104,14 @@ InitCheckout is used for initiating a Checkout payment through Qvickly Checkout 
         "time": "1417004339.9291 ",
         "test": "true"
     },
-    "checkoutdata":{
-        "terms": "http://qvickly.io/terms",
-        "privacyPolicy": "http://qvickly.io/privacy-policy",
-        "companyview": "false",
-        "showPhoneOnDelivery": "false",
-        "redirectOnSuccess": "true"
-    },
     "data": {
+        "checkoutdata":{
+          "terms": "http://qvickly.io/terms",
+          "privacyPolicy": "http://qvickly.io/privacy-policy",
+          "companyview": "false",
+          "showPhoneOnDelivery": "false",
+          "redirectOnSuccess": "true"
+        },
         "PaymentData": {
             "currency": "SEK",
             "language": "sv",

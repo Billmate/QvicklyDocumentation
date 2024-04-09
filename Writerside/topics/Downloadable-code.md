@@ -21,13 +21,22 @@ The simple code is a bare minimum example of how to use the API.
 The module code is a more advanced example of how to use the API and is more or less an advanced wrapper based on the simple code.
 
 ## Languages
+The different statuses are as follows
+
+| Status  | Description                                             |
+|---------|---------------------------------------------------------|
+| Started | The code is started but not finished.                   |
+| As-is   | The code is as-is and will not be updated.              |
+| Planned | The code is planned but not started yet.                |
+| n/a     | Not applicable or there is no plan to create this code. |
 
 ### PHP
 The newer PHP code examples are adopted for PHP 8.x. They are however based on the same principles as the original PHP code examples and might therefore not always be cutting edge.
 
-| Type   | Link                                                                   | Status  | Description |
-|--------|------------------------------------------------------------------------|---------|-------------|
-| Simple | [GitHub](https://github.com/Billmate/QvicklyAPISamples/tree/main/PHP)  | Started |             |
+| Type   | Link                                                                  | Status  | Description |
+|--------|-----------------------------------------------------------------------|---------|-------------|
+| Simple | [GitHub](https://github.com/Billmate/QvicklyAPISamples/tree/main/PHP) | Started |             |
+| Module |                                                                       | Planned |             |
 
 ### PHP Legacy
 The original PHP code example was written in early PHP 5.x. It is still available for download for reference purposes.
@@ -35,6 +44,7 @@ The original PHP code example was written in early PHP 5.x. It is still availabl
 | Type   | Link                                                                         | Status | Description |
 |--------|------------------------------------------------------------------------------|--------|-------------|
 | Simple | [GitHub](https://github.com/Billmate/QvicklyAPISamples/tree/main/PHP.Legacy) | As-is  |             |
+| Module |                                                                              | n/a    |             |
 
 ### .NET
 There is one DLL-file for the .NET code examples. The DLL-file is a wrapper for the Qvickly API but the origin is unknown and can most likely only serve as a reference.
@@ -44,6 +54,7 @@ There are also some simple .NET code examples available for download.
 | Type   | Link                                                                            | Status | Description |
 |--------|---------------------------------------------------------------------------------|--------|-------------|
 | Simple | [GitHub](https://github.com/Billmate/QvicklyAPISamples/tree/main/Microsoft.NET) | As-is  |             |
+| Module |                                                                                 | n/a    |             |
 
 ### Python
 The Python code examples are based on Python 3.x.
@@ -51,6 +62,7 @@ The Python code examples are based on Python 3.x.
 | Type   | Link                                                                     | Status  | Description |
 |--------|--------------------------------------------------------------------------|---------|-------------|
 | Simple | [GitHub](https://github.com/Billmate/QvicklyAPISamples/tree/main/Python) | Started |             |
+| Module |                                                                          | Planned |             |
 
 ### Node.js
 The Node.js code examples are based on Node.js LTS v20.x.
@@ -58,6 +70,9 @@ The Node.js code examples are based on Node.js LTS v20.x.
 | Type   | Link                                                                      | Status  | Description |
 |--------|---------------------------------------------------------------------------|---------|-------------|
 | Simple | [GitHub](https://github.com/Billmate/QvicklyAPISamples/tree/main/Node.JS) | Started |             |
+| Module |                                                                           | Planned |             |
+
+> The main focus is on the LTS version of Node.js. The code examples will probably but are not guaranteed to work with other versions of Node.js.
 
 ### Deno
 The Deno code examples are based on Deno v1.4.x.
@@ -65,6 +80,7 @@ The Deno code examples are based on Deno v1.4.x.
 | Type   | Link                                                                   | Status  | Description |
 |--------|------------------------------------------------------------------------|---------|-------------|
 | Simple | [GitHub](https://github.com/Billmate/QvicklyAPISamples/tree/main/Deno) | Started |             |
+| Module |                                                                        | Planned |             |
 
 > The code for Deno and Node.js is almost identical. This code is just adapted for Deno to make it run.
 
@@ -74,24 +90,27 @@ The Bun code examples are based on Bun v1.0.x.
 | Type   | Link                                                                  | Status  | Description |
 |--------|-----------------------------------------------------------------------|---------|-------------|
 | Simple | [GitHub](https://github.com/Billmate/QvicklyAPISamples/tree/main/Bun) | Started |             |
+| Module |                                                                       | Planned |             |
 
 > The code for Bun and Node.js is almost identical. This code is just adapted for Bun to make it run.
 
 ### Rust
 The Rust code examples are based on Rust 1.76.
 
-| Type   | Link                                                                   | Status  | Description |
-|--------|------------------------------------------------------------------------|---------|-------------|
-| Simple | [GitHub](https://github.com/Billmate/QvicklyAPISamples/tree/main/Rust) | Planned |             |
+| Type   | Link                                                                   | Status  | Description                      |
+|--------|------------------------------------------------------------------------|---------|----------------------------------|
+| Simple | [GitHub](https://github.com/Billmate/QvicklyAPISamples/tree/main/Rust) | Planned | GitHub link is for upcoming code |
+| Module |                                                                        | Planned |                                  |
 
 ### Go
 The Go code examples are based on Go 1.22.
 
 Go implementations are unfortunately all but pretty. This is due to the fact that Go is not a language that is well suited for the kind of API calls that are required for the Qvickly API since the API uses some non-strict types.
 
-| Type   | Link                                                                 | Status  | Description |
-|--------|----------------------------------------------------------------------|---------|-------------|
-| Simple | [GitHub](https://github.com/Billmate/QvicklyAPISamples/tree/main/Go) | Planned |             |
+| Type   | Link                                                                 | Status  | Description                      |
+|--------|----------------------------------------------------------------------|---------|----------------------------------|
+| Simple | [GitHub](https://github.com/Billmate/QvicklyAPISamples/tree/main/Go) | Planned | GitHub link is for upcoming code |
+| Module |                                                  | Planned |                                  |
 
 ## Downloadable code comparison
 | Code / Product                   | Payment API | Checkout API | Auth API | Paylink | Portal API | MyQvickly API |
@@ -100,13 +119,17 @@ Go implementations are unfortunately all but pretty. This is due to the fact tha
 | [Simple PHP Legacy](#php-legacy) | Yes         | No           | No       | n/a     | No         | No            |
 | [Simple .NET](#net)              | Nah         | No           | No       | n/a     | No         | No            |
 | [Simple Python](#python)         | Yes         | No           | No       | n/a     | No         | No            |
-| [Simple Node.js (v21)](#node-js) | Yes         | No           | No       | n/a     | No         | No            |
+| [Simple Node.js (v20)](#node-js) | Yes         | No           | No       | n/a     | No         | No            |
+| [Simple Deno](#deno)             | Yes         | No           | No       | n/a     | No         | No            |
+| [Simple Bun](#bun)               | Yes         | No           | No       | n/a     | No         | No            |
 | [Simple Go](#go)                 | No          | No           | No       | n/a     | No         | No            |
 | [Simple Rust](#rust)             | No          | No           | No       | n/a     | No         | No            |
 | [Module PHP](#php)               | No          | No           | No       | n/a     | No         | No            |
 | [Module .NET](#net)              | No          | No           | No       | n/a     | No         | No            |
 | [Module Python](#python)         | No          | No           | No       | n/a     | No         | No            |
-| [Module Node.js (v21)](#node-js) | No          | No           | No       | n/a     | No         | No            |
+| [Module Node.js (v20)](#node-js) | No          | No           | No       | n/a     | No         | No            |
+| [Module Deno](#deno)             | No          | No           | No       | n/a     | No         | No            |
+| [Module Bun](#bun)               | No          | No           | No       | n/a     | No         | No            |
 | [Module Go](#go)                 | No          | No           | No       | n/a     | No         | No            |
 | [Module Rust](#rust)             | No          | No           | No       | n/a     | No         | No            |
 

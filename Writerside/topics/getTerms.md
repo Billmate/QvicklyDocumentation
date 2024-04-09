@@ -76,7 +76,7 @@ Du behöver aldrig lämna ut känslig information
 
 Alltid 14 dagars ångerrätt i enlighet med distans- och hemförsäljningslagen*
 
-Tillgång till dina fakturor via Billmate Online
+Tillgång till dina fakturor via Qvickly Portal
 
 Möjlighet till delbetalning
 
