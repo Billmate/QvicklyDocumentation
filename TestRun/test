@@ -1,6 +1,6 @@
 #!/bin/bash
 
-rm -rf ./webHelpHI2-all
+rm -rf ./webHelpHI2-all/*
 unzip webHelpHI2-all.zip -d webHelpHI2-all
 cd webHelpHI2-all
 python3 -m http.server

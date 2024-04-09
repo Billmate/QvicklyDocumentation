@@ -6,7 +6,6 @@
 Added documentation on new functions:
 * [getSettlements](getSettlements.md)
 * [getSettlementsWithDetails](getSettlementsWithDetails.md)
-* [getAuthorizedPeople](getAuthorizedPeople.md)
 * [getCustomersByName](getCustomersByName.md)
 * [getMerchantByOrgnum](getMerchantByOrgnum.md)
 * [getInvoicesByPno](getInvoicesByPno.md)
