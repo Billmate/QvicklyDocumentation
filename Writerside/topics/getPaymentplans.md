@@ -11,7 +11,7 @@ getPaymentplans is used for fetching part payment plans and for calculating mont
 | currency     | true     | string | Currency code to be used for the payment according to ISO 4217. Currently supported: SEK.                                                                                                                                                                                              |
 | country      | true     | string | Country code for the country where purchase is made (normally store location) according to ISO 3166-1 alpha-2, e.g. SE, DK, NO, GB.                                                                                                                                                    |
 | language     | true     | string | Language code for the language used on the invoice/recipt according to ISO 639-1. Currently supported: sv.                                                                                                                                                                             |
-| totalwithtax | true     | int    | The monthly cost with tax for each payment plan will be calculated from the total payment value with tax. If not submitted, all payment plans are returned. NOTE: Total payment including tax needs to be in 1/100 of currency (i.e. öre if currency is SEK, cent if currency is EUR). |
+| totalwithtax | true     | cent   | The monthly cost with tax for each payment plan will be calculated from the total payment value with tax. If not submitted, all payment plans are returned. NOTE: Total payment including tax needs to be in 1/100 of currency (i.e. öre if currency is SEK, cent if currency is EUR). |
 
 ### Function
 
@@ -45,23 +45,23 @@ getPaymentplans is used for fetching part payment plans and for calculating mont
 
 ## Response
 
-| Property      | Type    | Description                                                                                                                                                                                      |
-|---------------|---------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| paymentplanid | int     | Part payment id of the payment plan.                                                                                                                                                             |
-| description   | string  | Description of the selected part payment plan                                                                                                                                                    |
-| nbrofmonths   | int     | The number of months for this part payment plan                                                                                                                                                  |
-| startfee      | int     | The fee debited for start up of this part payment plan. Given in 1/100 of currency (i.e. öre if currency is SEK, cent if currency is EUR).                                                       |
-| handlingfee   | int     | The invoice fee debited per month for this part payment plan. Given in 1/100 of currency (i.e. öre if currency is SEK, cent if currency is EUR).                                                 |
-| minamount     | int     | The minimum purchase amount for this part payment plan. Given in 1/100 of currency (i.e. öre if currency is SEK, cent if currency is EUR).                                                       |
-| maxamount     | int     | The maximum purchase amount for this payment plan. Given in 1/100 of currency (i.e. öre if currency is SEK, cent if currency is EUR).                                                            |
-| country       | string  | The country code of the country of sales for the part payment plan                                                                                                                               |
-| type          | int     | This is used to determine what type the part payment is and which calculation method is to be used. Type values: 0 = Campaign, 1 = Normal part payment                                           |
-| expirydate    | string  | The part payment plan last expiry date in the format YYYY-MM-DD                                                                                                                                  |
-| interestrate	 | dec     | The interest rate in percentage for this part payment plan                                                                                                                                       |
-| currency	     | string  | The currency code of the part payment plan                                                                                                                                                       |
-| language	     | string  | The language code of the part payment plan                                                                                                                                                       |
-| totalfee      | int     | The total cost with tax for the payment plan given by the totalwithtax amount in request. Total is including tax in 1/100 of currency (i.e. öre if currency is SEK, cent if currency is EUR).    |
-| monthlycost   | int     | The monthly total with tax for the payment plan given by the totalwithtax amount in request. Total is including tax in 1/100 of currency (i.e. öre if currency is SEK, cent if currency is EUR). |
+| Property      | Type   | Description                                                                                                                                                                                      |
+|---------------|--------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| paymentplanid | int    | Part payment id of the payment plan.                                                                                                                                                             |
+| description   | string | Description of the selected part payment plan                                                                                                                                                    |
+| nbrofmonths   | int    | The number of months for this part payment plan                                                                                                                                                  |
+| startfee      | cent   | The fee debited for start up of this part payment plan. Given in 1/100 of currency (i.e. öre if currency is SEK, cent if currency is EUR).                                                       |
+| handlingfee   | cent   | The invoice fee debited per month for this part payment plan. Given in 1/100 of currency (i.e. öre if currency is SEK, cent if currency is EUR).                                                 |
+| minamount     | cent   | The minimum purchase amount for this part payment plan. Given in 1/100 of currency (i.e. öre if currency is SEK, cent if currency is EUR).                                                       |
+| maxamount     | cent   | The maximum purchase amount for this payment plan. Given in 1/100 of currency (i.e. öre if currency is SEK, cent if currency is EUR).                                                            |
+| country       | string | The country code of the country of sales for the part payment plan                                                                                                                               |
+| type          | int    | This is used to determine what type the part payment is and which calculation method is to be used. Type values: 0 = Campaign, 1 = Normal part payment                                           |
+| expirydate    | string | The part payment plan last expiry date in the format YYYY-MM-DD                                                                                                                                  |
+| interestrate	 | dec    | The interest rate in percentage for this part payment plan                                                                                                                                       |
+| currency	     | string | The currency code of the part payment plan                                                                                                                                                       |
+| language	     | string | The language code of the part payment plan                                                                                                                                                       |
+| totalfee      | cent   | The total cost with tax for the payment plan given by the totalwithtax amount in request. Total is including tax in 1/100 of currency (i.e. öre if currency is SEK, cent if currency is EUR).    |
+| monthlycost   | cent   | The monthly total with tax for the payment plan given by the totalwithtax amount in request. Total is including tax in 1/100 of currency (i.e. öre if currency is SEK, cent if currency is EUR). |
 
 ```json
 {

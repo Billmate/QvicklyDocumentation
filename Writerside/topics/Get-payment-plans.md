@@ -1,6 +1,31 @@
 # Get payment plans
 
 <tabs>
+    <tab title="%code-json%">
+<code-block lang="json">
+<![CDATA[
+{
+    "credentials": {
+        "id": "%MERCHANT_ID%",
+        "hash": "e7ebd95d701c9a8a16d6ad51457bc4d775d7027682fef2853abcfb0ad918d0ea89b849cf552efa9be08a8e397df9a971e884706455f1673ad556dab2330904f3",
+        "version": "%API_VERSION%",
+        "client": "%CLIENT_NAME%",
+        "language": "sv",
+        "time": 1714839918.5766358
+    },
+    "data": {
+        "PaymentData": {
+            "country": "SE",
+            "currency": "SEK",
+            "language": "sv"
+        }
+    },
+    "function": "getPaymentPlans"
+}
+]]>
+</code-block>
+    </tab>
+
   <tab title="%code-phplegacy%">
 <code-block lang="PHP">
 <![CDATA[
@@ -99,24 +124,23 @@ namespace GetPaymentPlans
   <tab title="%code-python%">
 <code-block lang="Python">
 <![CDATA[
-import json
-import os
+from PaymentAPI import PaymentAPI
 
-from QvicklyPackage import API
-from QvicklyPackage.API import APIPayload
-
-billmate_id = os.getenv("BILLMATE_ID")
-secret = os.getenv("SECRET")
-mypno = os.getenv("MY_PNO")
-
-api_connection = API.APIConnection(billmate_id, secret, devMode=True)
-
-api_connection.setValidateResult()
-api_connection.returnJustData()
-
-paymentplans = api_connection.getPaymentplans(250000)
+# Create a PaymentAPI object
+api = PaymentAPI(eid, secret)
+plans = api.call(function="getPaymentPlans", data={
+    "PaymentData": {
+        "country": "SE",
+        "currency": "SEK",
+        "language": "sv",
+    }
+})
+print(json.dumps(plans, indent=4))
 ]]>
 </code-block>
+
+Full example can be found [here](https://github.com/Billmate/QvicklyAPISamples/blob/main/Python/examples/PaymentAPI/getPaymentPlans.py)
+
   </tab>
 </tabs>
 
@@ -181,3 +205,5 @@ paymentplans = api_connection.getPaymentplans(250000)
     ]
 }
 </code-block>
+
+<include from="Snippets-Examples.md" element-id="snippet-footer"></include>

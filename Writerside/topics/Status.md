@@ -7,4 +7,4 @@
 | Pending     | Invoice/Part Payment | Invoice under credit review                             |
 | Factoring   | Invoice              | Invoice that is activated and sent to the customer      |
 | PartPayment | Part Payment         | Part payment that is activated and sent to the customer |
-| Handling    | Invoice Service      | Invoice service created not activated                   |
+| Handling    | Invoice Handling     | Handling invoice created not activated                  |

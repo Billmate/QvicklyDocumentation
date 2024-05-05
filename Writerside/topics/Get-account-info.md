@@ -1,6 +1,27 @@
 # Get account info
 
 <tabs>
+    <tab title="%code-json%">
+<code-block lang="JSON">
+<![CDATA[
+{
+    "credentials": {
+        "id": "%MERCHANT_ID%",
+        "hash": "3601ec7c5b97fafc35ed8084e3e299710a8aa8bcb44fa6669909482b39ccad486ee05e43f5e5ecbafed7e783421e5c9cdb455aeed7fe16facf212ae9871780e0",
+        "version": "%API_VERSION%",
+        "client": "%CLIENT_NAME%",
+        "language": "sv",
+        "time": 1714838585.980936
+    },
+    "data": {
+        "dummyData": 1714838585980861000
+    },
+    "function": "getAccountinfo"
+}
+]]>
+</code-block>
+    </tab>
+
   <tab title="%code-phplegacy%">
 <code-block lang="PHP">
 <![CDATA[
@@ -75,9 +96,17 @@ namespace GetAccountInfo
   <tab title="%code-python%">
 <code-block lang="Python">
 <![CDATA[
-# Work in progress
+from PaymentAPI import PaymentAPI
+
+# Create a PaymentAPI object
+api = PaymentAPI(eid, secret)
+account = api.call(function="getAccountinfo")
+print(json.dumps(account, indent=4))
 ]]>
 </code-block>
+
+Full example can be found [here](https://github.com/Billmate/QvicklyAPISamples/blob/main/Python/examples/PaymentAPI/getAccountInfo.py)
+
   </tab>
 </tabs>
 
@@ -86,18 +115,18 @@ namespace GetAccountInfo
 {
     "credentials": {
         "hash": "3f8b36d6daa225bfa4a714335730f045f81f1b5111a1ed272164a99c56f15e295bca643912ac30b2920a14e53ee6134f0aa616c0ebcd8eab596264a1ff0f080e",
-        "logid": "163642"
+        "logid": "1234567"
     },
     "data": {
-        "company": "Billmate AB",
-        "address": "Gustav Adolfs Torg 47",
-        "zip": "211 39",
-        "city": "MALMÖ",
+        "company": "Qvickly Test",
+        "address": "Testvägen 1",
+        "zip": "123 45",
+        "city": "Testinge",
         "country": "Sweden",
-        "phone": "040 - 30 35 00",
-        "email": "support@developer.qvickly.io",
-        "orgregnr": "556918-4129",
-        "vatregnr": "SE556918412901",
+        "phone": "0123-456 78",
+        "email": "test@example.com",
+        "orgregnr": "555555-5555",
+        "vatregnr": "SE555555555501",
         "language": "sv",
         "paymentoptions": [
             {
@@ -119,30 +148,29 @@ namespace GetAccountInfo
                 "method": "8",
                 "currency": "SEK,DKK,NOK,GBP,EUR,USD",
                 "language": "sv,da,no,en"
-            },
-            {
-                "method": "16",
-                "currency": "SEK",
-                "language": "sv"
-            },
-            {
-                "method": "32",
-                "currency": "SEK,DKK,NOK,GBP,EUR,USD",
-                "language": "sv,da,no,en"
             }
         ],
         "defaultpaymentterms_company": "20",
-        "defaultpaymentterms_private": "14",
+        "defaultpaymentterms_private": "5",
         "checkout": "1",
         "force2have18years": "0",
-        "force2havepno": "1",
+        "force2havepno": "0",
         "force2havephonenumber": "1",
         "locknameforshipping": "0",
+        "showPf2Fee": "0",
+        "parkrightCustomerService": "0",
+        "enableparkright": "0",
+        "enableTestModeCheckout": "1",
+        "allow2When1FailsInCheckout": "1",
+        "enableSpecificationInPayLink": "1",
+        "continueWithoutPnoInPF2": "0",
         "checkoutAvailableCustomerTypes": [
             "company",
             "person"
         ],
-        "logo": "https://mobilfakturera.se/mexc/attachments/companylogos/4913/00070813124735.png"
+        "logo": "https://example.com/companylogos/logo.png"
     }
 }
 </code-block>
+
+<include from="Snippets-Examples.md" element-id="snippet-footer"></include>

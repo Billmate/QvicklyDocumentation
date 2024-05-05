@@ -17,8 +17,11 @@ Strings have a maximum character length of 255 characters, otherwise it is noted
 }
 </code-block>
 
-## int
-Int´s are numeric based values but acts as strings.
+## int and cent
+Int´s and cent´s are numeric based values but acts as strings.
+
+int is a whole number, while cent is a whole number representing a currency value in cents (Öre for SEK/DKR/NOK and cent for USD).
+
 <code-block lang="json">
 {
     "topay": "200"
@@ -39,7 +42,7 @@ Dec´s are decimal numeric value, but acts as strings. Note that it uses the poi
 </code-block>
 
 ## date
-Dates are using the ISO 8601 standard in format Year, Month and Day (Y-m-d). One example is 2020-02-12 representing the 12th of February 2020.
+Dates are using the ISO 8601 standard in format Year with four digits, Month and Day (C-style formatting pattern _Y-m-d_). One example is 2020-02-12 representing the 12th of February 2020.
 <code-block lang="json">
 {
     "paymentdate": "2024-01-05"
@@ -70,7 +73,7 @@ A list with a set of data.
 ### Inconsistent data types
 Due to some earlier sins in the API, some data types are not consistent.
 
-Ths most common problem is [int](#int) and [dec](#dec) that should be strings but in some cases are numeric values.
+Ths most common problem is [int, cent](#int-and-cent) and [dec](#dec) that should be strings but in some cases are numeric values.
 
 This affects implementations in languages that uses strict typing.
 

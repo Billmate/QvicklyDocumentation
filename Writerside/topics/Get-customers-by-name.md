@@ -1,6 +1,27 @@
 # Get customers by name
 
 <tabs>
+    <tab title="%code-json%">
+<code-block lang="json">
+<![CDATA[
+{
+    "credentials": {
+        "id": "%MERCHANT_ID%",
+        "hash": "528d00c050b04a93ca2669a47e4a296c0ac1a463123943c4dc1840a1efed3b10af13a20a13d2eba98e2e23fe7e1253e7fa633d8f5383233e947b1717b8e32119",
+        "version": "%API_VERSION%",
+        "client": "%CLIENT_NAME%",
+        "language": "sv",
+        "time": 1714931959.55777
+    },
+    "data": {
+        "name": "Thomas"
+    },
+    "function": "getCustomersByName"
+}
+]]>
+</code-block>
+    </tab>
+
   <tab title="%code-phplegacy%">
 <code-block lang="PHP">
 <![CDATA[
@@ -25,14 +46,93 @@
   <tab title="%code-python%">
 <code-block lang="Python">
 <![CDATA[
-# Work in progress
+from PaymentAPI import PaymentAPI
+
+# Create a PaymentAPI object
+api = PaymentAPI(eid, secret)
+customers = api.call(function="getCustomersByName", data={"name":"Tess"})
+print(json.dumps(customers, indent=4))
 ]]>
 </code-block>
+
+Full example can be found [here](https://github.com/Billmate/QvicklyAPISamples/blob/main/Python/examples/PaymentAPI/getCustomersByName.py)
+
   </tab>
 </tabs>
 
 ## Response from server
 <code-block lang="json">
+<![CDATA[
 {
+    "credentials": {
+        "hash": "b270968ee3af5dc303dd5b8b63bcc74a7b3b9f837364c67f10d53a28a9fa479d29e6ed8ed644691bb1702e1a6215d289c271cd7102cc50ae522c724ec36b7fa0",
+        "logid": 2017796
+    },
+    "data": [
+        {
+            "mexcParamvaluesetsid": "1234567",
+            "date": "2024-01-01 01:23:45",
+            "customerid": "12345",
+            "name": "Tess T Persson",
+            "address": "Testgatan 1",
+            "postcode": "12345",
+            "postoffice": "Testingsby",
+            "state": "",
+            "countrycode": "",
+            "telephone": "",
+            "fax": "",
+            "mobile": "",
+            "deliveryaddress": "",
+            "deliverypostcode": "",
+            "deliverypostoffice": "",
+            "email": "tess.t.persson@example.com",
+            "reference": "",
+            "companyno": "0000000000",
+            "vatregno": "",
+            "paymentterms": "",
+            "rebate": "",
+            "currency": "SEK",
+            "language": "sv",
+            "export": "",
+            "handlingcharge": "",
+            "reversetax": "",
+            "mexcModulesid": "543210",
+            "mm3servicesid": "123456",
+            "country": "Sverige",
+            "creditlimit": "",
+            "customertypecode": "",
+            "deliveryterms": "",
+            "deliverymethod": "",
+            "deliveryname": "",
+            "deliveryaddress2": "",
+            "deliverycountrycode": "",
+            "deliverycountry": "",
+            "profile": "",
+            "name2": "",
+            "address2": "",
+            "propertydesignation": "",
+            "housingassociationregno": "",
+            "status": "",
+            "statuslog": "",
+            "longitude": "",
+            "latitude": "",
+            "glncode": "",
+            "reference_order": "",
+            "email_order": "",
+            "reference_offer": "",
+            "email_offer": "",
+            "notes": "",
+            "origin": "",
+            "pricelist": "",
+            "crediflowPartyId": "",
+            "internalCreditLimit": "",
+            "internalRegressLimit": "",
+            "sendByPostOnly": "",
+            "dontSendEFaktura": ""
+        }
+    ]
 }
+]]>
 </code-block>
+
+<include from="Snippets-Examples.md" element-id="snippet-footer"></include>

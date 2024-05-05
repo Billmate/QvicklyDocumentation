@@ -12,6 +12,7 @@
         <toc-element topic="Public-packages.md"/>
     </toc-element>
     <toc-element topic="Qvickly-API.md">
+        <toc-element topic="The-basics.md"/>
         <toc-element topic="API-Credentials.md"/>
         <toc-element topic="Authentication.md">
             <toc-element topic="Creating-hash.md"/>
@@ -20,6 +21,11 @@
         <toc-element topic="Data-types.md"/>
         <toc-element topic="Methods.md"/>
         <toc-element topic="Status.md"/>
+        <toc-element topic="Callbacks.md">
+            <toc-element topic="accepturl.md"/>
+            <toc-element topic="cancelurl.md"/>
+            <toc-element topic="callbackurl.md"/>
+        </toc-element>
         <toc-element topic="Request-payload.md"/>
         <toc-element topic="Errors.md">
             <toc-element topic="API-Error-codes.md"/>
@@ -53,34 +59,43 @@
         </toc-element>
         <toc-element topic="Examples.md">
             <toc-element topic="Get-address.md"/>
-            <toc-element topic="Get-due-payments.md"/>
-            <toc-element topic="Get-payment-info.md"/>
-            <toc-element topic="Get-payment-plans.md"/>
-            <toc-element topic="Get-terms.md"/>
-            <toc-element topic="Cancel-payment.md"/>
             <toc-element topic="Add-payment.md"/>
-            <toc-element topic="Credit-payment.md"/>
-            <toc-element topic="Update-payment.md"/>
-            <toc-element topic="Get-account-info.md"/>
             <toc-element topic="Activate-payment.md"/>
-            <toc-element topic="New-examples.md">
-                <toc-element topic="Get-settlements.md"/>
-                <toc-element topic="Get-settlements-with-details.md"/>
-                <toc-element topic="Get-authorized-people.md"/>
-                <toc-element topic="Get-customers-by-name.md"/>
-                <toc-element topic="Get-merchant-by-orgnum.md"/>
-                <toc-element topic="Get-invoices-by-pno.md"/>
-                <toc-element topic="Get-invoices-by-customer.md"/>
-                <toc-element topic="Get-exchange-rate.md"/>
-                <toc-element topic="Get-vat-rate.md"/>
-                <toc-element topic="Get-fees.md"/>
-                <toc-element topic="Crediflow-search-party.md"/>
+            <toc-element topic="Update-payment.md"/>
+            <toc-element topic="Cancel-payment.md"/>
+            <toc-element topic="Credit-payment.md"/>
+            <toc-element topic="Get-account-info.md">
             </toc-element>
+            <toc-element topic="Get-terms.md"/>
+            <toc-element topic="Get-payment-plans.md"/>
+            <toc-element topic="Get-payment-info.md"/>
+            <toc-element topic="Get-due-payments.md">
+            </toc-element>
+            <toc-element topic="Get-settlements.md"/>
+            <toc-element topic="Get-settlements-with-details.md"/>
+            <toc-element topic="Get-customers-by-name.md"/>
+            <toc-element topic="Get-merchant-by-orgnum.md"/>
+            <toc-element topic="Get-invoices-by-pno.md"/>
+            <toc-element topic="Get-invoices-by-customer.md"/>
+            <toc-element topic="Get-exchange-rate.md"/>
+            <toc-element topic="Get-vat-rate.md"/>
+            <toc-element topic="Get-fees.md"/>
+            <toc-element topic="Crediflow-search-party.md"/>
+            <toc-element topic="Get-order-by-hash.md"/>
+            <toc-element topic="Get-invoice-by-hash.md"/>
+            <toc-element topic="Create-invoice-from-order.md"/>
+            <toc-element topic="Get-API-Credentials.md"/>
             <toc-element topic="Init-checkout.md"/>
             <toc-element topic="Update-checkout.md"/>
-            <toc-element topic="Advanced-examples.md"/>
+            <toc-element topic="Advanced-examples.md">
+                <toc-element topic="PHP-advanced-examples.md"/>
+                <toc-element topic="Node-JS-advanced-examples.md"/>
+                <toc-element topic="Perl-advanced-examples.md"/>
+            </toc-element>
         </toc-element>
         <toc-element topic="Test.md"/>
+        <toc-element topic="Versions.md"/>
+        <toc-element topic="Future-ideas.md"/>
         <toc-element topic="API-changelog.md"/>
     </toc-element>
     <toc-element topic="Checkout-API.md">

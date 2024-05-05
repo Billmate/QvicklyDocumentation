@@ -78,7 +78,11 @@ Please note that not all sections are mandatory. See the documentation for each 
       "country": "SE",
       "autoactivate": "0",
       "orderid": "P123456789",
-      "logo": "Logo2.jpg"
+      "logo": "Logo2.jpg",
+      "accepturl": "https://www.mystore.se/completedpayment",
+      "cancelurl": "https://www.mystore.se/failedpayment",
+      "returnmethod": "",
+      "callbackurl": "https://www.mystore.se/callback.php"
     },
     "PaymentInfo": {
       "paymentdate": "2014-07-31",
@@ -93,11 +97,7 @@ Please note that not all sections are mandatory. See the documentation for each 
     "Card": {
       "promptname": "",
       "recurring": "",
-      "recurringnr": "",
-      "accepturl": "https://www.mystore.se/completedpayment",
-      "cancelurl": "https://www.mystore.se/failedpayment",
-      "returnmethod": "",
-      "callbackurl": "https://www.mystore.se/callback.php"
+      "recurringnr": ""
     },
     "Customer": {
       "nr": "12",

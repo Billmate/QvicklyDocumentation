@@ -1,6 +1,69 @@
 # Update payment
 
 <tabs>
+    <tab title="%code-json%">
+<code-block lang="json">
+<![CDATA[
+{
+    "credentials": {
+        "id": "%MERCHANT_ID%",
+        "hash": "fe656aff23e6ee67aa9e6801369f2f82fcc4f9f9afa37c318391bfa2e2f17d81db429e42847c1a2cd9c1b11b5848522ca6941167b407fc45a23446bf095affa0",
+        "version": "%API_VERSION%",
+        "client": "%CLIENT_NAME%",
+        "language": "sv",
+        "time": 1714828104.6922839
+    },
+    "data": {
+        "PaymentData": {
+            "number": "12345",
+            "method": "8",
+            "currency": "SEK",
+            "language": "sv",
+            "country": "SE",
+            "orderid": "123456",
+            "bankid": "true",
+            "accepturl": "https://example.com/accept",
+            "cancelurl": "https://example.com/cancel",
+            "callbackurl": "https://example.com/callback"
+        },
+        "Customer": {
+            "pno": "550101-1018",
+            "Billing": {
+                "firstname": "Tess T",
+                "lastname": "Person",
+                "address": "Testvägen 1",
+                "zip": "12345",
+                "city": "Testinge",
+                "country": "SE",
+                "phone": "0700000000",
+                "email": "test@example.com"
+            }
+        },
+        "Articles": [
+            {
+                "artnr": "1",
+                "title": "Test",
+                "aprice": "10000",
+                "taxrate": "25",
+                "quantity": "1",
+                "withouttax": "10000"
+            }
+        ],
+        "Cart": {
+            "Total": {
+                "withouttax": "10000",
+                "tax": "2500",
+                "withtax": "12500"
+            }
+        }
+    },
+    "function": "updatePayment"
+}
+]]>
+</code-block>
+    </tab>
+
+
   <tab title="%code-phplegacy%">
 <code-block lang="PHP">
 <![CDATA[
@@ -268,9 +331,61 @@ namespace GetAddress
   <tab title="%code-python%">
 <code-block lang="Python">
 <![CDATA[
-# Work in progress
+from PaymentAPI import PaymentAPI
+
+# Create a PaymentAPI object
+api = PaymentAPI(eid, secret)
+paymentPayload = {
+    "PaymentData": {
+        "number": "12345",
+        "method": "8",
+        "currency": "SEK",
+        "language": "sv",
+        "country": "SE",
+        "orderid": "123456",
+        "bankid": "true",
+        "accepturl": "https://example.com/accept",
+        "cancelurl": "https://example.com/cancel",
+        "callbackurl": "https://example.com/callback",
+    },
+    "Customer": {
+        "pno": "550101-1018",
+        "Billing": {
+            "firstname": "Tess T",
+            "lastname": "Person",
+            "address": "Testvägen 1",
+            "zip": "12345",
+            "city": "Testinge",
+            "country": "SE",
+            "phone": "0700000000",
+            "email": "test@example.com",
+        }
+    },
+    "Articles": [
+        {
+            "artnr": "1",
+            "title": "Test",
+            "aprice": "10000",
+            "taxrate": "25",
+            "quantity": "1",
+            "withouttax": "10000",
+        }
+    ],
+    "Cart": {
+        "Total": {
+            "withouttax": "10000",
+            "tax": "2500",
+            "withtax": "12500",
+        },
+    },            
+}
+payment = api.call(function="updatePayment", data=paymentPayload)
+print(json.dumps(payment, indent=4))
 ]]>
 </code-block>
+
+Full example can be found [here](https://github.com/Billmate/QvicklyAPISamples/blob/main/Python/examples/PaymentAPI/updatePayment.py)
+
   </tab>
 </tabs>
 
@@ -278,7 +393,8 @@ namespace GetAddress
 <code-block lang="json">
 {
     "credentials": {
-        "hash": "cea23742339896d70a3ba5ade87f96de9c46827d6fb1d964eb9cd1754681d16a4d00efa0d6ce771819e9fa92a1383d3f9dc7d7321dd564c088881899e0e7e65f"
+        "hash": "cea23742339896d70a3ba5ade87f96de9c46827d6fb1d964eb9cd1754681d16a4d00efa0d6ce771819e9fa92a1383d3f9dc7d7321dd564c088881899e0e7e65f",
+        "logid": "1234567"
     },
     "data": {
         "number": "1000235",
@@ -288,3 +404,22 @@ namespace GetAddress
     }
 }
 </code-block>
+
+### Error response
+<code-block lang="json">
+{
+    "code": "5202",
+    "message": "Couldn't update payment - payment does not have status created.",
+    "logid": "1234567"
+}
+</code-block>
+
+<code-block lang="json">
+{
+    "code": "5201",
+    "message": "Invoice number 13286 does not exist.",
+    "logid": "1234567"
+}
+</code-block>
+
+<include from="Snippets-Examples.md" element-id="snippet-footer"></include>

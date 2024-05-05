@@ -2,6 +2,9 @@
 
 <tabs>
   <tab title="%code-json%">
+
+**Full credit**
+
 <code-block lang="json">
 <![CDATA[
 {
@@ -11,14 +14,37 @@
         "version": "%API_VERSION%",
         "client": "%CLIENT_NAME%",
         "language": "sv",
-        "serverdata": {"HTTP_HOST":"developer.qvickly.io","HTTP_CONNECTION":"keep-alive","HTTP_CACHE_CONTROL":"max-age=0","HTTP_ACCEPT":"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/webp,*\/*;q=0.8","HTTP_USER_AGENT":"Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/39.0.2171.95 Safari\/537.36","HTTP_ACCEPT_ENCODING":"gzip, deflate, sdch","HTTP_ACCEPT_LANGUAGE":"en-US,en;q=0.8","PATH":"\/sbin:\/usr\/sbin:\/bin:\/usr\/bin","SERVER_SOFTWARE":"Apache\/2.2.26 (Amazon)","SERVER_NAME":"developer.qvickly.io","SERVER_ADDR":"172.31.22.88","SERVER_PORT":"80","REMOTE_ADDR":"2.71.114.219","REMOTE_PORT":"53241","GATEWAY_INTERFACE":"CGI\/1.1","SERVER_PROTOCOL":"HTTP\/1.1","REQUEST_METHOD":"GET","QUERY_STRING":"","REQUEST_TIME":1421313644},
-        "time": "1417004339.9291 ",
-        "test": "true"
+        "time": "1417004339.9291"
+    },
+    "data": {
+        "PaymentData": {
+            "number": "12345"
+        }
+    },
+    "function": "creditPayment"
+}
+
+]]>
+
+</code-block>
+
+**Partial credit**
+
+<code-block lang="json">
+<![CDATA[
+{
+    "credentials": {
+        "id": "%MERCHANT_ID%",
+        "hash": "30744d308f0102c5f17d5dbce18bb23131740fd73a6a00163c4064384395c467ae2a92375f18189a63be95b9a68eaebd3f86f019e33b909d9bf924e88ab74085",
+        "version": "%API_VERSION%",
+        "client": "%CLIENT_NAME%",
+        "language": "sv",
+        "time": "1417004339.9291"
     },
     "data": {
         "PaymentData": {
             "number": "1000235",
-            "partcredit": "false"
+            "partcredit": "true"
         },
         "Articles": [
             {
@@ -59,19 +85,6 @@
     "function": "creditPayment"
 }
 
-// Response from Server
-
-{
-    "credentials": {
-        "hash": "36961fea06f6031ccc4ca10df664c9930f6e805731e9c1e617c68e776f0d0b3d7a540018aef546ecb6cccfd6b9be673b86ccdb6ac48b62e8bf86d43cd622c24c"
-    },
-    "data": {
-        "number": "1000236",
-        "orderid": "12346",
-        "status": "Credited",
-        "url": "https://api.qvickly.io/invoice/140544658153c38f1cdf279"
-    }
-}
 ]]>
 </code-block>
   </tab>
@@ -249,25 +262,58 @@ namespace CreditPayment
 </code-block>
   </tab>
   <tab title="%code-python%">
+
+**Full credit**
 <code-block lang="Python">
 <![CDATA[
-import json
-import os
+from PaymentAPI import PaymentAPI
 
-from QvicklyPackage import API
-from QvicklyPackage.API import APIPayload
-
-merchant_id = os.getenv("QVICKLY_MERCHANT_ID")
-secret = os.getenv("SECRET")
-mypno = os.getenv("MY_PNO")
-
-api_connection = API.APIConnection(merchant_id, secret, devMode=True)
-
-api_connection.setValidateResult()
-
-creditPayment = api_connection.creditPayment(1000236)
+# Create a PaymentAPI object
+api = PaymentAPI(eid, secret)
+payment = api.call(function="creditPayment", data={"number": "12345"})
+print(json.dumps(payment, indent=4))
 ]]>
 </code-block>
+
+Full example can be found [here](https://github.com/Billmate/QvicklyAPISamples/blob/main/Python/examples/PaymentAPI/creditPayment.py)
+
+**Partial credit**
+<code-block lang="Python">
+<![CDATA[
+from PaymentAPI import PaymentAPI
+
+# Create a PaymentAPI object
+api = PaymentAPI(eid, secret)
+paymentPayload = {
+    "PaymentData": {
+        "number": "12345",
+        "partcredit": "true",
+    },
+    "Articles": [
+        {
+            "artnr": "1",
+            "title": "Test",
+            "aprice": "10000",
+            "taxrate": "25",
+            "quantity": "1",
+            "withouttax": "10000",
+        }
+    ],
+    "Cart": {
+        "Total": {
+        "withouttax": "10000",
+            "tax": "2500",
+            "withtax": "12500",
+        },
+    },
+}
+payment = api.call(function="creditPayment", data=paymentPayload)
+print(json.dumps(payment, indent=4))
+]]>
+</code-block>
+
+Full example can be found [here](https://github.com/Billmate/QvicklyAPISamples/blob/main/Python/examples/PaymentAPI/partCreditPayment.py)
+
   </tab>
 </tabs>
 
@@ -285,3 +331,5 @@ creditPayment = api_connection.creditPayment(1000236)
     }
 }
 </code-block>
+
+<include from="Snippets-Examples.md" element-id="snippet-footer"></include>

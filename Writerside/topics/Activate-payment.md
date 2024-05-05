@@ -1,6 +1,27 @@
 # Activate payment
 
 <tabs>
+  <tab title="%code-json%">
+<code-block lang="json">
+<![CDATA[
+{
+    "credentials": {
+        "id": "%MERCHANT_ID%",
+        "hash": "b8122d2e9580525e03c566264c8f5a004ed780b0f00568429dbd965fc2b2b89a7f0fd50e11d19c86a81f4bb4684eb2bac1d608653e807725b0068ce4bee3221c", 
+        "version": "%API_VERSION%", 
+        "client": "%CLIENT_NAME%",
+        "language": "sv",
+        "time": 1714827001.526806
+    },
+    "data": {
+        "number": "12345"
+    },
+    "function": "activatePayment"
+}
+]]>
+</code-block>
+  </tab>
+
   <tab title="%code-phplegacy%">
 <code-block lang="PHP">
 <![CDATA[
@@ -32,6 +53,7 @@ $bm->activatePayment($values);
 ]]>
 </code-block>
   </tab>
+
   <tab title="%code-php%">
 <code-block lang="PHP">
 <![CDATA[
@@ -39,6 +61,7 @@ $bm->activatePayment($values);
 ]]>
 </code-block>
   </tab>
+
   <tab title="%code-csharp%">
 <code-block lang="c#">
 <![CDATA[
@@ -82,26 +105,21 @@ namespace ActivatePayment
 ]]>
 </code-block>
   </tab>
+
   <tab title="%code-python%">
 <code-block lang="Python">
 <![CDATA[
-import json
-import os
+from PaymentAPI import PaymentAPI
 
-from QvicklyPackage import API
-from QvicklyPackage.API import APIPayload
-
-billmate_id = os.getenv("BILLMATE_ID")
-secret = os.getenv("SECRET")
-mypno = os.getenv("MY_PNO")
-
-api_connection = API.APIConnection(billmate_id, secret, devMode=True)
-
-api_connection.setValidateResult()
-
-creditPayment = api_connection.creditPayment(1000235)
+# Create a PaymentAPI object
+api = PaymentAPI(eid, secret)
+payment = api.call(function="activatePayment", data={"number":"12345"})
+print(json.dumps(payment, indent=4))
 ]]>
 </code-block>
+
+Full example can be found [here](https://github.com/Billmate/QvicklyAPISamples/blob/main/Python/examples/PaymentAPI/activatePayment.py)
+
   </tab>
 </tabs>
 
@@ -109,7 +127,8 @@ creditPayment = api_connection.creditPayment(1000235)
 <code-block lang="json">
 {
     "credentials": {
-        "hash": "3d7506031bac8c67b4fc4750b2f879c6965d595f3f21e07aa2722313e5bc0c9cce347af5764a67b2f85c086503296f54cc2294334086efca210232b76e1b98ac"
+        "hash": "3d7506031bac8c67b4fc4750b2f879c6965d595f3f21e07aa2722313e5bc0c9cce347af5764a67b2f85c086503296f54cc2294334086efca210232b76e1b98ac",
+        "logid": "1234567"
     },
     "data": {
         "number": "1000235",
@@ -119,3 +138,14 @@ creditPayment = api_connection.creditPayment(1000235)
     }
 }
 </code-block>
+
+### Error response
+<code-block lang="json">
+{
+    "code": "5201",
+    "message": "Invoice number 12345 does not exist.",
+    "logid": "1234567"
+}
+</code-block>
+
+<include from="Snippets-Examples.md" element-id="snippet-footer"></include>

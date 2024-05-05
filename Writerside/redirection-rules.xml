@@ -26,4 +26,12 @@
         <description>Created after removal of "getAuthorizedPeople" from Qvickly Product Documentation</description>
         <accepts>getAuthorizedPeople.html</accepts>
     </rule>
+    <rule id="7d83b204">
+        <description>Created after removal of "Crediflow search party" from Qvickly Product Documentation</description>
+        <accepts>Crediflow-search-party-example.html</accepts>
+    </rule>
+    <rule id="67ec4375">
+        <description>Created after removal of "Get authorized people" from Qvickly Product Documentation</description>
+        <accepts>Get-authorized-people.html</accepts>
+    </rule>
 </rules>

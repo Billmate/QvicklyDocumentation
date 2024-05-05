@@ -1,6 +1,27 @@
 # Get terms
 
 <tabs>
+    <tab title="%code-json%">
+<code-block lang="json">
+<![CDATA[
+{
+    "credentials": {
+        "id": "%MERCHANT_ID%",
+        "hash": "7d6b98a406aeb6551b8a92eebc3ba388e5fe903cdce7a412059869627cb78f37c44d4664d558e7b88221094c29b981bd25d779daa946a558f37a50f2fe6a10f0",
+        "version": "%API_VERSION%",
+        "client": "%CLIENT_NAME%",
+        "language": "sv",
+        "time": 1714839340.0972931
+    },
+    "data": {
+        "dummyData": 1714839340097221000
+    },
+    "function": "getTerms"
+}
+]]>
+</code-block>
+    </tab>
+
   <tab title="%code-phplegacy%">
 <code-block lang="PHP">
 <![CDATA[
@@ -113,67 +134,21 @@ namespace GetTerms
   <tab title="%code-python%">
 <code-block lang="Python">
 <![CDATA[
-import json
-import os
+from PaymentAPI import PaymentAPI
 
-from QvicklyPackage import API
-from QvicklyPackage.API import APIPayload
-
-billmate_id = os.getenv("BILLMATE_ID")
-secret = os.getenv("SECRET")
-mypno = os.getenv("MY_PNO")
-
-api_connection = API.APIConnection(billmate_id, secret, devMode=True)
-
-api_connection.setValidateResult()
-
-terms = api_connection.getTerms(1, 250000)
+# Create a PaymentAPI object
+api = PaymentAPI(eid, secret)
+terms = api.call(function="getTerms")
+print(terms)
 ]]>
 </code-block>
+
+Full example can be found [here](https://github.com/Billmate/QvicklyAPISamples/blob/main/Python/examples/PaymentAPI/getTerms.py)
+
   </tab>
 </tabs>
 
 ## Response from server
-<code-block lang="text">
-<![CDATA[
-Köpvillkor
+The response will be an HTML page with the terms and conditions.
 
-
-Handla nu - betala först efter leverans!
-
-När du betalar via faktura administreras denna av Billmate AB vilket innebär att du handlar tryggt och enkelt. Du slipper uppge dina kortuppgifter och betalar först efter att du mottagit dina varor. Fakturan skickas via e-post till den e-post adress du anger vid köptillfället.
-
-Billmate Faktura erbjuder dig följande:
-
-Få alltid hem varan innan du betalar
-
-
-14 dagars betalningstid
-
-
-Du behöver aldrig lämna ut känslig information
-
-
-Alltid 14 dagars ångerrätt i enlighet med distans- och hemförsäljningslagen*
-
-
-Tillgång till dina fakturor via Billmate Online
-
-
-Möjlighet till delbetalning
-
-Vid försenad betalning tillkommer lagstadgad påminnelse-/förseningsavgift samt dröjsmålsränta om 2 % per månad. Vid utebliven betalning överlämnas fakturan till inkasso. För att kunna beställa mot faktura måste beställaren vara ett registrerat svenskt företag eller en person över 18 år, vara folkbokförd i Sverige samt godkännas i den kreditprövning som genomförs vid köpet. Kreditprövningen kan i vissa fall innebära att en kreditupplysning tas. I sådana fall kommer ni bli meddelade om detta postledes eller via e-post. Kreditupplysningen sköts via CreditSafe och är inget som belastar när man ansöker om kredit hos kreditinstitut.
-
-Billmate AB har rätt att utföra stickprovskontroller för att säkerställa så fakturan är korrekt.
-Personuppgifter hanteras i enlighet med gällande lagstiftning. Billmate AB behandlar personuppgifter i syfte att utföra kundanalys, identifikation, kreditkoll samt marknadsföring. Personnummer kan används som kundnummer i kundhanteringssyfte
-
-
-Billmate AB
-Organisationsnummer: 556918-4129
-Telefonnummer: 040-30 35 00
-Email: info@developer.qvickly.io
-Webb: www.developer.qvickly.io
-
-* Gäller ej för alla varor och tjänster, t ex. flygresor, evenemang och specialtillverkade varor.
-]]>
-</code-block>
+<include from="Snippets-Examples.md" element-id="snippet-footer"></include>

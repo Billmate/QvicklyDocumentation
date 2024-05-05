@@ -1,5 +1,8 @@
 # Init checkout
 
+> This topic describes how to initialize a checkout session and is part of the [Checkout](Checkout-API.md) topic. But since the initial request is made to the Payment API, this topic is included in the Payment API section.
+> {style="information"}
+
 <tabs>
   <tab title="%code-phplegacy%">
 <code-block lang="PHP">
@@ -30,3 +33,5 @@
 </code-block>
   </tab>
 </tabs>
+
+<include from="Snippets-Examples.md" element-id="snippet-footer"></include>

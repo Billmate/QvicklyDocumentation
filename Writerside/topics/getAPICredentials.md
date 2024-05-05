@@ -56,7 +56,7 @@ getAPICredentials is used to fetch the credentials needed to use the Payment API
     "credentials": {
         "hash": "54c3928bd58ea07eec2b82b6f3075df85f9bc5846f737feee5e497dcf96df26097258b30447df4627f97fcd4100fa86f7dbe9dd4a753da29939d34c9afae013f"
     },
-    data: {
+    "data": {
         "eid": "12345",
         "mm3servicesid": "12345",
         "mexcModulesid": "12345",

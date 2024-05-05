@@ -85,7 +85,7 @@ The Deno code examples are based on Deno v1.4.x.
 > The code for Deno and Node.js is almost identical. This code is just adapted for Deno to make it run.
 
 ### Bun
-The Bun code examples are based on Bun v1.0.x.
+The Bun code examples are based on Bun v1.1.x.
 
 | Type   | Link                                                                  | Status  | Description |
 |--------|-----------------------------------------------------------------------|---------|-------------|

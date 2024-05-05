@@ -1,6 +1,27 @@
 # Cancel payment
 
 <tabs>
+    <tab title="%code-json%">
+<code-block lang="json">
+<![CDATA[
+{
+    "credentials": {
+        "id": "%MERCHANT_ID%",
+        "hash": "d6c98ac67c1b7dacb49c39a2641b64bca7048f765445a69a4ffad78799091fbef1d3d5ebaf0d88ffea3b98021c2026934313feeaa9bc509a42a6491cd04a714a",
+        "version": "%API_VERSION%",
+        "client": "%CLIENT_NAME%",
+        "language": "sv",
+        "time": 1714828782.338867
+    },
+    "data": {
+        "number": "12345"
+    },
+    "function": "cancelPayment"
+}
+]]>
+</code-block>
+    </tab>
+
   <tab title="%code-phplegacy%">
 <code-block lang="PHP">
 <![CDATA[
@@ -86,23 +107,17 @@ namespace CancelPayment
   <tab title="%code-python%">
 <code-block lang="Python">
 <![CDATA[
-import json
-import os
+from PaymentAPI import PaymentAPI
 
-from QvicklyPackage import API
-from QvicklyPackage.API import APIPayload
-
-billmate_id = os.getenv("BILLMATE_ID")
-secret = os.getenv("SECRET")
-mypno = os.getenv("MY_PNO")
-
-api_connection = API.APIConnection(billmate_id, secret, devMode=True)
-
-api_connection.setValidateResult()
-
-cancelPayment = api_connection.cancelPayment(1000235)
+# Create a PaymentAPI object
+api = PaymentAPI(eid, secret)
+payment = api.call(function="cancelPayment", data={"number":"12345"})
+print(json.dumps(payment, indent=4))
 ]]>
 </code-block>
+
+Full example can be found [here](https://github.com/Billmate/QvicklyAPISamples/blob/main/Python/examples/PaymentAPI/cancelPayment.py)
+
   </tab>
 </tabs>
 
@@ -120,3 +135,5 @@ cancelPayment = api_connection.cancelPayment(1000235)
     }
 }
 </code-block>
+
+<include from="Snippets-Examples.md" element-id="snippet-footer"></include>

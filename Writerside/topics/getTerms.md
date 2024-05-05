@@ -15,7 +15,7 @@ getTerms is used for fetching our payment terms.
 
 | Property      | Required | Type | Description                                                                                                                                                                                                                                                                                                       |
 |---------------|----------|------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| total.withtax | true     | int  | Total payment including tax in 1/100 of currency (i.e. öre if currency is SEK, cent if currency is EUR). Note: Total Payment with Tax must be equal to Total Payment Excluding Tax + Total Tax + Rounding. This is a double check to make sure no rounding errors are present and payment always will be correct. |
+| total.withtax | true     | cent | Total payment including tax in 1/100 of currency (i.e. öre if currency is SEK, cent if currency is EUR). Note: Total Payment with Tax must be equal to Total Payment Excluding Tax + Total Tax + Rounding. This is a double check to make sure no rounding errors are present and payment always will be correct. |
 
 ### Function
 

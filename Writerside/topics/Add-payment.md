@@ -1,6 +1,67 @@
 # Add payment
 
 <tabs>
+  <tab title="%code-json%">
+<code-block lang="json">
+<![CDATA[
+{
+    "credentials": {
+        "id": "%MERCHANT_ID%",
+        "hash": "bd18e1c9a5212e97d69c8800c66fead8f8f536834fd1d0582fc22ccca8ce4bd24292861ccb7a6419a175e2045869d1aa4799624a9334b44d0b6d6bcaaa319208",
+        "version": "%API_VERSION%",
+        "client": "%CLIENT_NAME%",
+        "language": "sv",
+        "time": 1714751523.547915
+    },
+    "data": {
+        "PaymentData": {
+            "method": "8",
+            "currency": "SEK",
+            "language": "sv",
+            "country": "SE",
+            "orderid": "123456",
+            "bankid": "true",
+            "accepturl": "https://example.com/accept",
+            "cancelurl": "https://example.com/cancel",
+            "callbackurl": "https://example.com/callback"
+        },
+        "Customer": {
+            "pno": "550101-1018",
+            "Billing": {
+                "firstname": "Tess T",
+                "lastname": "Person",
+                "address": "Testvägen 1",
+                "zip": "12345",
+                "city": "Testinge",
+                "country": "SE",
+                "phone": "0700000000",
+                "email": "test@example.com"
+            }
+        },
+        "Articles": [
+            {
+                "artnr": "1",
+                "title": "Test",
+                "aprice": "10000",
+                "taxrate": "25",
+                "quantity": "1",
+                "withouttax": "10000"
+            }
+        ],
+        "Cart": {
+            "Total": {
+                "withouttax": "10000",
+                "tax": "2500",
+                "withtax": "12500"
+            }
+        }
+    },
+    "function": "addPayment"
+}
+]]>
+</code-block>
+  </tab>
+
   <tab title="%code-phplegacy%">
 <code-block lang="PHP">
 <![CDATA[
@@ -296,23 +357,183 @@ namespace AddPayment
   <tab title="%code-python%">
 <code-block lang="Python">
 <![CDATA[
-# Work in progress
+from PaymentAPI import PaymentAPI
+
+# Create a PaymentAPI object
+api = PaymentAPI(eid, secret)
+paymentPayload = {
+    "PaymentData": {
+        "method": "8",
+        "currency": "SEK",
+        "language": "sv",
+        "country": "SE",
+        "orderid": "123456",
+        "bankid": "true",
+        "accepturl": "https://example.com/accept",
+        "cancelurl": "https://example.com/cancel",
+        "callbackurl": "https://example.com/callback",
+    },
+    "Customer": {
+        "pno": "550101-1018",
+        "Billing": {
+            "firstname": "Tess T",
+            "lastname": "Person",
+            "address": "Testvägen 1",
+            "zip": "12345",
+            "city": "Testinge",
+            "country": "SE",
+            "phone": "0700000000",
+            "email": "test@example.com",
+        }
+    },
+    "Articles": [
+        {
+            "artnr": "1",
+            "title": "Test",
+            "aprice": "10000",
+            "taxrate": "25",
+            "quantity": "1",
+            "withouttax": "10000",
+        }
+    ],
+    "Cart": {
+        "Total": {
+            "withouttax": "10000",
+            "tax": "2500",
+            "withtax": "12500",
+        },
+    },            
+}
+payment = api.call(function="addPayment", data=paymentPayload)
 ]]>
 </code-block>
+
+Full example can be found [here](https://github.com/Billmate/QvicklyAPISamples/blob/main/Python/examples/PaymentAPI/addPayment.py)
+
   </tab>
 </tabs>
 
 ## Response from server
+
+Depending on the used payment method, the response will contain different data.
+
+### Card payment
+
 <code-block lang="json">
 {
     "credentials": {
-        "hash":"0b2d1c4d31228a6dc845a16d57b782b97a5e111db2348324be42f5a91e88c8bd35fa62f0e6240b5680e17da03bb9301c5bd0ed755db7fa62ba6054ee21cdde88"
+        "hash": "d5cee0d79367fe63003166174a19980e919cd85da029e8b2029526bc96ab054ba2dc71390409538cc0e82aa44600a48535d1a7c02f04546e0797a82118b6c66d",
+        "logid": 123456798
+    },
+    "data": {
+        "number": "12345",
+        "status": "WaitingForPurchase",
+        "orderid": "123456",
+        "url": "https://api.billmate.se/swedbankpay/12345/20240503d3ed5b5f079ad7f3b8ce4b5ac1303bed"
+    }
+}
+</code-block>
+
+### Swish payment
+
+<code-block lang="json">
+{
+    "credentials": {
+        "hash": "d55b010b0b43009b82f24d238c960e2768d84c67779a5fd4f7049c7e0ac2e212c43b5abcc372ad650c9442f1e71cdc1e0508e9bbe194b87d68dea55d308b7989",
+        "logid": 123456798
+    },
+    "data": {
+        "number": "12345",
+        "status": "WaitingForPurchase",
+        "orderid": "123456",
+        "url": "https://api.billmate.se/invoice-swish/12345/2024050384406eb8b12402af11f3ed7a65f2d1f8/"
+    }
+}
+</code-block>
+
+### Invoice payment with BankID authentification
+
+<code-block lang="json">
+{
+    "credentials": {
+        "hash": "814809f5d30966cbf50b2161680dc562ede3fc40596a195771fdee15935bd5c1d92f0babb9f5e189d0b728a143b24a2383bed60f863566ed25b1bff352bb6549",
+        "logid": 123456798
+    },
+    "data": {
+        "number": "12345",
+        "status": "WaitingForBankIDIdentification",
+        "orderid": "123456",
+        "url": "https://api.billmate.se/bankidv6/12345/20240503ce7218d18baae344cb14383c1a2d5ff9"
+    }
+}
+</code-block>
+
+### Response after a successful payment
+
+<code-block lang="json">
+{
+    "credentials": {
+        "hash":"0b2d1c4d31228a6dc845a16d57b782b97a5e111db2348324be42f5a91e88c8bd35fa62f0e6240b5680e17da03bb9301c5bd0ed755db7fa62ba6054ee21cdde88",
+        "logid": 123456798
     }
     "data": {
         "number":"12345",
         "status":"Created",
-        "orderid":"P123456789",
+        "orderid":"123456",
         "url":"https://api.qvickly.io/invoice/140544658153c38f1cdf279"
     }
 }
 </code-block>
+
+### Checkout
+
+<code-block lang="json">
+{
+    "credentials": {
+        "hash": "58132e8ca66155907498718758427a15f958a03d6d2a9f2e1227262e6c1fe84f022a0302f16107d30777d6442555fc8fade57c86680217265b005253c3cc69f3",
+        "logid": 123456798
+    },
+    "data": {
+        "number": "12345",
+        "status": "WaitingForPurchase",
+        "orderid": "123456",
+        "url": "https://checkout.billmate.se/12345/20240503d4b5b18e58def17d219732e7fbc6f5e6"
+    }
+}
+</code-block>
+
+### Paylink
+
+<code-block lang="json">
+{
+    "credentials": {
+        "hash": "d9189bbd4f039d23596d7aba451f2a096973d5caf4ca584fa1fd9cd01016456bd556f1ce21449c0f06d077d19da83a60440b312d08dd36a603936802dd479ed2",
+        "logid": 123456798
+    },
+    "data": {
+        "number": "12345",
+        "status": "WaitingForPurchase",
+        "orderid": "123456",
+        "url": "https://pay.billmate.se/12345/20240503ef170056f5ada064c6574f5feb1729d2"
+    }
+}
+</code-block>
+
+### Pay With Qvickly
+
+<code-block lang="json">
+{
+    "credentials": {
+        "hash": "3249bc6fab53b0256d05b6705d2c116a438a078d33f771ad6018840230af1794df3906d77c3045f191b17904218edf846056b7e00549926e82eddefbf195f678",
+        "logid": 123456798
+    },
+    "data": {
+        "number": "12345",
+        "status": "Created",
+        "orderid": "123456",
+        "url": "https://my.qvickly.io/pwq/12345/20240503e3b574f0d3e5f18965f1eea3a0806e83"
+    }
+}
+</code-block>
+
+<include from="Snippets-Examples.md" element-id="snippet-footer"></include>

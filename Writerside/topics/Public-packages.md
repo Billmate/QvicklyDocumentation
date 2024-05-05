@@ -9,35 +9,47 @@ Third-party packages that has obvious issues and/or is not maintained will be re
 > This list is currently a suggestion and will be updated as the project progresses.
 > {style="note"}
 
-## JSR
+## Javascript / Typescript
+### JSR
 Status: Planned
+Link: [JSR](https://jsr.io/@qvickly)
 
-## NPM
+### NPM
 Status: Planned
+Link: [NPM](https://www.npmjs.com/)
 
-## Composer
-Status: Planned
-
-## NuGet
+## PHP
+### Packagist
 Status: Suggested
+Link: [Packagist](https://packagist.org/)
 
-## Packagist
+## .NET
+### NuGet
 Status: Suggested
+Link: [NuGet](https://www.nuget.org/)
 
-## PyPI
+## Python
+### PyPI
 Status: Suggested
+Link: [PyPI](https://pypi.org/)
 
-## RubyGems
+## Ruby
+### RubyGems
 Status: Unlikely
+Link: [RubyGems](https://rubygems.org/)
 
-## Maven
+## Rust
+### Cargo
 Status: Unlikely
+Link: [Cargo](https://crates.io/)
 
-## Gradle
+## Perl
+### CPAN
 Status: Unlikely
+Link: [CPAN](https://www.cpan.org/)
 
-## Cargo
+## Java
+### Maven
 Status: Unlikely
+Link: [Maven](https://mvnrepository.com/)
 
-## CPAN
-Status: Unlikely

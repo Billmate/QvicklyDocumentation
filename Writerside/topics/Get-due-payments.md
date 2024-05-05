@@ -1,6 +1,28 @@
 # Get due payments
 
 <tabs>
+    <tab title="%code-json%">
+<code-block lang="json">
+<![CDATA[
+{
+    "credentials": {
+        "id": "%MERCHANT_ID%",
+        "hash": "f3061b99a05366a299841cdf5ea7114af9b28042a1fc6435e28be4cff060aa52db1eec54871fed93c1cb1fe25d1f505f197a9cd71f0878c870dfb5e394228f3a",
+        "version": "%API_VERSION%",
+        "client": "%CLIENT_NAME%",
+        "language": "sv",
+        "time": 1714926964.203058
+    },
+    "data": {
+        "dummyData": 1714926964203000000
+    },
+    "function": "getDuePayments"
+}
+]]>
+</code-block>
+    </tab>
+
+
   <tab title="%code-phplegacy%">
 <code-block lang="PHP">
 <![CDATA[
@@ -90,23 +112,17 @@ namespace GetDuePayments
   <tab title="%code-python%">
 <code-block lang="Python">
 <![CDATA[
-import json
-import os
+from PaymentAPI import PaymentAPI
 
-from QvicklyPackage import API
-from QvicklyPackage.API import APIPayload
-
-billmate_id = os.getenv("BILLMATE_ID")
-secret = os.getenv("SECRET")
-mypno = os.getenv("MY_PNO")
-
-api_connection = API.APIConnection(billmate_id, secret, devMode=True)
-
-api_connection.setValidateResult()
-
-duepayments = api_connection.getDuePayments("2021-10-10")
+# Create a PaymentAPI object
+api = PaymentAPI(eid, secret)
+payments = api.call(function="getDuePayments", data={"dueDate":"2024-05-01"})
+print(json.dumps(payments, indent=4))
 ]]>
 </code-block>
+
+Full example can be found [here](https://github.com/Billmate/QvicklyAPISamples/blob/main/Python/examples/PaymentAPI/getDuePayments.py)
+
   </tab>
 </tabs>
 
@@ -136,3 +152,5 @@ duepayments = api_connection.getDuePayments("2021-10-10")
     ]
 }
 </code-block>
+
+<include from="Snippets-Examples.md" element-id="snippet-footer"></include>
