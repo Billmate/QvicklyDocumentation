@@ -1,5 +1,7 @@
 # Example flow
 
+<include from="Snippets-CheckoutAPI.md" element-id="snippet-header" />
+
 * Client (server) makes a initCheckout request
 * Qvickly replies with a number and url.
   - Keep track of the url, note that this number is temporary and not the final transaction id.

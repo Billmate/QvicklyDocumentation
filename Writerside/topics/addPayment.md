@@ -1,20 +1,26 @@
 # addPayment
 
+<include from="Snippets-PaymentAPI.md" element-id="snippet-header"></include>
+
 addPayment is used for creating payments.
 
+*An example can be found here [add Payment example](Add-payment.md)*
 
 ## Request
 
 ### Parameters
-The data section of the payload has the following sub-sections:
-* PaymentData
-* PaymentInfo
-* Card
-* Customer
-* Articles
-* Cart
+### Data
 
-Please note that not all sections are mandatory. See the documentation for each section for more information.
+| Property    | Required | Type                   | Description        |
+|-------------|----------|------------------------|--------------------|
+| PaymentData | true     | [object](#paymentdata) | Payment data.      |
+| PaymentInfo | true     | [object](#paymentinfo) | Payment info.      |
+| Card        | true     | [object](#card)        | Card data.         |
+| Customer    | true     | [object](#customer)    | Customer data.     |
+| Articles    | true     | [array](#articles)     | Array of articles. |
+| Cart        | true     | [object](#cart)        | Cart data.         |
+
+Please note that not all properties in all sections are mandatory. See the documentation for each section for more information.
 
 ### PaymentData
 

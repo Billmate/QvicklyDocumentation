@@ -1,5 +1,7 @@
 # creditPayment
 
+<include from="Snippets-PaymentAPI.md" element-id="snippet-header"></include>
+
 creditPayment is used for crediting payments.
 
 The original payment could be credited fully or partially.
@@ -12,7 +14,17 @@ If partcredit flag is true, then add all articles that should be credited. Note 
 > 
 > If multiple tax rates are used in the invoice, the discount tax (negative) and discount tax rate (positive) has to be calculated for each standard tax rate and be given as parameters. Thus, discount tax rate has to be fixed to a standard tax rate (i.e. 6%,12%,25%) and can not be given as a decimal value like 12.6%.
 
+*An example can be found here [Credit payment example](Credit-payment.md)*
+
 ## Request
+
+### Data
+
+| Property     | Required | Type   | Description                                               |
+|--------------|----------|--------|-----------------------------------------------------------|
+| PaymentData  | true     | object | Payment data                                              |
+| Articles     | false    | array  | Articles is the list of articles that should be credited. |
+| Cart         | false    | object | Cart is the cart that should be credited.                 |
 
 ### PaymentData
 
@@ -20,6 +32,42 @@ If partcredit flag is true, then add all articles that should be credited. Note 
 |------------|----------|--------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | number     | true     | int    | The payment number of the payment you wish to credit.                                                                                                                                      |
 | partcredit | false    | bool   | If part credit is true, then articles that should be credited and the cart needs to be specified as below. If part credit is false, then full amount is always credited. Default is false. |
+| action     | false    | string | The action to be taken on the payment.                                                                                                                                                     |
+| feeid      | false    | int    | Fee to credit. This can not be set for part credit. Feeid have to match the original feeid.                                                                                                |
+
+#### Action
+
+> The action parameter is not yet implemented in the API.
+> 
+> Expected implementation is during Q3 2024.
+> 
+> {style='warning'}
+
+The default behavior is to credit and activate the credit. 
+
+If you want to credit the payment without activating it, you can specify the action as `credit`.
+
+If you wish to activate an existing credit, you can specify the action as `activate`.
+
+If you wish to credit the payment and activate the credit, you can specify the action as `credit|activate`.
+
+To use multiple actions, separate them with a pipe `|`.
+
+Numerical values can be used instead of the string values.
+
+
+| Action               | Description          |
+|----------------------|----------------------|
+| credit               | Credit the payment.  |
+| activate             | Activate the credit. |
+| credit&#124;activate | Credit and activate. |
+| 1                    | Credit the payment.  |
+| 2                    | Activate the credit. |
+| 1&#124;2             | Credit and activate. |
+| 3                    | Credit and activate. |
+
+It is possible to mix the numerical and string values.
+
 
 ### Articles
 

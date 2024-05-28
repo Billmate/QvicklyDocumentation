@@ -1,6 +1,10 @@
 # cancelPayment
 
+<include from="Snippets-PaymentAPI.md" element-id="snippet-header"></include>
+
 cancelPayment is used to cancel a created payment.
+
+*An example can be found here [Cancel payment example](Cancel-payment.md)*
 
 ## Request
 

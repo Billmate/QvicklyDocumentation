@@ -1,6 +1,10 @@
 # getPaymentinfo
 
+<include from="Snippets-PaymentAPI.md" element-id="snippet-header"></include>
+
 getPaymentinfo is used for getting info about a payment.
+
+*An example can be found here [Get payment info example](Get-payment-info.md)*
 
 ## Request
 

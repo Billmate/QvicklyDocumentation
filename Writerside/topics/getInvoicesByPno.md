@@ -1,15 +1,32 @@
 # getInvoicesByPno
 
-Get merchants filtered by organization number.
+<include from="Snippets-PaymentAPI.md" element-id="snippet-header"></include>
 
-This function only allows you to filter out merchants that are connected to your account.
+Get invoices filtered by personal identification number.
+
+*An example can be found here [Get invoices by pno example](Get-invoices-by-pno.md)*
 
 ## Request
 
+### Data
+
 | Property | Required | Type   | Description                                                                                   |
 |----------|----------|--------|-----------------------------------------------------------------------------------------------|
-| pno      | true     | string | The organization number of the merchant. The organization number may be partial.              |
+| pno      | true     | string | The personal identification number of the customer.                                           |
 | status   | true     | string | The only allowed statuses are Sent and Sent,Paid. All other will result in an 7022 exception. |
+
+#### Status
+
+| Status    | Description                                                                                                 |
+|-----------|-------------------------------------------------------------------------------------------------------------|
+| Sent      | Sent invoices. The distributor status has to be either `Created` or `Sent`                                  |
+| Sent,Paid | Sent and paid invoices. Either the distributor status has to be `Paid` or the status has to be `Cancelled`. |
+
+### Function
+
+| Property | Required | Type   | Description                                                       |
+|----------|----------|--------|-------------------------------------------------------------------|
+| function | true     | string | The function name to be used, for this page it’s getInvoicesByPno |
 
 ```json
 {
@@ -43,7 +60,7 @@ The response will contain an array of invoices.
 | fileurl                | string | File URL. The fileurl is not always present. The url might also point to a non-existing address due to changes over time.                          |
 | balancedue             | int    | Balance due for this payment                                                                                                                       |
 | invoicetype            | string | Type of invoice. F = Invoice (Faktura) , K = Credit invoice (Kreditfaktura), KN = Cash invoice (Kontantnota), RF = Interest invoice (Räntefaktura) |
-| distributor_status     | string | Distrobutir status.                                                                                                                                |
+| distributor_status     | string | Distributor status.                                                                                                                                |
 | creditinvoiceid        | int    | Invoice id for credit invoice if not empty                                                                                                         |
 | hash                   | string | Hash value for the invoice                                                                                                                         |
 | mm3servicesid          | int    | Internal service id                                                                                                                                |

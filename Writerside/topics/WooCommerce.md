@@ -7,6 +7,9 @@
 > For WooCommerce support, please contact your WooCommerce integrator.
 > {style="note"}
 
+> The WooCommerce plugins are developed by [Krokedil](https://krokedil.se/produkt/qvickly-checkout/), a Swedish company that specializes in WooCommerce development.
+> {style="note"}
+
 ## Qvickly Checkout for WooCommerce
 Qvickly Checkout for WooCommerce is a plugin that extends WooCommerce, allowing you to take payments via Qvickly.
 

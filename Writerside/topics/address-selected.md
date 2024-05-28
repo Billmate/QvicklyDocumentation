@@ -1,5 +1,7 @@
 # address_selected
 
+<include from="Snippets-CheckoutAPI.md" element-id="snippet-header" />
+
 Receive from Checkout.
 
 For keeping track on which address that are selected.

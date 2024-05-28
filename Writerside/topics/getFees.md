@@ -1,9 +1,24 @@
 # getFees
 
+<include from="Snippets-PaymentAPI.md" element-id="snippet-header"></include>
+
+Get the available fees for the merchant.
+
+*An example can be found here [Get fees example](Get-address.md)*
+
 ## Request
 
+### Data
 | Property | Required | Type   | Description                                                                                   |
 |----------|----------|--------|-----------------------------------------------------------------------------------------------|
+
+This call has no parameters. But since the data is required by the API, you need to send an object (that can be empty).
+
+### Function
+
+| Property | Required | Type   | Description                                              |
+|----------|----------|--------|----------------------------------------------------------|
+| function | true     | string | The function name to be used, for this page it’s getFees |
 
 
 ```json

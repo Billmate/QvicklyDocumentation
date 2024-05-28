@@ -1,13 +1,23 @@
 # getSettlements
 
+<include from="Snippets-PaymentAPI.md" element-id="snippet-header"></include>
+
 This method returns a list of settlements.
+
+*An example can be found here [Get settlements example](Get-settlements.md)*
 
 ## Request
 
-### Parameters
+### Data
 | Property | Required | Type   | Description                                         |
 |----------|----------|--------|-----------------------------------------------------|
 | fromDate | false    | date   | Start date for the settlements. Sent as YYYY-MM-DD. |
+
+### Function
+
+| Property | Required | Type   | Description                                                     |
+|----------|----------|--------|-----------------------------------------------------------------|
+| function | true     | string | The function name to be used, for this page it’s getSettlements |
 
 ```json
 {

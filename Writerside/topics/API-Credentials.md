@@ -1,5 +1,7 @@
 # API Credentials
 
+<include from="Snippets-PaymentAPI.md" element-id="snippet-header"></include>
+
 To authenticate with %brand% you have to use your API Credentials.
 
 | Name | Type   | Description                                                                                                                                          |

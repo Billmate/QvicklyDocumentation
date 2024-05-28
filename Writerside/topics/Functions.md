@@ -1,5 +1,7 @@
 # Functions
 
+<include from="Snippets-PaymentAPI.md" element-id="snippet-header"></include>
+
 | Function                                                  | Description                                                              |
 |-----------------------------------------------------------|--------------------------------------------------------------------------|
 | [getAddress](getAddress.md)                               | getAddress is used for getting address.                                  |

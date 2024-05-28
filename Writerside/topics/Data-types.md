@@ -1,4 +1,7 @@
 # Data types
+
+<include from="Snippets-PaymentAPI.md" element-id="snippet-header"></include>
+
 This section contains the different data types that are related to the API.
 
 ## Character encoding
@@ -65,6 +68,18 @@ A list with a set of data.
             "language": "sv,da,no,en"
         }
     ]
+}
+</code-block>
+
+## object
+An object is a collection of properties.
+<code-block lang="json">
+{
+    "paymentoptions": {
+        "method": "1",
+        "currency": "SEK,DKK,NOK,GBP,EUR,USD",
+        "language": "sv,da,no,en"
+    }
 }
 </code-block>
 

@@ -1,5 +1,7 @@
 # Authentication
 
+<include from="Snippets-PaymentAPI.md" element-id="snippet-header"></include>
+
 To authenticate with Qvickly you have to use your [API Credentials](API-Credentials.md)
 
 The credentials consist of three elements:

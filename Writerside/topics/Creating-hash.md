@@ -1,5 +1,7 @@
 # Creating hash
 
+<include from="Snippets-PaymentAPI.md" element-id="snippet-header"></include>
+
 Creating hash values are one of the most important steps when using the Qvickly API. The hash value is used to verify the integrity of the data sent to the API.
 The hash value is created by converting the data section of the payload to a JSON string and then use the secret key creating a 512 bit hmac.
 
@@ -99,7 +101,7 @@ console.log(hash);
 <tab title="Deno">
 <code-block title="%code-deno%" language="typescript">
 <![CDATA[
-import { hmac } from "https://denopkg.com/chiefbiiko/hmac/mod.ts";
+import { hmac } from "https://deno.land/x/hmac/mod.ts";
 
 const data = {
     "data": {

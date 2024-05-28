@@ -1,5 +1,7 @@
 # Get payment info
 
+<include from="Snippets-PaymentAPI.md" element-id="snippet-header"></include>
+
 <tabs>
     <tab title="%code-json%">
 <code-block lang="json">
@@ -55,15 +57,6 @@ $bm->getPaymentinfo($values);
   </tab>
 
 
-  <tab title="%code-php%">
-<code-block lang="PHP">
-<![CDATA[
-// Work in progress
-]]>
-</code-block>
-  </tab>
-
-
   <tab title="%code-csharp%">
 <code-block lang="c#">
 <![CDATA[
@@ -106,6 +99,56 @@ namespace GetPaymentInfo
 </code-block>
   </tab>
 
+<tab title="%code-node%">
+<code-block lang="javascript">
+<![CDATA[
+import { QvicklyPaymentAPI } from "../../PaymentAPI.js";
+
+const paymentAPI = new QvicklyPaymentAPI(process.env.EID, process.env.SECRET);
+const payment = await paymentAPI.call("getPaymentInfo", {
+    number: "12345",
+});
+console.log(payment);
+]]>
+</code-block>
+
+Full example can be found [here](https://github.com/Billmate/QvicklyAPISamples/blob/main/Node.JS/examples/PaymentAPI/getPaymentInfo.js)
+
+</tab>
+
+<tab title="%code-deno%">
+<code-block lang="javascript">
+<![CDATA[
+import {QvicklyPaymentAPI, env} from "../../PaymentAPI.ts";
+
+const paymentAPI = new QvicklyPaymentAPI(env["EID"], env["SECRET"]);
+const payment = await paymentAPI.call("getPaymentInfo", {
+    number: "12345",
+});
+console.log(payment);
+]]>
+</code-block>
+
+Full example can be found [here](https://github.com/Billmate/QvicklyAPISamples/blob/main/Deno/examples/PaymentAPI/getPaymentInfo.ts)
+
+</tab>
+
+<tab title="%code-bun%">
+<code-block lang="javascript">
+<![CDATA[
+import QvicklyPaymentAPI from "../../PaymentAPI";
+
+const paymentAPI = new QvicklyPaymentAPI(Bun.env.EID, Bun.env.SECRET);
+const payment = await paymentAPI.call("getPaymentInfo", {
+    number: "12345",
+});
+console.log(payment);
+]]>
+</code-block>
+
+Full example can be found [here](https://github.com/Billmate/QvicklyAPISamples/blob/main/Bun/examples/PaymentAPI/getPaymentInfo.ts)
+
+</tab>
 
   <tab title="%code-python%">
 <code-block lang="Python">

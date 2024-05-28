@@ -1,8 +1,24 @@
 # getAccountinfo
 
+<include from="Snippets-PaymentAPI.md" element-id="snippet-header"></include>
+
 getAccountinfo is used for retrieving account details and payment methods.
 
+*An example can be found here [Get account info example](Get-account-info.md)*
+
 ## Request
+
+### Data
+
+| Property     | Required | Type   | Description   |
+|--------------|----------|--------|---------------|
+| PaymentData  | false    | object | Payment data. |
+
+### PaymentData
+
+| Property      | Required | Type | Description                                                                                         |
+|---------------|----------|------|-----------------------------------------------------------------------------------------------------|
+| totalwithtax  | false    | int  | If totalwithtax is defined it will be used for fetching payment methods available for given amount. |
 
 ### Function
 

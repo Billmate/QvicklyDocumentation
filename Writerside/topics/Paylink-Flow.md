@@ -1,5 +1,7 @@
 # Paylink Flow
 
+<include from="Snippets-PaylinkAPI.md" element-id="snippet-header" />
+
 ```plantuml
 
 @startuml

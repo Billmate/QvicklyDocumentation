@@ -1,8 +1,19 @@
 # getPaymentplans
 
+<include from="Snippets-PaymentAPI.md" element-id="snippet-header"></include>
+
 getPaymentplans is used for fetching part payment plans and for calculating monthly cost for part payments. Fetching paymentplans is normally used in admin panel for fetching an updated part payment plan and save it locally for calculation of monthly cost. Monthly cost for available plans can also be fetched for every checkout using getPaymentplans with an amount, totalwithtax.
 
+*An example can be found here [Get payment plans example](Get-payment-plans.md)*
+
 ## Request
+
+### Data
+
+| Property    | Required | Type   | Description                     |
+|-------------|----------|--------|---------------------------------|
+| PaymentData | true     | object | Object containing payment data. |
+| Cart        | false    | object | Object containing cart data.    |
 
 ### PaymentData
 
@@ -11,7 +22,19 @@ getPaymentplans is used for fetching part payment plans and for calculating mont
 | currency     | true     | string | Currency code to be used for the payment according to ISO 4217. Currently supported: SEK.                                                                                                                                                                                              |
 | country      | true     | string | Country code for the country where purchase is made (normally store location) according to ISO 3166-1 alpha-2, e.g. SE, DK, NO, GB.                                                                                                                                                    |
 | language     | true     | string | Language code for the language used on the invoice/recipt according to ISO 639-1. Currently supported: sv.                                                                                                                                                                             |
-| totalwithtax | true     | cent   | The monthly cost with tax for each payment plan will be calculated from the total payment value with tax. If not submitted, all payment plans are returned. NOTE: Total payment including tax needs to be in 1/100 of currency (i.e. öre if currency is SEK, cent if currency is EUR). |
+| totalwithtax | false    | cent   | The monthly cost with tax for each payment plan will be calculated from the total payment value with tax. If not submitted, all payment plans are returned. NOTE: Total payment including tax needs to be in 1/100 of currency (i.e. öre if currency is SEK, cent if currency is EUR). |
+
+### Cart
+
+| Property | Required | Type   | Description                             |
+|----------|----------|--------|-----------------------------------------|
+| total    | false    | object | Object containing total values for cart |
+
+### Total
+
+| Property | Required | Type | Description                                                                                              |
+|----------|----------|------|----------------------------------------------------------------------------------------------------------|
+| withtax  | false    | cent | Total payment including tax in 1/100 of currency (i.e. öre if currency is SEK, cent if currency is EUR). |
 
 ### Function
 
@@ -42,6 +65,9 @@ getPaymentplans is used for fetching part payment plans and for calculating mont
     "function": "getPaymentplans"
 }
 ```
+### The amount used
+
+If `PaymentData->totalwithtax` is empty, then `Cart->Total->withtax` will be used as amount. If no amount is found then all available payment plans will be returned.
 
 ## Response
 

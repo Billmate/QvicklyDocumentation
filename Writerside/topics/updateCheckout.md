@@ -1,5 +1,7 @@
 # updateCheckout
 
+<include from="Snippets-CheckoutAPI.md" element-id="snippet-header" />
+
 UpdateCheckout is used for updating an ongoing session for Qvickly Checkout payment gateway ( https://checkout.qvickly.io/).
 
 > This function is a part of [Qvickly Payment API](Qvickly-API.md)

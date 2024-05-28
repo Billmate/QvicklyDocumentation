@@ -1,6 +1,10 @@
 # activatePayment
 
+<include from="Snippets-PaymentAPI.md" element-id="snippet-header"></include>
+
 activatePayment is used for activating payments and get payout from Qvickly shortly.
+
+*An example can be found here [Activate payment example](Activate-payment.md)*
 
 ## Request
 

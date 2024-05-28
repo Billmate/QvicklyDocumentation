@@ -1,5 +1,7 @@
 # Errors
 
+<include from="Snippets-PaymentAPI.md" element-id="snippet-header"></include>
+
 | Property | Type   | Description                                                                                                                                       |
 |----------|--------|---------------------------------------------------------------------------------------------------------------------------------------------------|
 | code     | int    | “Code” is the error code according to table below.                                                                                                |

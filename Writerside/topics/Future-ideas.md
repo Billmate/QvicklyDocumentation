@@ -1,5 +1,7 @@
 # Future ideas
 
+<include from="Snippets-PaymentAPI.md" element-id="snippet-header"></include>
+
 ## Feature flags in header
 
 Enable or disable features by sending a header with the request. This would allow for a more dynamic way of enabling and disabling features.

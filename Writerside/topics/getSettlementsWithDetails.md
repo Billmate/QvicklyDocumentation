@@ -1,14 +1,23 @@
 # getSettlementsWithDetails
 
+<include from="Snippets-PaymentAPI.md" element-id="snippet-header"></include>
+
 Get the details of a specific settlement.
+
+*An example can be found here [Get settlements with details example](Get-settlements-with-details.md)*
 
 ## Request
 
-### Parameters
+### Data
 | Property       | Required | Type | Description                                                                 |
 |----------------|----------|------|-----------------------------------------------------------------------------|
 | settlementId   | true     | int  | Settlement number.                                                          |
 
+### Function
+
+| Property | Required | Type   | Description                                                                |
+|----------|----------|--------|----------------------------------------------------------------------------|
+| function | true     | string | The function name to be used, for this page it’s getSettlementsWithDetails |
 
 ## Response
 

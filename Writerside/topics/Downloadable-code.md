@@ -23,12 +23,16 @@ The module code is a more advanced example of how to use the API and is more or 
 ## Languages
 The different statuses are as follows
 
-| Status  | Description                                             |
-|---------|---------------------------------------------------------|
-| Started | The code is started but not finished.                   |
-| As-is   | The code is as-is and will not be updated.              |
-| Planned | The code is planned but not started yet.                |
-| n/a     | Not applicable or there is no plan to create this code. |
+| Status      | Description                                             |
+|-------------|---------------------------------------------------------|
+| Complete    | The code is finished.                                   |
+| Testing     | The code is being tested.                               |
+| Nearly done | The code is almost finished.                            |
+| Started     | The code is started but not finished.                   |
+| Deprecated  | The code is deprecated.                                 |
+| As-is       | The code is as-is and will not be updated.              |
+| Planned     | The code is planned but not started yet.                |
+| n/a         | Not applicable or there is no plan to create this code. |
 
 ### PHP
 The newer PHP code examples are adopted for PHP 8.x. They are however based on the same principles as the original PHP code examples and might therefore not always be cutting edge.
@@ -59,17 +63,17 @@ There are also some simple .NET code examples available for download.
 ### Python
 The Python code examples are based on Python 3.x.
 
-| Type   | Link                                                                     | Status  | Description |
-|--------|--------------------------------------------------------------------------|---------|-------------|
-| Simple | [GitHub](https://github.com/Billmate/QvicklyAPISamples/tree/main/Python) | Started |             |
-| Module |                                                                          | Planned |             |
+| Type   | Link                                                                     | Status      | Description |
+|--------|--------------------------------------------------------------------------|-------------|-------------|
+| Simple | [GitHub](https://github.com/Billmate/QvicklyAPISamples/tree/main/Python) | Nearly done |             |
+| Module |                                                                          | Planned     |             |
 
 ### Node.js
 The Node.js code examples are based on Node.js LTS v20.x.
 
 | Type   | Link                                                                      | Status  | Description |
 |--------|---------------------------------------------------------------------------|---------|-------------|
-| Simple | [GitHub](https://github.com/Billmate/QvicklyAPISamples/tree/main/Node.JS) | Started |             |
+| Simple | [GitHub](https://github.com/Billmate/QvicklyAPISamples/tree/main/Node.JS) | Nearly done |             |
 | Module |                                                                           | Planned |             |
 
 > The main focus is on the LTS version of Node.js. The code examples will probably but are not guaranteed to work with other versions of Node.js.

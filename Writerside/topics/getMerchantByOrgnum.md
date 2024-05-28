@@ -1,15 +1,26 @@
 # getMerchantByOrgnum
 
+<include from="Snippets-PaymentAPI.md" element-id="snippet-header"></include>
+
 Get merchants filtered by organization number.
 
 This function only allows you to filter out merchants that are connected to your account.
 
+*An example can be found here [Get merchant by orgnum example](Get-merchant-by-orgnum.md)*
+
 ## Request
 
+### Data
 | Property | Required | Type   | Description                                                                                                                           |
 |----------|----------|--------|---------------------------------------------------------------------------------------------------------------------------------------|
 | orgnum   | false    | string | The organization number of the merchant. The organization number may be partial.                                                      |
 | all      | false    | int    | If set to 1, all merchants connected to your account will be returned. If not set, only the first matching merchant will be returned. |
+
+### Function
+
+| Property | Required | Type   | Description                                                          |
+|----------|----------|--------|----------------------------------------------------------------------|
+| function | true     | string | The function name to be used, for this page it’s getMerchantByOrgnum |
 
 ```json
 {
@@ -31,3 +42,5 @@ This function only allows you to filter out merchants that are connected to your
 ## Response
 
 | Property | Type   | Description                                                                                                                |
+|----------|--------|----------------------------------------------------------------------------------------------------------------------------|
+

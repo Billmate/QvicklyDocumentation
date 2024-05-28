@@ -1,8 +1,12 @@
 # getAPICredentials
 
+<include from="Snippets-PaymentAPI.md" element-id="snippet-header"></include>
+
 > This method can only be used by accredited merchants.
 
 getAPICredentials is used to fetch the credentials needed to use the Payment API.
+
+*An example can be found here [Get API credentials example](Get-API-Credentials.md)*
 
 ## Request
 
@@ -16,8 +20,8 @@ getAPICredentials is used to fetch the credentials needed to use the Payment API
 
 ### Function
 
-| Property | Required | Type   | Description                                                     |
-|----------|----------|--------|-----------------------------------------------------------------|
+| Property | Required | Type   | Description                                                        |
+|----------|----------|--------|--------------------------------------------------------------------|
 | function | true     | string | The function name to be used, for this page it’s getAPICredentials |
 
 ```json

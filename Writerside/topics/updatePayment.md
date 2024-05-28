@@ -1,5 +1,7 @@
 # updatePayment
 
+<include from="Snippets-PaymentAPI.md" element-id="snippet-header"></include>
+
 updatePayment is used for updating payments. NOTE: You can only update a payment that has status “Created”, which has not yet been locked (sent).
 If the payment is locked (any other status), then you will have to use CreditPayment instead to credit the original payment and then create a new correct payment with addPayment.
 
@@ -7,18 +9,23 @@ If the payment is locked (any other status), then you will have to use CreditPay
 
 > It is not allowed to change payment method of the invoice. To change payment method, original payment has to be cancelled and a new payment has to be created.
 
+*An example can be found here [Update payment example](Update-payment.md)*
+
 ## Request
 
-### Parameters
-The data section of the payload has the following sub-sections:
-* PaymentData
-* PaymentInfo
-* Card
-* Customer
-* Articles
-* Cart
+### Data
 
-Please note that not all sections are mandatory. See the documentation for each section for more information.
+| Property    | Required | Type   | Description        |
+|-------------|----------|--------|--------------------|
+| PaymentData | true     | object | Payment data.      |
+| PaymentInfo | true     | object | Payment info.      |
+| Card        | true     | object | Card data.         |
+| Customer    | true     | object | Customer data.     |
+| Articles    | true     | array  | Array of articles. |
+| Cart        | true     | object | Cart data.         |
+
+
+Please note that not all properties in all sections are mandatory. See the documentation for each section for more information.
 
 
 ### PaymentData

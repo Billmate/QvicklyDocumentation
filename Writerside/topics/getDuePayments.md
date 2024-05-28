@@ -1,7 +1,10 @@
 # getDuePayments
 
+<include from="Snippets-PaymentAPI.md" element-id="snippet-header"></include>
+
 getDuePayments is used for retrieving a list of due payments which can have the status of either *Collection* (Inkasso) or *Due* (Förfallen).
 
+*An example can be found here [Get due payments example](Get-due-payments.md)*
 
 ## Request
 

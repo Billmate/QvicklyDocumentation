@@ -1,5 +1,7 @@
 # Test credentials
 
+<include from="Snippets-PaymentAPI.md" element-id="snippet-header"></include>
+
 ## Test persons
 
 ### Person - Approved status

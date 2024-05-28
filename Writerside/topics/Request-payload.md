@@ -1,5 +1,7 @@
 # Request payload
 
+<include from="Snippets-PaymentAPI.md" element-id="snippet-header"></include>
+
 The request payload is a JSON object that contains the credentials, data and function to call for the request. The credentials are used to authenticate the request, the data is used to send the actual data for the request and function is used to call the correct function on the server side.
 
 ```json

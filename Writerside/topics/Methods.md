@@ -1,5 +1,7 @@
 # Methods
 
+<include from="Snippets-PaymentAPI.md" element-id="snippet-header"></include>
+
 | Method  | Description          | Multiple | Note                           |
 |---------|----------------------|----------|--------------------------------|
 | 1       | Invoice Factoring    | No       |                                |

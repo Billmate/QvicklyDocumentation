@@ -1,5 +1,7 @@
 # Get invoices by pno
 
+<include from="Snippets-PaymentAPI.md" element-id="snippet-header"></include>
+
 <tabs>
     <tab title="%code-json%">
 <code-block lang="json">
@@ -23,27 +25,57 @@
 </code-block>
     </tab>
 
-  <tab title="%code-phplegacy%">
-<code-block lang="PHP">
+<tab title="%code-node%">
+<code-block lang="javascript">
 <![CDATA[
-// Work in progress
+import { QvicklyPaymentAPI } from "../../PaymentAPI.js";
+
+const paymentAPI = new QvicklyPaymentAPI(process.env.EID, process.env.SECRET);
+const invoices = await paymentAPI.call("getInvoicesByPno", {
+    pno: "0000000000",
+});
+console.log(invoices);
 ]]>
 </code-block>
-  </tab>
-  <tab title="%code-php%">
-<code-block lang="PHP">
+
+Full example can be found [here](https://github.com/Billmate/QvicklyAPISamples/blob/main/Node.JS/examples/PaymentAPI/getInvoicesByPno.js)
+
+</tab>
+
+<tab title="%code-deno%">
+<code-block lang="javascript">
 <![CDATA[
-// Work in progress
+import {QvicklyPaymentAPI, env} from "../../PaymentAPI.ts";
+
+const paymentAPI = new QvicklyPaymentAPI(env["EID"], env["SECRET"]);
+const invoices = await paymentAPI.call("getInvoicesByPno", {
+    pno: "0000000000",
+});
+console.log(invoices);
 ]]>
 </code-block>
-  </tab>
-  <tab title="%code-csharp%">
-<code-block lang="c#">
+
+Full example can be found [here](https://github.com/Billmate/QvicklyAPISamples/blob/main/Deno/examples/PaymentAPI/getInvoicesByPno.ts)
+
+</tab>
+
+<tab title="%code-bun%">
+<code-block lang="javascript">
 <![CDATA[
-// Work in progress
+import QvicklyPaymentAPI from "../../PaymentAPI";
+
+const paymentAPI = new QvicklyPaymentAPI(Bun.env.EID, Bun.env.SECRET);
+const invoices = await paymentAPI.call("getInvoicesByPno", {
+    pno: "0000000000",
+});
+console.log(invoices);
 ]]>
 </code-block>
-  </tab>
+
+Full example can be found [here](https://github.com/Billmate/QvicklyAPISamples/blob/main/Bun/examples/PaymentAPI/getInvoicesByPno.ts)
+
+</tab>
+
   <tab title="%code-python%">
 <code-block lang="Python">
 <![CDATA[

@@ -1,5 +1,7 @@
 # The basics
 
+<include from="Snippets-PaymentAPI.md" element-id="snippet-header"></include>
+
 Some important things to know about the Qvickly API.
 
 ## How to get started

@@ -1,16 +1,24 @@
 # getAddress
 
+<include from="Snippets-PaymentAPI.md" element-id="snippet-header"></include>
+
 getAddress is used for retrieving a person/company’s address from a personal or organization number.
 getAddress API is only permitted to be used together with Qvickly payments.
 The return is an array in JSON format with the values of the person/company details or an error.
 To use addPayment methods factoring or part payment, the person/company who purchase the product must have the same invoice address and delivery address as the address returned from getAddress.
 
+*An example can be found here [Get address example](Get-address.md)*
+
 ## Request
 
-| Property | Required | Type   | Description                                                                                                                                                                                   |
-|----------|----------|--------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| pno      | true     | string | National identification number (NIN) or organisation number. Sweden Sent as YYMMDD-XXXX, it can be sent with or without “-” and with or without the two first numbers (19 or 20) in the year. |
-| country  | false    | string | Country code for the pno according to ISO 3166-1 alpha-2, e.g. SE, DK, NO, GB. Default is SE if not submitted.                                                                                |
+### Data
+
+| Property     | Required | Type   | Description                                                                                                                                                                                   |
+|--------------|----------|--------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| pno          | true     | string | National identification number (NIN) or organisation number. Sweden Sent as YYMMDD-XXXX, it can be sent with or without “-” and with or without the two first numbers (19 or 20) in the year. |
+| country      | false    | string | Country code for the pno according to ISO 3166-1 alpha-2, e.g. SE, DK, NO, GB. Default is SE if not submitted.                                                                                |
+| alladdresses | false    | int    | If set to 1, all addresses will be returned. Default is 0.                                                                                                                                    |
+| engagements  | false    | int    | If set to 1, all engagements for this pno will be returned. Default is 0.                                                                                                                     |
 
 ```json
 {

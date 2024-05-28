@@ -1,5 +1,7 @@
 # Callbacks and links
 
+<include from="Snippets-PaymentAPI.md" element-id="snippet-header"></include>
+
 There are two types of links that can be defined in the PaymentData part of the payload.
 This can be done with addPayment, updatePayment, initCheckout and updateCheckout.
 

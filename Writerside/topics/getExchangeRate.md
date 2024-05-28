@@ -1,13 +1,24 @@
 # getExchangeRate
 
+<include from="Snippets-PaymentAPI.md" element-id="snippet-header"></include>
+
 Get the exchange rate for a specific currency on any given day.
+
+*An example can be found here [Get exchange rate example](Get-exchange-rate.md)*
 
 ## Request
 
+### Data
 | Property | Required | Type   | Description                                                                                                                                                                                                  |
 |----------|----------|--------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | currency | true     | string | The currency code.                                                                                                                                                                                           |
 | date     | false    | string | The date for the exchange rate. The date must be in the format YYYY-MM-DD. If omitted the current date will be used. If the date is a Saturday or Sunday then the last Friday before that date will be used. |
+
+### Function
+
+| Property | Required | Type   | Description                                                      |
+|----------|----------|--------|------------------------------------------------------------------|
+| function | true     | string | The function name to be used, for this page it’s getExchangeRate |
 
 ```json
 {

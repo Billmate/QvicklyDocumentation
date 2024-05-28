@@ -1,3 +1,4 @@
 # Auth API
 
-<include from="Snippets-WorkingInformation.md" element-id="snippet-work-just-started" />
+<include from="Snippets-AuthAPI.md" element-id="snippet-header" />
+

@@ -1,5 +1,7 @@
 # Create a paylink
 
+<include from="Snippets-PaylinkAPI.md" element-id="snippet-header" />
+
 
 <code-block>
 {
@@ -16,7 +18,7 @@
         "Customer": {
             "pno": "19550101-1018",
             "Billing": {
-                "firstname": "Testperson ",
+                "firstname": "Testperson",
                 "lastname": "Approved",
                 "street": "Testgatan 1",
                 "zip": "12345",

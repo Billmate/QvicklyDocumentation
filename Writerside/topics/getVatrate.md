@@ -1,14 +1,25 @@
 # getVatrate
 
+<include from="Snippets-PaymentAPI.md" element-id="snippet-header"></include>
+
 Get the VAT rate for a specific country.
 
-> Please note that this function will return the mail VAT rate for the country. The VAT rate may differ depending on the type of goods or services.
+> Please note that this function will return the main VAT rate for the country. The VAT rate may differ depending on the type of goods or services.
+
+*An example can be found here [Get VAT rate example](Get-vat-rate.md)*
 
 ## Request
 
+### Data
 | Property | Required | Type   | Description                                                                         |
 |----------|----------|--------|-------------------------------------------------------------------------------------|
 | country  | true     | string | The country code according to ISO-3166-1. Both 2 and 3 character codes can be used. |
+
+### Function
+
+| Property | Required | Type   | Description                                                  |
+|----------|----------|--------|--------------------------------------------------------------|
+| function | true     | string | The function name to be used, for this page it’s getVatrates |
 
 ```json
 {
@@ -29,9 +40,9 @@ Get the VAT rate for a specific country.
 
 ## Response
 
-| Property | Type | Description                   |
-|----------|------|-------------------------------|
-| result   | int  | The VAT rate for the country. |
+| Property | Type | Description                        |
+|----------|------|------------------------------------|
+| result   | int  | The main VAT rate for the country. |
 
 ```json
 {

@@ -1,12 +1,23 @@
 # getCustomersByName
 
+<include from="Snippets-PaymentAPI.md" element-id="snippet-header"></include>
+
 Get customers filtered by name.
+
+*An example can be found here [Get customers by name example](Get-customers-by-name.md)*
 
 ## Request
 
+### Data
 | Property | Required | Type   | Description                                            |
 |----------|----------|--------|--------------------------------------------------------|
 | name     | true     | string | The name of the customer. Name can be full or partial. |
+
+### Function
+
+| Property | Required | Type   | Description                                                         |
+|----------|----------|--------|---------------------------------------------------------------------|
+| function | true     | string | The function name to be used, for this page it’s getCustomersByName |
 
 ```json
 {

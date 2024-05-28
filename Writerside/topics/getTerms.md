@@ -1,8 +1,19 @@
 # getTerms
 
+<include from="Snippets-PaymentAPI.md" element-id="snippet-header"></include>
+
 getTerms is used for fetching our payment terms.
 
+*An example can be found here [Get terms example](Get-terms.md)*
+
 ## Request
+
+### Data
+
+| Property    | Required | Type   | Description   |
+|-------------|----------|--------|---------------|
+| PaymentData | true     | object | Payment data. |
+| Cart        | true     | object | Cart data.    |
 
 ### PaymentData
 

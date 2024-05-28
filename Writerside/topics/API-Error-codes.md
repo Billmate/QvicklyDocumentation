@@ -1,5 +1,7 @@
 # Error codes
 
+<include from="Snippets-PaymentAPI.md" element-id="snippet-header"></include>
+
 | Code   | Message                                                                                                           |
 |--------|-------------------------------------------------------------------------------------------------------------------|
 | 1001   | Credit denied for Personal/Organisationnumber.                                                                    |
@@ -16,6 +18,7 @@
 | 2551   | Pricelist variable is not enabled in API request                                                                  |
 | 2552   | Pricelist variable is invalid                                                                                     |
 | 2553   | The date format is wrong.                                                                                         |
+| 2554   | The due date have expired for payment!                                                                            |
 | 4100   | Recurring number is not found                                                                                     |
 | 4102   | We were not able to debit the card. Please try again later or contact %brand% support.                            |
 | 4103   | Debiting the recurring payment is failed                                                                          |
@@ -39,6 +42,7 @@
 | 5200   | Payment number is mandatory                                                                                       |
 | 5201   | Invoice does not exist                                                                                            |
 | 5202   | Invalid status of payment                                                                                         |
+| 5203   | Order id is mandatory                                                                                             |
 | 5204   | Cannot credit more than balance due                                                                               |
 | 5205   | Cannot credit a created invoice or part payment invoice.                                                          |
 | 5206   | Could not activate Factoring invoice. Person number was denied in credit check.                                   |
@@ -74,6 +78,7 @@
 | 5301   | No payment plans found.                                                                                           |
 | 5302   | Currency, Country and Language are mandatory.                                                                     |
 | 6009   | Order id can not be empty                                                                                         |
+| 6010   | Hash does not exist                                                                                               |
 | 6011   | Invoice does not exist.                                                                                           |
 | 6012   | Currency has to be SEK.                                                                                           |
 | 6021   | Cancel URL was empty                                                                                              |
@@ -99,6 +104,7 @@
 | 7010   | Name can not be empty.                                                                                            |
 | 7015   | New password is empty                                                                                             |
 | 7020   | Customer No/Number can not be empty.                                                                              |
+| 7022   | Status not correct                                                                                                |
 | 7030   | Method does not exist.                                                                                            |
 | 7031   | Country does not exist. Please verify that the country code is of correct ISO standard.                           |
 | 7032   | Country is mandatory.                                                                                             |
@@ -140,7 +146,8 @@
 | 9111   | You need to provide integer values for these fields: withtax, withouttax, tax.                                    |
 | 9112   | Article tax rate is mandatory.                                                                                    |
 | 9113   | Rounding can not be bigger than 50 ore.                                                                           |
-| 9120   | NULL                                                                                                              |
+| 9114   | Cart summary does not match article summary                                                                       |
+| 9120   | - RESERVED -                                                                                                      |
 | 9121   | Auto cancel parameter should be given as numeric char.                                                            |
 | 9200   | Email is invalid                                                                                                  |
 | 9201   | Name is invalid                                                                                                   |
@@ -173,8 +180,13 @@
 | 61109  | Crediting fee not possible another time.                                                                          |
 | 61110  | Original invoice does not have fee but credit has one.                                                            |
 | 61111  | Not allowed.                                                                                                      |
+| 61112  | Not possible to extend a payment that is not activated!                                                           |
 | 61113  | Topay is not within extendable amount limit!                                                                      |
 | 61114  | Duedate is over or equal to the extendable date!                                                                  |
+| 61115  | Invoice cannot extend when invoice currency does not match extend fee currency                                    |
+| 61116  | Credit action is declared but not defined                                                                         |
+| 61117  | Can not activate a cancelled credit invoice                                                                       |
+| 61118  | Unable to activate a non created credit invoice.                                                                  |
 | 70000  | Incorrect mm3customersid                                                                                          |
 | 70001  | Incorrect email                                                                                                   |
 | 70002  | Email already in use                                                                                              |
@@ -182,6 +194,7 @@
 | 70004  | Username already exists                                                                                           |
 | 70010  | User ID is not defined                                                                                            |
 | 70011  | You do not have permission to change the password                                                                 |
+| 70012  | Not correct user                                                                                                  |
 | 70013  | Old password is incorrect                                                                                         |
 | 70014  | New passwords does not match.                                                                                     |
 | 70015  | New password is empty.                                                                                            |
@@ -192,3 +205,6 @@
 | 500004 | Token has expired                                                                                                 |
 | 500005 | Username or password is incorrect                                                                                 |
 | 500006 | Missing username and pno                                                                                          |
+| 500007 | Missing hash                                                                                                      |
+| 500008 | Hash not found                                                                                                    |
+

@@ -34,4 +34,8 @@
         <description>Created after removal of "Get authorized people" from Qvickly Product Documentation</description>
         <accepts>Get-authorized-people.html</accepts>
     </rule>
+    <rule id="2049bdd7">
+        <description>Created after removal of "Perl" from Qvickly Product Documentation</description>
+        <accepts>Perl-advanced-examples.html</accepts>
+    </rule>
 </rules>
