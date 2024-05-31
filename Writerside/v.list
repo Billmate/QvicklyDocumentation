@@ -5,6 +5,11 @@
     <var name="brand" value="Qvickly"/>
     <var name="product-short" value="Qvickly"/>
     <var name="API_VERSION" value="2.5.0"/>
+    <var name="CHECKOUT_API_VERSION" value="1.7.27"/>
+    <var name="AUTH_API_VERSION" value="n/a"/>
+    <var name="PAYLINK_API_VERSION" value="n/a"/>
+    <var name="PORTAL_API_VERSION" value="n/a"/>
+    <var name="MYQVICKLY_API_VERSION" value="n/a"/>
     <var name="MERCHANT_ID" value="12345"/>
     <var name="MERCHANT_KEY" value="123451234512"/>
     <var name="CLIENT_NAME" value="Pluginname:Qvickly:1.0"/>

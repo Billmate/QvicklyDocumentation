@@ -2,6 +2,9 @@
 
 <include from="Snippets-CheckoutAPI.md" element-id="snippet-header" />
 
-Receive from Checkout.
+## Event direction
+Received from Checkout.
+
+## Description
 
 This event is sent from Checkout iframe to parent when Checkout show an overlay and if Client want to do the same.

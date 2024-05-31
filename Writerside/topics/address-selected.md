@@ -2,7 +2,10 @@
 
 <include from="Snippets-CheckoutAPI.md" element-id="snippet-header" />
 
-Receive from Checkout.
+## Event direction
+Received from Checkout.
+
+## Description
 
 For keeping track on which address that are selected.
 

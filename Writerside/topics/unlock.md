@@ -2,6 +2,11 @@
 
 <include from="Snippets-CheckoutAPI.md" element-id="snippet-header" />
 
-Send to Checkout.
+## Event direction
+Sent to Checkout.
 
-Ask Checkout to unlock. **Note**, Checkout will automatic unlock after Update.
+## Description
+Ask Checkout to unlock. 
+
+> Checkout will automatic unlock after Update.
+> {style="note"}
