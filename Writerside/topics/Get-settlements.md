@@ -10,8 +10,8 @@
     "credentials": {
         "id": "%MERCHANT_ID%",
         "hash": "4bb4f3729ed101501b9c79f7fec7be79da0b20190188a7b0fb0073a04c8025851ea00056857d7f724dd54392ceff97d4b8f63f6024b4ec6539bafb7daff96b2e",
-        "version": "%API_VERSION%",
-        "client": "%CLIENT_NAME%",
+        "version": "%PAYMENT_API_VERSION%",
+        "client": "%PAYMENT_API_CLIENT_NAME%",
         "language": "sv",
         "time": 1714927493.389399
     },
@@ -23,6 +23,36 @@
 ]]>
 </code-block>
     </tab>
+
+ <tab title="%code-phplegacy%">
+<code-block lang="PHP">
+<![CDATA[
+<?php
+include('../PaymentAPI.php');
+$test = true;
+$debug = false;
+
+/* Credentials for Auth */
+
+$id = "%MERCHANT_ID%";
+$key = "%MERCHANT_KEY%";
+define("QVICKLY_SERVER", "%PAYMENT_API_VERSION%"); // API version
+define("QVICKLY_CLIENT", "%PAYMENT_API_CLIENT_NAME%");
+define("QVICKLY_LANGUAGE", "sv");
+$api = new PaymentAPI($id, $key, $test, $debug);
+$values = array();
+
+$values = array(
+    "fromDate" => "2024-03-01"
+);
+
+echo json_encode($api->getSettlements($values), JSON_PRETTY_PRINT);
+]]>
+</code-block>
+
+Full example can be found [here](https://github.com/Billmate/QvicklyAPISamples/blob/main/PHP.Legacy/examples/getSettlements.php)
+
+</tab>
 
 <tab title="%code-node%">
 <code-block lang="javascript">

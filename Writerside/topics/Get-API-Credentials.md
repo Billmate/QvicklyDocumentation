@@ -10,8 +10,8 @@
     "credentials": {
         "id": "%MERCHANT_ID%",
         "hash": "57d2dfa80914e9668d91862836e893249fba62bfaa4ca603c84ffdc903a0e66c8b1aa44060fd586a47b98b1877a071e00fb817d872508c5b5a2ac8e5bbad50fa",
-        "version": "%API_VERSION%",
-        "client": "%CLIENT_NAME%",
+        "version": "%PAYMENT_API_VERSION%",
+        "client": "%PAYMENT_API_CLIENT_NAME%",
         "language": "sv",
         "time": 1714944786.554058
     },
@@ -24,6 +24,35 @@
 ]]>
 </code-block>
     </tab>
+
+<tab title="%code-phplegacy%">
+<code-block lang="PHP">
+<![CDATA[
+<?php
+include('../PaymentAPI.php');
+$test = true;
+$debug = false;
+
+/* Credentials for Auth */
+
+$id = "%MERCHANT_ID%";
+$key = "%MERCHANT_KEY%";
+define("QVICKLY_SERVER", "%PAYMENT_API_VERSION%"); // API version
+define("QVICKLY_CLIENT", "%PAYMENT_API_CLIENT_NAME%");
+define("QVICKLY_LANGUAGE", "sv");
+$api = new PaymentAPI($id, $key, $test, $debug);
+$values = array();
+
+$values["hash"] = "123456abc123456abc123456abc12345";
+$values["eid"] = "23456";
+
+echo json_encode($api->getAPICredentials($values), JSON_PRETTY_PRINT);
+]]>
+</code-block>
+
+Full example can be found [here](https://github.com/Billmate/QvicklyAPISamples/blob/main/PHP.Legacy/examples/getAPICredentials.php)
+
+</tab>
 
 <tab title="%code-node%">
 <code-block lang="javascript">

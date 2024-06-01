@@ -10,8 +10,8 @@
     "credentials": {
         "id": "%MERCHANT_ID%",
         "hash": "b8122d2e9580525e03c566264c8f5a004ed780b0f00568429dbd965fc2b2b89a7f0fd50e11d19c86a81f4bb4684eb2bac1d608653e807725b0068ce4bee3221c", 
-        "version": "%API_VERSION%", 
-        "client": "%CLIENT_NAME%",
+        "version": "%PAYMENT_API_VERSION%", 
+        "client": "%PAYMENT_API_CLIENT_NAME%",
         "language": "sv",
         "time": 1714827001.526806
     },
@@ -28,18 +28,18 @@
 <code-block lang="PHP">
 <![CDATA[
 <?php
+include('../PaymentAPI.php');
 $test = true;
-$ssl = true;
 $debug = false;
 
 /* Credentials for Auth */
 
 $id = "%MERCHANT_ID%";
 $key = "%MERCHANT_KEY%";
-define("QVICKLY_SERVER", "%API_VERSION%");    /* API version */
-define("QVICKLY_CLIENT", "%CLIENT_NAME%");
+define("QVICKLY_SERVER", "%PAYMENT_API_VERSION%");    /* API version */
+define("QVICKLY_CLIENT", "%PAYMENT_API_CLIENT_NAME%");
 define("QVICKLY_LANGUAGE", "sv");
-$bm = new Qvickly($id,$key,$ssl,$test,$debug);
+$api = new PaymentAPI($id, $key, $test, $debug);
 $values = array();
 
 /* Payment Data */
@@ -51,10 +51,13 @@ $values["PaymentData"] = array(
     "number" => "1000235"
 );
 
-$bm->activatePayment($values);
+echo json_encode($api->activatePayment($values), JSON_PRETTY_PRINT);
 ]]>
 </code-block>
-  </tab>
+
+Full example can be found [here](https://github.com/Billmate/QvicklyAPISamples/blob/main/PHP.Legacy/examples/activatePayment.php)
+
+</tab>
 
 
   <tab title="%code-csharp%">
@@ -78,8 +81,8 @@ namespace ActivatePayment
                 Dictionary referrer = new Dictionary();
                 referrer["HTTP_X_REAL_IP"] = "127.0.0.1";
                 Billmate bm = new Billmate("%MERCHANT_ID%", "%MERCHANT_KEY%",ssl,true,false,referrer);
-                bm.Client = "%CLIENT_NAME%";
-                bm.Server = "%API_VERSION%";
+                bm.Client = "%PAYMENT_API_CLIENT_NAME%";
+                bm.Server = "%PAYMENT_API_VERSION%";
                 bm.Language = "sv";
                 Dictionary<string, object> parameters = new Dictionary<string, object>();
                 parameters["number"] = "1000235";

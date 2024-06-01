@@ -4,27 +4,37 @@
 
 The Payment API is the base for many of the Qvickly services. It is used to create and manage payments, and to get information about payments.
 
-> The latest version of the Payment API is %API_VERSION%
+> The latest version of the Payment API is %PAYMENT_API_VERSION%
 
 
-Here is a simple state diagram for addPayment and where to go from there:
-```mermaid
-stateDiagram-v2
-    [*] --> addPayment
-    UP: updatePayment
-    AP: activatePayment
-    CREDIT: creditPayment
-    CANCEL: cancelPayment
-    DONE: Payment done
-    addPayment --> UP
-    addPayment --> AP
-    addPayment --> CANCEL
-    UP --> UP
-    UP --> AP
-    addPayment --> DONE
-    UP --> DONE
-    AP --> CREDIT
-    CANCEL --> DONE
-    CREDIT --> DONE
-    DONE --> [*]
+Here is a simple diagram for addPayment and where to go from there:
+
+
+```d2
+direction: down
+addPayment: Add Payment
+updatePayment: Update Payment
+activatePayment: Activate Payment
+creditPayment: Credit Payment
+cancelPayment: Cancel Payment
+done: Payment done
+areWeDoneUpdating: Done updating
+areWeDoneUpdating.shape: diamond
+isPaymentDone: Is payment done?
+isPaymentDone.shape: diamond
+
+addPayment -> areWeDoneUpdating 
+updatePayment -> areWeDoneUpdating
+areWeDoneUpdating -> updatePayment: No
+areWeDoneUpdating -> activatePayment: Activate
+areWeDoneUpdating -> cancelPayment: Cancel
+cancelPayment -> done
+activatePayment -> isPaymentDone
+isPaymentDone -> done: Yes
+isPaymentDone -> creditPayment: No
+creditPayment -> done
+
+```
+
+```plantuml
 ```

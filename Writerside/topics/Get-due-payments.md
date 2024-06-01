@@ -10,8 +10,8 @@
     "credentials": {
         "id": "%MERCHANT_ID%",
         "hash": "f3061b99a05366a299841cdf5ea7114af9b28042a1fc6435e28be4cff060aa52db1eec54871fed93c1cb1fe25d1f505f197a9cd71f0878c870dfb5e394228f3a",
-        "version": "%API_VERSION%",
-        "client": "%CLIENT_NAME%",
+        "version": "%PAYMENT_API_VERSION%",
+        "client": "%PAYMENT_API_CLIENT_NAME%",
         "language": "sv",
         "time": 1714926964.203058
     },
@@ -25,22 +25,22 @@
     </tab>
 
 
-  <tab title="%code-phplegacy%">
+<tab title="%code-phplegacy%">
 <code-block lang="PHP">
 <![CDATA[
 <?php
+include('../PaymentAPI.php');
 $test = true;
-$ssl = true;
 $debug = false;
 
 /* Credentials for Auth */
 
 $id = "%MERCHANT_ID%";
 $key = "%MERCHANT_KEY%";
-define("QVICKLY_SERVER", "%API_VERSION%"); // API version
-define("QVICKLY_CLIENT", "%CLIENT_NAME%");
+define("QVICKLY_SERVER", "%PAYMENT_API_VERSION%"); // API version
+define("QVICKLY_CLIENT", "%PAYMENT_API_CLIENT_NAME%");
 define("QVICKLY_LANGUAGE", "sv");
-$bm = new BillMate($id, $key, $ssl, $test, $debug);
+$api = new PaymentAPI($id, $key, $test, $debug);
 $values = array();
 
 /* Customer Data */
@@ -52,10 +52,13 @@ $values = array(
     "dueDate" => "2020-01-01"
 );
 
-$bm->getDuePayments($values);
+echo json_encode($api->getDuePayments($values), JSON_PRETTY_PRINT);
 ]]>
 </code-block>
-  </tab>
+
+Full example can be found [here](https://github.com/Billmate/QvicklyAPISamples/blob/main/PHP.Legacy/examples/getDuePayments.php)
+
+</tab>
 
 
 
@@ -80,8 +83,8 @@ namespace GetDuePayments
                 Dictionary referrer = new Dictionary();
                 referrer["HTTP_X_REAL_IP"] = "127.0.0.1";
                 Billmate bm = new Billmate("%MERCHANT_ID%", "%MERCHANT_KEY%", ssl, true, false, referrer);
-                bm.Client = "%CLIENT_NAME%";
-                bm.Server = "%API_VERSION%";
+                bm.Client = "%PAYMENT_API_CLIENT_NAME%";
+                bm.Server = "%PAYMENT_API_VERSION%";
                 bm.Language = "sv";
                 Dictionary<string, object> parameters = new Dictionary<string, object>();
                 parameters["dueDate"] = "2020-01-01";

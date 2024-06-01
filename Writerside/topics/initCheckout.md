@@ -99,8 +99,8 @@ function
     "credentials": {
         "id": "%MERCHANT_ID%",
         "hash": "080ed3cec93c064b62afb6390a247efbfc821c1585ac16b93bd4cee780b8b5e6ec4ba79d0ed7fc9b575ff5892c9999de31bcdbc74a8957a5b32bfc8d9e1881d1",
-        "version": "%API_VERSION%",
-        "client": "%CLIENT_NAME%",
+        "version": "%PAYMENT_API_VERSION%",
+        "client": "%PAYMENT_API_CLIENT_NAME%",
         "language": "sv",
         "serverdata": { "..." },
         "time": "1417004339.9291 ",

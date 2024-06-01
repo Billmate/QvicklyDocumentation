@@ -10,7 +10,7 @@ To get started with the Qvickly API you need to have a merchant account with Qvi
 
 ## API version
 
-The latest version of the Qvickly API is %API_VERSION%.
+The latest version of the Qvickly API is %PAYMENT_API_VERSION%.
 
 Code that introduce breaking changes will be set behind a specific version number to avoid breaking existing integrations.
 

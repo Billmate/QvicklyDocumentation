@@ -10,8 +10,8 @@
     "credentials": {
         "id": "%MERCHANT_ID%",
         "hash": "e2b7cd4e3e73d940be7c14cb68de7e56316925dc46ce92a9b0a97f7ccbd59b615cf87fcca1140f4fee2818d6a8b51e9c167f1ddb055a602ab47016dfd49a2fb4",
-        "version": "%API_VERSION%",
-        "client": "%CLIENT_NAME%",
+        "version": "%PAYMENT_API_VERSION%",
+        "client": "%PAYMENT_API_CLIENT_NAME%",
         "language": "sv",
         "time": 1714940849.370662
     },
@@ -23,6 +23,41 @@
 ]]>
 </code-block>
     </tab>
+
+<tab title="%code-phplegacy%">
+<code-block lang="PHP">
+<![CDATA[
+<?php
+include('../PaymentAPI.php');
+$test = true;
+$debug = false;
+
+/* Credentials for Auth */
+
+$id = "%MERCHANT_ID%";
+$key = "%MERCHANT_KEY%";
+define("QVICKLY_SERVER", "%PAYMENT_API_VERSION%"); // API version
+define("QVICKLY_CLIENT", "%PAYMENT_API_CLIENT_NAME%");
+define("QVICKLY_LANGUAGE", "sv");
+$api = new PaymentAPI($id, $key, $test, $debug);
+$values = array();
+
+/* Customer Data */
+/**
+* @param array Customer Data : Customer details.
+  */
+
+$values = array(
+    "country" => "FI"
+);
+
+echo json_encode($api->getVatRate($values), JSON_PRETTY_PRINT);
+]]>
+</code-block>
+
+Full example can be found [here](https://github.com/Billmate/QvicklyAPISamples/blob/main/PHP.Legacy/examples/getVatRate.php)
+
+</tab>
 
 <tab title="%code-node%">
 <code-block lang="javascript">

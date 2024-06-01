@@ -25,8 +25,8 @@ To use addPayment methods factoring or part payment, the person/company who purc
   "credentials": {
     "id": "%MERCHANT_ID%",
     "hash": "d12fffb30cc76ebf7ba5c5bc496188cea46c1cf09ebaa4421391f9571bd4df6920223222e87b6bf0dcb7fa8867410851e148f84f9dec6d94b1fddf9f66dc1307",
-    "version": "%API_VERSION%",
-    "client": "%CLIENT_NAME%",
+    "version": "%PAYMENT_API_VERSION%",
+    "client": "%PAYMENT_API_CLIENT_NAME%",
     "language": "sv",
     "test": "true"
   },

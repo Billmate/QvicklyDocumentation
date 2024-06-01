@@ -10,8 +10,8 @@
     "credentials": {
         "id": "%MERCHANT_ID%",
         "hash": "7d6b98a406aeb6551b8a92eebc3ba388e5fe903cdce7a412059869627cb78f37c44d4664d558e7b88221094c29b981bd25d779daa946a558f37a50f2fe6a10f0",
-        "version": "%API_VERSION%",
-        "client": "%CLIENT_NAME%",
+        "version": "%PAYMENT_API_VERSION%",
+        "client": "%PAYMENT_API_CLIENT_NAME%",
         "language": "sv",
         "time": 1714839340.0972931
     },
@@ -28,18 +28,18 @@
 <code-block lang="PHP">
 <![CDATA[
 <?php
+include('../PaymentAPI.php');
 $test = true;
-$ssl = true;
 $debug = false;
 
 /* Credentials for Auth */
 
 $id = "%MERCHANT_ID%";
 $key = "%MERCHANT_KEY%";
-define("QVICKLY_SERVER", "%API_VERSION%"); // API version
-define("QVICKLY_CLIENT", "%CLIENT_NAME%");
+define("QVICKLY_SERVER", "%PAYMENT_API_VERSION%"); // API version
+define("QVICKLY_CLIENT", "%PAYMENT_API_CLIENT_NAME%");
 define("QVICKLY_LANGUAGE", "sv");
-$bm = new BillMate($id, $key, $ssl, $test, $debug);
+api = new PaymentAPI($id, $key, $test, $debug);
 $values = array();
 
 /* Payment Data */
@@ -61,10 +61,13 @@ $values["Cart"] = array(
     )
 );
 
-$bm->getTerms($values);
+echo $api->getTerms($values);
 ]]>
 </code-block>
-  </tab>
+
+Full example can be found [here](https://github.com/Billmate/QvicklyAPISamples/blob/main/PHP.Legacy/examples/getTerms.php)
+
+</tab>
 
 
   <tab title="%code-csharp%">
@@ -88,8 +91,8 @@ namespace GetTerms
                 Dictionary referrer = new Dictionary();
                 referrer["HTTP_X_REAL_IP"] = "127.0.0.1";
                 Billmate bm = new Billmate("%MERCHANT_ID%", "%MERCHANT_KEY%",ssl,%(test),false,referrer);
-                bm.Client = "%CLIENT_NAME%";
-                bm.Server = "%API_VERSION%";
+                bm.Client = "%PAYMENT_API_CLIENT_NAME%";
+                bm.Server = "%PAYMENT_API_VERSION%";
                 bm.Language = "sv";
                 Dictionary<string, object> Paymentdata = new Dictionary<string, object>();
                 paymentdata["method"] = "1";

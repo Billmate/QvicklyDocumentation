@@ -25,6 +25,7 @@
 | [getVatrate](getVatrate.md)                               | getVatrate is used for getting VAT rate.                                 |
 | [getFees](getFees.md)                                     | getFees is used for getting fees.                                        |
 | [crediflowSearchParty](crediflowSearchParty.md)           | crediflowSearchParty is used for searching for a party.                  |
+| [getOrderInfo](getOrderInfo.md)                           | getOrderInfo is used for getting order by hash.                          |
 | [getOrderByHash](getOrderByHash.md)                       | getOrderByHash is used for getting order by hash.                        |
 | [getInvoiceByHash](getInvoiceByHash.md)                   | getInvoiceByHash is used for getting invoice by hash.                    |
 | [createInvoiceFromOrder](createInvoiceFromOrder.md)       | createInvoiceFromOrder is used for creating invoice from order.          |

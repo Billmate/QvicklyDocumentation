@@ -24,8 +24,8 @@ This method returns a list of settlements.
   "credentials":{
     "hash":"1569cd696206b2a8aaa7a63b6215318c9f637e6a2f7f519b7a2033cd7b47103b01fe097e40a17028acf839f078ccbaa91e3bc423870a926bcf08e9747db8c5da",
     "id":"%MERCHANT_ID%",
-    "version":"%API_VERSION%",
-    "client":"%CLIENT_NAME%",
+    "version":"%PAYMENT_API_VERSION%",
+    "client":"%PAYMENT_API_CLIENT_NAME%",
     "language":"sv",
     "test":false
   },

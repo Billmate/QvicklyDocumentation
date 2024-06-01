@@ -10,8 +10,8 @@
     "credentials": {
         "id": "%MERCHANT_ID%",
         "hash": "e7ebd95d701c9a8a16d6ad51457bc4d775d7027682fef2853abcfb0ad918d0ea89b849cf552efa9be08a8e397df9a971e884706455f1673ad556dab2330904f3",
-        "version": "%API_VERSION%",
-        "client": "%CLIENT_NAME%",
+        "version": "%PAYMENT_API_VERSION%",
+        "client": "%PAYMENT_API_CLIENT_NAME%",
         "language": "sv",
         "time": 1714839918.5766358
     },
@@ -32,18 +32,18 @@
 <code-block lang="PHP">
 <![CDATA[
 <?php
+include('../PaymentAPI.php');
 $test = true;
-$ssl = true;
 $debug = false;
 
 /* Credentials for Auth */
 
 $id = "%MERCHANT_ID%";
 $key = "%MERCHANT_KEY%";
-define("QVICKLY_SERVER", "%API_VERSION%"); // API version
-define("QVICKLY_CLIENT", "%CLIENT_NAME%");
+define("QVICKLY_SERVER", "%PAYMENT_API_VERSION%"); // API version
+define("QVICKLY_CLIENT", "%PAYMENT_API_CLIENT_NAME%");
 define("QVICKLY_LANGUAGE", "sv");
-$bm = new BillMate($id, $key, $ssl, $test, $debug);
+$api = new PaymentAPI($id, $key, $test, $debug);
 $values = array();
 
 /* Payment Data */
@@ -59,10 +59,13 @@ $values["PaymentData"] = array(
     "totalwithtax" => "50000"
 );
 
-$bm->getPaymentplans($values);
+echo json_encode($api->getPaymentplans($values), JSON_PRETTY_PRINT);
 ]]>
 </code-block>
-  </tab>
+
+Full example can be found [here](https://github.com/Billmate/QvicklyAPISamples/blob/main/PHP.Legacy/examples/getPaymentPlans.php)
+
+</tab>
 
 
 
@@ -87,8 +90,8 @@ namespace GetPaymentPlans
                 Dictionary referrer = new Dictionary();
                 referrer["HTTP_X_REAL_IP"] = "127.0.0.1";
                 Billmate bm = new Billmate("%MERCHANT_ID%", "%MERCHANT_KEY%",ssl,true,false,referrer);
-                bm.Client = "%CLIENT_NAME%";
-                bm.Server = "%API_VERSION%";
+                bm.Client = "%PAYMENT_API_CLIENT_NAME%";
+                bm.Server = "%PAYMENT_API_VERSION%";
                 bm.Language = "sv";
                 Dictionary<string, object> parameters = new Dictionary<string, object>();
                 parameters["currency"] = "SEK";

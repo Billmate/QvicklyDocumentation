@@ -10,8 +10,8 @@
     "credentials": {
         "id": "%MERCHANT_ID%",
         "hash": "fe656aff23e6ee67aa9e6801369f2f82fcc4f9f9afa37c318391bfa2e2f17d81db429e42847c1a2cd9c1b11b5848522ca6941167b407fc45a23446bf095affa0",
-        "version": "%API_VERSION%",
-        "client": "%CLIENT_NAME%",
+        "version": "%PAYMENT_API_VERSION%",
+        "client": "%PAYMENT_API_CLIENT_NAME%",
         "language": "sv",
         "time": 1714828104.6922839
     },
@@ -70,18 +70,18 @@
 <code-block lang="PHP">
 <![CDATA[
 <?php
+include('../PaymentAPI.php');
 $test = true;
-$ssl = true;
 $debug = false;
 
 /* Credentials for Auth */
 
 $id = "%MERCHANT_ID%";
 $key = "%MERCHANT_KEY%";
-define("QVICKLY_SERVER", "%API_VERSION%");    /* API version */
-define("QVICKLY_CLIENT", "%CLIENT_NAME%");
+define("QVICKLY_SERVER", "%PAYMENT_API_VERSION%");    /* API version */
+define("QVICKLY_CLIENT", "%PAYMENT_API_CLIENT_NAME%");
 define("QVICKLY_LANGUAGE", "sv");
-$bm = new BillMate($id,$key,$ssl,$test,$debug);
+$api = new PaymentAPI($id, $key, $test, $debug);
 $values = array();
 
 /* Payment Data */
@@ -184,10 +184,13 @@ $values["Cart"] = array(
     )
 );
 
-$bm->updatePayment($values)
+echo json_encode($api->updatePayment($values), JSON_PRETTY_PRINT);
 ]]>
 </code-block>
-  </tab>
+
+Full example can be found [here](https://github.com/Billmate/QvicklyAPISamples/blob/main/PHP.Legacy/examples/updatePayment.php)
+
+</tab>
   <tab title="%code-csharp%">
 <code-block lang="c#">
 <![CDATA[
@@ -209,8 +212,8 @@ namespace GetAddress
                 Dictionary referrer = new Dictionary();
                 referrer["HTTP_X_REAL_IP"] = "127.0.0.1";
                 Billmate bm = new Billmate("%MERCHANT_ID%", "%MERCHANT_KEY%",ssl,true,false,referrer);
-                bm.Client = "%CLIENT_NAME%";
-                bm.Server = "%API_VERSION%";
+                bm.Client = "%PAYMENT_API_CLIENT_NAME%";
+                bm.Server = "%PAYMENT_API_VERSION%";
                 bm.Language = "sv";
                 Dictionary<string, object> values = new Dictionary<string, object>();
 

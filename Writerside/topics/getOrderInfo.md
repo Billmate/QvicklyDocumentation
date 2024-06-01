@@ -27,8 +27,8 @@ Return the order with the specified hash.
   "credentials":{
     "hash":"adf499d1605f213363f52d9ad0ecf7c4809d0f2cb0384f2e959e6cbb0dc84e5a4443a259d76bf6893e37e8212b5f3c9852377be1cd0d7fb472adc0b2f2618796",
     "id":"%MERCHANT_ID%",
-    "version":"%API_VERSION%",
-    "client":"%CLIENT_NAME%",
+    "version":"%PAYMENT_API_VERSION%",
+    "client":"%PAYMENT_API_CLIENT_NAME%",
     "language":"sv",
     "test":false
   },

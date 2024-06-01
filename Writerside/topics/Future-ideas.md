@@ -11,12 +11,12 @@ Enable or disable features by sending a header with the request. This would allo
   "credentials": {
     "id": "%MERCHANT_ID%",
     "hash": "d12fffb30cc76ebf7ba5c5bc496188cea46c1cf09ebaa4421391f9571bd4df6920223222e87b6bf0dcb7fa8867410851e148f84f9dec6d94b1fddf9f66dc1307",
-    "version": "%API_VERSION%",
+    "version": "%PAYMENT_API_VERSION%",
     "feature": {
       "accept": "16",
       "deny": "2"
     },
-    "client": "%CLIENT_NAME%",
+    "client": "%PAYMENT_API_CLIENT_NAME%",
     "language": "sv",
     "test": "true"
   },

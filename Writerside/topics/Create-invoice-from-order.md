@@ -10,8 +10,8 @@
     "credentials": {
         "id": "%MERCHANT_ID%",
         "hash": "1a077ea8235dffb8170140e904182cee200e737de9cd9eb0854e8fa001525c2a4eded1f070b22ae56c93f6426fe58149fb5c4d39238e1af5efb51df550c666b4",
-        "version": "%API_VERSION%",
-        "client": "%CLIENT_NAME%",
+        "version": "%PAYMENT_API_VERSION%",
+        "client": "%PAYMENT_API_CLIENT_NAME%",
         "language": "sv",
         "time": 1714944035.925046
     },
@@ -22,6 +22,35 @@
     "function": "createInvoiceFromOrderHash"
 }]]>
 </code-block>
+</tab>
+
+<tab title="%code-phplegacy%">
+<code-block lang="PHP">
+<![CDATA[
+<?php
+include('../PaymentAPI.php');
+$test = true;
+$debug = false;
+
+/* Credentials for Auth */
+
+$id = "%MERCHANT_ID%";
+$key = "%MERCHANT_KEY%";
+define("QVICKLY_SERVER", "%PAYMENT_API_VERSION%"); // API version
+define("QVICKLY_CLIENT", "%PAYMENT_API_CLIENT_NAME%");
+define("QVICKLY_LANGUAGE", "sv");
+$api = new PaymentAPI($id, $key, $test, $debug);
+$values = array();
+
+$values["hash"] = "123456abc123456abc123456abc12345";
+$values["method"] = "8";
+
+echo json_encode($api->createInvoiceFromOrderHash($values), JSON_PRETTY_PRINT);
+]]>
+</code-block>
+
+Full example can be found [here](https://github.com/Billmate/QvicklyAPISamples/blob/main/PHP.Legacy/examples/createInvoiceFromOrderHash.php)
+
 </tab>
 
 <tab title="%code-node%">

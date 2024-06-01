@@ -8,8 +8,8 @@
     "credentials": {
         "id": "%MERCHANT_ID%",
         "hash": "ece9e930c57be0c24ffa0d2a5425569d45a9af0202b752a54a2392d57cb1e18ca1ae5049c2f526a10607bbdade373991ce392fe350abfdd16b0bbb10b6ec74d1",
-        "version": "%API_VERSION%",
-        "client": "%CLIENT_NAME%",
+        "version": "%PAYMENT_API_VERSION%",
+        "client": "%PAYMENT_API_CLIENT_NAME%",
         "language": "sv",
         "test": "false"
     },

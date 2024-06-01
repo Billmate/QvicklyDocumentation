@@ -68,8 +68,8 @@ Please note that not all properties in all sections are mandatory. See the docum
   "credentials": {
     "id": "%MERCHANT_ID%",
     "hash": "24632112c18c6fbf7fce6409deda1d4824140c0059fbc108ed6190934c47709caffcb8f8c47fd770ab53e4637e5dac1b8679faa30a248353775dbf336a67d202",
-    "version": "%API_VERSION%",
-    "client": "%CLIENT_NAME%",
+    "version": "%PAYMENT_API_VERSION%",
+    "client": "%PAYMENT_API_CLIENT_NAME%",
     "language": "sv",
     "serverdata": {"HTTP_HOST":"developer.qvickly.io","HTTP_CONNECTION":"keep-alive","HTTP_CACHE_CONTROL":"max-age=0","HTTP_ACCEPT":"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/webp,*\/*;q=0.8","HTTP_USER_AGENT":"Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/39.0.2171.95 Safari\/537.36","HTTP_ACCEPT_ENCODING":"gzip, deflate, sdch","HTTP_ACCEPT_LANGUAGE":"en-US,en;q=0.8","PATH":"\/sbin:\/usr\/sbin:\/bin:\/usr\/bin","SERVER_SOFTWARE":"Apache\/2.2.26 (Amazon)","SERVER_NAME":"developer.qvickly.io","SERVER_ADDR":"172.31.22.88","SERVER_PORT":"80","REMOTE_ADDR":"2.71.114.219","REMOTE_PORT":"53241","GATEWAY_INTERFACE":"CGI\/1.1","SERVER_PROTOCOL":"HTTP\/1.1","REQUEST_METHOD":"GET","QUERY_STRING":"","REQUEST_TIME":1421313644},
     "time": "1417004339.9291 ",

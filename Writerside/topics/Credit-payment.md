@@ -13,8 +13,8 @@
     "credentials": {
         "id": "%MERCHANT_ID%",
         "hash": "30744d308f0102c5f17d5dbce18bb23131740fd73a6a00163c4064384395c467ae2a92375f18189a63be95b9a68eaebd3f86f019e33b909d9bf924e88ab74085",
-        "version": "%API_VERSION%",
-        "client": "%CLIENT_NAME%",
+        "version": "%PAYMENT_API_VERSION%",
+        "client": "%PAYMENT_API_CLIENT_NAME%",
         "language": "sv",
         "time": "1417004339.9291"
     },
@@ -38,8 +38,8 @@
     "credentials": {
         "id": "%MERCHANT_ID%",
         "hash": "30744d308f0102c5f17d5dbce18bb23131740fd73a6a00163c4064384395c467ae2a92375f18189a63be95b9a68eaebd3f86f019e33b909d9bf924e88ab74085",
-        "version": "%API_VERSION%",
-        "client": "%CLIENT_NAME%",
+        "version": "%PAYMENT_API_VERSION%",
+        "client": "%PAYMENT_API_CLIENT_NAME%",
         "language": "sv",
         "time": "1417004339.9291"
     },
@@ -90,22 +90,23 @@
 ]]>
 </code-block>
   </tab>
+
   <tab title="%code-phplegacy%">
 <code-block lang="PHP">
 <![CDATA[
 <?php
+include('../PaymentAPI.php');
 $test = true;
-$ssl = true;
 $debug = false;
 
 /* Credentials for Auth */
 
 $id = "%MERCHANT_ID%";
 $key = "%MERCHANT_KEY%";
-define("QVICKLY_SERVER", "%API_VERSION%"); // API version
-define("QVICKLY_CLIENT", "%CLIENT_NAME%");
+define("QVICKLY_SERVER", "%PAYMENT_API_VERSION%"); // API version
+define("QVICKLY_CLIENT", "%PAYMENT_API_CLIENT_NAME%");
 define("QVICKLY_LANGUAGE", "sv");
-$bm = new BillMate($id, $key, $ssl, $test, $debug);
+$api = new PaymentAPI($id, $key, $test, $debug);
 $values = array();
 
 /* Payment Data */
@@ -162,10 +163,13 @@ $values["Cart"] = array(
     )
 );
 
-$bm->creditPayment($values);
+echo json_encode($api->creditPayment($values), JSON_PRETTY_PRINT);
 ]]>
 </code-block>
-  </tab>
+
+Full example can be found [here](https://github.com/Billmate/QvicklyAPISamples/blob/main/PHP.Legacy/examples/creditPayment.php)
+
+</tab>
   <tab title="%code-csharp%">
 <code-block lang="c#">
 <![CDATA[
@@ -187,8 +191,8 @@ namespace CreditPayment
                 Dictionary referrer = new Dictionary();
                 referrer["HTTP_X_REAL_IP"] = "127.0.0.1";
                 Billmate bm = new Billmate("%MERCHANT_ID%", "%MERCHANT_KEY%",ssl,true,false,referrer);
-                bm.Client = "%CLIENT_NAME%";
-                bm.Server = "%API_VERSION%";
+                bm.Client = "%PAYMENT_API_CLIENT_NAME%";
+                bm.Server = "%PAYMENT_API_VERSION%";
                 bm.Language = "sv";
                 Dictionary<string,object> values = new Dictionary<string,object>();
 
