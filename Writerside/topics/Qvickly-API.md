@@ -36,5 +36,3 @@ creditPayment -> done
 
 ```
 
-```plantuml
-```

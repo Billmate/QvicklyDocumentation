@@ -11,45 +11,63 @@ Third-party packages that has obvious issues and/or is not maintained will be re
 
 ## Javascript / Typescript
 ### JSR
+
 Status: Planned
-Link: [JSR](https://jsr.io/@qvickly)
+
+Link: [JSR](https://jsr.io/)
 
 ### NPM
+
 Status: Planned
+
 Link: [NPM](https://www.npmjs.com/)
 
 ## PHP
 ### Packagist
+
 Status: Suggested
+
 Link: [Packagist](https://packagist.org/)
 
 ## .NET
 ### NuGet
+
 Status: Suggested
+
 Link: [NuGet](https://www.nuget.org/)
 
 ## Python
 ### PyPI
+
 Status: Suggested
+
 Link: [PyPI](https://pypi.org/)
 
 ## Ruby
 ### RubyGems
+
 Status: Unlikely
+
 Link: [RubyGems](https://rubygems.org/)
 
 ## Rust
 ### Cargo
+
 Status: Unlikely
+
 Link: [Cargo](https://crates.io/)
 
 ## Perl
 ### CPAN
+
 Status: Unlikely
+
 Link: [CPAN](https://www.cpan.org/)
 
 ## Java
 ### Maven
+
 Status: Unlikely
+
 Link: [Maven](https://mvnrepository.com/)
 

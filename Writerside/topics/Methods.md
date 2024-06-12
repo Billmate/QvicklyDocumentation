@@ -1,4 +1,4 @@
-# Methods
+# Payment methods
 
 <include from="Snippets-PaymentAPI.md" element-id="snippet-header"></include>
 

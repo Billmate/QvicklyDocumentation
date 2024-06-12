@@ -17,7 +17,9 @@
         <toc-element topic="Authentication.md">
             <toc-element topic="Creating-hash.md"/>
         </toc-element>
-        <toc-element topic="Test-credentials.md"/>
+        <toc-element topic="Test.md">
+            <toc-element topic="Test-credentials.md"/>
+        </toc-element>
         <toc-element topic="Data-types.md"/>
         <toc-element topic="Methods.md"/>
         <toc-element topic="Status.md"/>
@@ -93,7 +95,6 @@
                 <toc-element topic="Python.md"/>
             </toc-element>
         </toc-element>
-        <toc-element topic="Test.md"/>
         <toc-element topic="Versions.md"/>
         <toc-element topic="Future-ideas.md"/>
         <toc-element topic="API-changelog.md"/>

@@ -44,11 +44,11 @@ Please note that not all properties in all sections are mandatory. See the docum
 
 <include from="Snippets-Request.md" element-id="snippet-customer" />
 
-### Customer Billing
+### Customer billing address 
 
 <include from="Snippets-Request.md" element-id="snippet-billing-address" />
 
-### Customer Shipping
+### Customer shipping address
 
 <include from="Snippets-Request.md" element-id="snippet-shipping-address" />
 

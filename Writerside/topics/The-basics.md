@@ -2,6 +2,10 @@
 
 <include from="Snippets-PaymentAPI.md" element-id="snippet-header"></include>
 
+The Payment API is based on JSON and uses a base URL to communicate with the Qvickly servers. The method to call is defined in the payload.
+
+The base URL is `https://api.qvickly.io/`
+
 Some important things to know about the Qvickly API.
 
 ## How to get started

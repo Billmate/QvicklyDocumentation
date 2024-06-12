@@ -57,10 +57,10 @@ getPaymentinfo is used for getting info about a payment.
 ### Customer
 <include from="Snippets-Response.md" element-id="snippet-customer" />
 
-#### Billing address
+#### Customer billing address
 <include from="Snippets-Response.md" element-id="snippet-billing-address" />
 
-#### Shipping address
+#### Customer shipping address
 <include from="Snippets-Response.md" element-id="snippet-shipping-address" />
 
 ### Articles

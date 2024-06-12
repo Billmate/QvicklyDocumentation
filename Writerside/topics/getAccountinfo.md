@@ -10,9 +10,10 @@ getAccountinfo is used for retrieving account details and payment methods.
 
 ### Data
 
-| Property     | Required | Type   | Description   |
-|--------------|----------|--------|---------------|
-| PaymentData  | false    | object | Payment data. |
+| Property      | Required | Type   | Description                                                                                                                                                                                                                                  |
+|---------------|----------|--------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| PaymentData   | false    | object | Payment data.                                                                                                                                                                                                                                |
+| comingFromPF2 | false    | string | Show all available payment methods as if you come from PaymentFlow2. If set to "1" then all available payment method will be returned. If set to "0" er left empty only card and Pay With Qvickly will be shown. Default is an empty string. |
 
 ### PaymentData
 
@@ -34,9 +35,14 @@ getAccountinfo is used for retrieving account details and payment methods.
         "version": "%PAYMENT_API_VERSION%",
         "client": "%PAYMENT_API_CLIENT_NAME%",
         "language": "sv",
-        "serverdata": {"HTTP_HOST":"developer.qvickly.io","HTTP_CONNECTION":"keep-alive","HTTP_CACHE_CONTROL":"max-age=0","HTTP_ACCEPT":"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/webp,*\/*;q=0.8","HTTP_USER_AGENT":"Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/39.0.2171.95 Safari\/537.36","HTTP_ACCEPT_ENCODING":"gzip, deflate, sdch","HTTP_ACCEPT_LANGUAGE":"en-US,en;q=0.8","PATH":"\/sbin:\/usr\/sbin:\/bin:\/usr\/bin","SERVER_SOFTWARE":"Apache\/2.2.26 (Amazon)","SERVER_NAME":"developer.qvickly.io","SERVER_ADDR":"172.31.22.88","SERVER_PORT":"80","REMOTE_ADDR":"2.71.114.219","REMOTE_PORT":"53241","GATEWAY_INTERFACE":"CGI\/1.1","SERVER_PROTOCOL":"HTTP\/1.1","REQUEST_METHOD":"GET","QUERY_STRING":"","REQUEST_TIME":1421313644},
         "time": "1417004339.9291",
         "test": "true"
+    },
+    "data": {
+        "PaymentData": {
+          "totalwithtax": "1000"
+        },
+        "comingFromPF2": "1"
     },
     "function": "getAccountinfo"
 }

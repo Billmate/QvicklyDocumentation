@@ -16,7 +16,7 @@
         "time": 1714838585.980936
     },
     "data": {
-        "dummyData": 1714838585980861000
+        "comingFromPF2": "1"
     },
     "function": "getAccountinfo"
 }
@@ -41,7 +41,7 @@ define("QVICKLY_CLIENT", "%PAYMENT_API_CLIENT_NAME%");
 define("QVICKLY_LANGUAGE", "sv");
 $api = new PaymentAPI($id, $key, $test, $debug);
 $values = array();
-
+$values['comingFromPF2'] = "1";
 echo json_encode($api->getAccountinfo($values), JSON_PRETTY_PRINT);
 ]]>
 </code-block>
@@ -74,6 +74,7 @@ namespace GetAccountInfo
                 bm.Server = "%PAYMENT_API_VERSION%";
                 bm.Language = "sv";
                 Dictionary<string, object> parameters = new Dictionary<string, object>();
+                parameters["comingFromPF2"] = "1";
                 Dictionary<string, object> result = bm.Call("getAccountinfo", parameters);
                 // Output it in Console
                 result.ToList().ForEach(x => Console.WriteLine(x.Key + ":" + x.Value));
@@ -97,7 +98,9 @@ namespace GetAccountInfo
 import { QvicklyPaymentAPI } from "../../PaymentAPI.js";
 
 const paymentAPI = new QvicklyPaymentAPI(process.env.EID, process.env.SECRET);
-const account = await paymentAPI.call("getAccountInfo");
+const account = await paymentAPI.call("getAccountInfo", {
+    comingFromPF2: "1"
+});
 console.log(account);
 ]]>
 </code-block>
@@ -112,7 +115,9 @@ Full example can be found [here](https://github.com/Billmate/QvicklyAPISamples/b
 import {QvicklyPaymentAPI, env} from "../../PaymentAPI.ts";
 
 const paymentAPI = new QvicklyPaymentAPI(env["EID"], env["SECRET"]);
-const account = await paymentAPI.call("getAccountInfo");
+const account = await paymentAPI.call("getAccountInfo", {
+    comingFromPF2: "1"
+});
 console.log(account);
 ]]>
 </code-block>
@@ -127,7 +132,9 @@ Full example can be found [here](https://github.com/Billmate/QvicklyAPISamples/b
 import QvicklyPaymentAPI from "../../PaymentAPI";
 
 const paymentAPI = new QvicklyPaymentAPI(Bun.env.EID, Bun.env.SECRET);
-const account = await paymentAPI.call("getAccountInfo");
+const account = await paymentAPI.call("getAccountInfo", {
+    comingFromPF2: "1"
+});
 console.log(account);
 ]]>
 </code-block>
@@ -143,7 +150,9 @@ from PaymentAPI import PaymentAPI
 
 # Create a PaymentAPI object
 api = PaymentAPI(eid, secret)
-account = api.call(function="getAccountinfo")
+account = api.call(function="getAccountinfo", data={
+    "comingFromPF2": "1"
+})
 print(json.dumps(account, indent=4))
 ]]>
 </code-block>

@@ -56,10 +56,12 @@
 
 <snippet id="snippet-customer">
 
-| Property | Type   | Description                                                                                 |
-|----------|--------|---------------------------------------------------------------------------------------------|
-| nr       | int    | Customer number.                                                                            |
-| pno      | string | Swedish national identification number or swedish organization number. Sent as YYMMDD-XXXX. |
+| Property  | Type                                 | Description                                                                                 |
+|-----------|--------------------------------------|---------------------------------------------------------------------------------------------|
+| nr        | int                                  | Customer number.                                                                            |
+| pno       | string                               | Swedish national identification number or swedish organization number. Sent as YYMMDD-XXXX. |
+| Billing   | [object](#customer-billing-address)  | Billing address.                                                                            |
+| Shipping  | [object](#customer-shipping-address) | Shipping address.                                                                           |
 
 </snippet>
 

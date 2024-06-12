@@ -28,7 +28,7 @@ The request payload is a JSON object that contains the credentials, data and fun
 |------------|----------|---------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | id         | true     | int     | The store ID from Qvickly.                                                                                                                                                                                                                                                         |
 | hash       | true     | string  | Hash key using the HMAC method with SHA-512. This is used for verifying that the request is correct and fom a valid server. <br/>Key - Qvickly key.<br/>Argument Data - array as json encoded string.                                                                              |
-| version    | false    | string  | Version of the Qvickly API. Latest version is at the time of writing %PAYMENT_API_VERSION%. Please consult technical [support](mailto:%DEVELOPER_MAIL_ADDRESS%) for latest version if you need to use this. Not mandatory, but helps when debugging in logs.                               |
+| version    | false    | string  | Version of the Qvickly API. Latest version is at the time of writing %PAYMENT_API_VERSION%. Please consult technical [support](mailto:%DEVELOPER_MAIL_ADDRESS%) for latest version if you need to use this. Not mandatory, but helps when debugging in logs.                       |
 | client     | false    | string  | A unique name to identify client and version of client. Can be set by a plugin developer.                                                                                                                                                                                          |
 | language   | true     | string  | This is the language of the api, this will decide what language we will return for example error messages. Language codes used according to ISO 639-1, Currently supported sv, en.                                                                                                 |
 | serverdata | false    | string  | Web shop server data. For example user agent of the customer browser. Very useful for debugging.                                                                                                                                                                                   |
@@ -58,6 +58,8 @@ The request payload is a JSON object that contains the credentials, data and fun
   </tab>
 
 </tabs>
+
+For more examples on how to generate the hash key in different languages, see [Creating hash](Creating-hash.md#example).
 
 ## Data
 The data in the payload can be different depending on which method is being called. See the documentation for each method for more information.
