@@ -12,13 +12,23 @@ Here is a simple diagram for addPayment and where to go from there:
 
 ```d2
 direction: down
-addPayment: Add Payment
-updatePayment: Update Payment
-activatePayment: Activate Payment
-creditPayment: Credit Payment
-cancelPayment: Cancel Payment
+addPayment: Add Payment {
+    link: addpayment.html
+}
+updatePayment: Update Payment {
+    link: updatepayment.html
+}
+activatePayment: Activate Payment {
+    link: activatepayment.html
+}
+creditPayment: Credit Payment {
+    link: creditpayment.html
+}
+cancelPayment: Cancel Payment {
+    link: cancelpayment.html
+}
 done: Payment done
-areWeDoneUpdating: Done updating
+areWeDoneUpdating: Done updating?
 areWeDoneUpdating.shape: diamond
 isPaymentDone: Is payment done?
 isPaymentDone.shape: diamond

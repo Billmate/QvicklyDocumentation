@@ -26,13 +26,13 @@
 > 
 > **Description** - A short description of the example.
 
-All old examples are undergoing verification and will be updated if needed in the near future. The old Billmate class has been updated to work better with PHP 8.x and changed name to PaymentAPI.
+All old examples has been undergoing verification and has been updated. The old Billmate class has been updated to work better with PHP 8.x and changed name to PaymentAPI.
 
-The old PHP examples will be updated to PHP8.
+The old PHP examples has been updated to work with PHP8.
 
-The Python code will be based on a new package.
+The Python code is based on a new package.
 
-The Node.JS code will be based on a new package.
+The Node.JS code is based on a new package.
 
 The old C# code will not be updated at this time.
 

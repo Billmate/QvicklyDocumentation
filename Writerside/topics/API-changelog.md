@@ -14,7 +14,7 @@ Fixed typos and wrote supplementary texts.
 ---
 ## 2024-05-10
 
-Updated examples and added new languages. There is now 25 verified examples with code in three different languages (plus two variants). There are 11 examples remaining from the old version of the API the covers two languages.
+Updated examples and added new languages. There is now 26 verified examples with code in four different languages (plus two variants). There are 11 examples remaining from the old C# examples.
 
 ---
 ## 2024-04-19
