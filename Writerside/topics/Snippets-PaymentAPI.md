@@ -2,6 +2,6 @@
 
 <snippet id="snippet-header">
 
-<include from="Snippets-WorkingInformation.md" element-id="snippet-proofreading"></include>
+<include from="Snippets-WorkingInformation.md" element-id="snippet-rc"></include>
 
 </snippet>

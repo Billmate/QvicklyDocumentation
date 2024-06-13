@@ -51,9 +51,20 @@
 <snippet id="snippet-proofreading">
 
 > **Proofreading**
-> 
+>
 > This documentation is currently being proofread. We are working hard to provide you with the information you need to get started with our products.
-> 
+>
+> Any information provided here might be subject to change.
+> {style="information"}
+
+</snippet>
+
+<snippet id="snippet-rc">
+
+> **Release candidate**
+>
+> This documentation is currently our release candidate. We are working hard to provide you with the information you need to get started with our products.
+>
 > Any information provided here might be subject to change.
 > {style="information"}
 
