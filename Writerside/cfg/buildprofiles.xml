@@ -6,6 +6,7 @@
     <build-profile instance="apidocumentation">
         <variables>
             <header-logo>Qvickly.svg</header-logo>
+            <custom-favicons>favicon.ico</custom-favicons>
             <noindex-content>true</noindex-content>
             <primary-color>iris</primary-color>
         </variables>
