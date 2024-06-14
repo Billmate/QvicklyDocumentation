@@ -171,7 +171,7 @@ Full example can be found [here](https://github.com/Billmate/QvicklyAPISamples/b
     },
     "data": {
         "company": "Qvickly Test",
-        "address": "Testvägen 1",
+        "street": "Testvägen 1",
         "zip": "123 45",
         "city": "Testinge",
         "country": "Sweden",

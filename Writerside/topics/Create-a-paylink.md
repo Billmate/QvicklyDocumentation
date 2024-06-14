@@ -2,6 +2,11 @@
 
 <include from="Snippets-PaylinkAPI.md" element-id="snippet-header" />
 
+## Create a paylink in the portal
+
+## Create a paylink through the API
+
+### Step 1 - Create a paylink
 
 <code-block>
 {
@@ -24,7 +29,8 @@
                 "zip": "12345",
                 "city": "Teststad",
                 "country": "SE",
-                "email": "test@example.com"
+                "email": "test@example.com",
+                "phone": "0700000000"
             },
             "Shipping": {
                 "firstname": "Testperson ",
@@ -76,17 +82,36 @@
 }
 </code-block>
 
+#### Response with paylink
 <code-block>
 {
+   {
     "credentials": {
-        "hash": "1d47ce6b01bbb0b61ddfba053ef293ec199373edadbb70601a625f2c9405ea1ac81e1bc75d2932a45a257b2020fa9a54d9655245a2d0aff42c0eb75c039e9ece",
-        "logid": "568803"
+        "hash": "fd7584f217a48dd101006bd85f3660f4e04ef72604838c3efd54b3b1af75317c8e519995a12ef5b279bf26cb23414b2df287db8f9b5e21b7b15d10187e6fb7c3",
+        "logid": "1890112"
     },
     "data": {
-        "number": "123456",
-        "status": "WaitingForBankIDIdentification",
-        "orderid": "1234567890-a2",
-        "url": "https://api.development.qvickly.io/bankid/12345/202401010d281c6dad5090a05548e3483c503aa5"
+        "number": "4003376",
+        "status": "WaitingForPurchase",
+        "orderid": "123456",
+        "url": "https://pay.billmate.se/12345/202406141a2de7bd612a5665067236b8e0262fd9"
     }
 }
 </code-block>
+
+### Step 2 - Redirect the customer to the paylink
+
+#### Choose nin or pay?
+
+> nin stands for **n**o **in**formation.
+
+If the customer has all the information needed, the customer should be redirected to the pay page. This is done by adding `/pay` to the URL.
+
+If the customer needs to add more information, the customer should be redirected to the nin page. This is done by adding `/nin` to the URL.
+
+If nothing is added to the URL, the customer will be redirected to a partially filled nin page.
+
+> Please note that if the customer is sent to the pay page and some information is missing, the page might not show properly and the customer can end up in a situation where they can't complete the purchase.
+> {style="warning"}
+
+> If a shipping address is added to the paylink and the customer isn't sent to the pay page, the shipping address will be removed from the paylink.

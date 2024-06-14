@@ -32,7 +32,7 @@
             "Billing": {
                 "firstname": "Tess T",
                 "lastname": "Person",
-                "address": "Testvägen 1",
+                "street": "Testvägen 1",
                 "zip": "12345",
                 "city": "Testinge",
                 "country": "SE",
@@ -375,7 +375,7 @@ const paymentData = {
         Billing: {
             firstname: "Tess T",
             lastname: "Person",
-            address: "Testvägen 1",
+            street: "Testvägen 1",
             zip: "12345",
             city: "Testinge",
             country: "SE",
