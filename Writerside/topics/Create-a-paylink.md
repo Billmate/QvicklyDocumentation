@@ -8,7 +8,10 @@
 
 ### Step 1 - Create a paylink
 
-<code-block>
+<tabs>
+
+<tab title="With customer information">
+<code-block lang="json">
 {
     "credentials": {
         "id": "%MERCHANT_ID%",
@@ -20,6 +23,17 @@
     },
     "function": "addPayment",
     "data": {
+        "PaymentData": {
+            "method": "256",
+            "currency": "SEK",
+            "language": "sv",
+            "country": "SE",
+            "orderid": "1234567890-a1",
+            "bankid": "true",
+            "accepturl": "https://example.com/accept",
+            "cancelurl": "https://example.com/cancel",
+            "callbackurl": "https://example.com/callback"
+        },
         "Customer": {
             "pno": "19550101-1018",
             "Billing": {
@@ -66,24 +80,63 @@
                 "taxrate": 25,
                 "withouttax": 10000
             }
-        ],
+        ]
+    }
+}
+</code-block>
+</tab>
+<tab title="Without customer information">
+<code-block lang="json">
+{
+    "credentials": {
+        "id": "%MERCHANT_ID%",
+        "hash": "ece9e930c57be0c24ffa0d2a5425569d45a9af0202b752a54a2392d57cb1e18ca1ae5049c2f526a10607bbdade373991ce392fe350abfdd16b0bbb10b6ec74d1",
+        "version": "%PAYMENT_API_VERSION%",
+        "client": "%PAYMENT_API_CLIENT_NAME%",
+        "language": "sv",
+        "test": "false"
+    },
+    "function": "addPayment",
+    "data": {
         "PaymentData": {
-            "method": 256,
+            "method": "256",
             "currency": "SEK",
             "language": "sv",
             "country": "SE",
             "orderid": "1234567890-a2",
             "bankid": "true",
             "accepturl": "https://example.com/accept",
+            "cancelurl": "https://example.com/cancel",
             "callbackurl": "https://example.com/callback",
-            "cancelurl": "https://example.com/cancel"
-        }
-    }
+        },
+        "Customer": {
+            "dummy": "true",
+        },
+        "Articles": [
+            {
+                "artnr": "1",
+                "title": "Test",
+                "aprice": "10000",
+                "taxrate": "25",
+                "quantity": "1",
+                "withouttax": "10000",
+            }
+        ],
+        "Cart": {
+            "Total": {
+                "withouttax": "10000",
+                "tax": "2500",
+                "withtax": "12500",
+            },
+        },            
+    },
 }
 </code-block>
+</tab>
+</tabs>
 
 #### Response with paylink
-<code-block>
+<code-block lang="json">
 {
    {
     "credentials": {
@@ -115,3 +168,9 @@ If nothing is added to the URL, the customer will be redirected to a partially f
 > {style="warning"}
 
 > If a shipping address is added to the paylink and the customer isn't sent to the pay page, the shipping address will be removed from the paylink.
+
+## Use another personal number for identification than the one in the paylink
+
+If you have created a paylink with a specified personal number and the customer tries to use another personal number for identification, then the BankID app will show an error message.
+
+![BankID error message](BankIDCantUseForIdentification.png)
