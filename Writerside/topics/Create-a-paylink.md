@@ -3,6 +3,40 @@
 <include from="Snippets-PaylinkAPI.md" element-id="snippet-header" />
 
 ## Create a paylink in the portal
+![PortalNewPaylink.png](PortalNewPaylink.png)
+
+In the upper right corner, click on the **New paylink** (**Skapa betallänk**) button.
+
+![PortalCreatePaylink.png](PortalCreatePaylink.png)
+
+Select the method you want to use for the paylink. In this example, we use **QR Code**.
+
+Using **E-mail** will send the paylink to the customer's e-mail address.
+
+Using **QR Code** will generate a QR code that the customer can scan immediately.
+
+![PortalQRCodePaylink.png](PortalQRCodePaylink.png)
+
+In the next step here you may change for how long the paylink is valid, the currency and the language.
+
+![PortalPaylinkWithoutCustomer.png](PortalPaylinkWithoutCustomer.png)
+
+The next step is about what kind of customer information you want to include in the paylink. We can select **private person**, **company** or **no information** (**Utan kunduppgifter**) and just let the customer add the information themselves.
+
+In this example we choose **no information** (**Utan kunduppgifter**).
+
+![PortalArticlesInPaylink.png](PortalArticlesInPaylink.png)
+
+In the next step, you can add articles to the paylink. In this example, we add one article from the register. But we can also add new articles if needed.
+
+![PortalPaylinkSummary.png](PortalPaylinkSummary.png)
+
+Now we can see a summary of the paylink. If everything looks good, click on the **Generate QR Code** (**Generera QR-kod**) button.
+
+![PortalPaylinkQRCode.png](PortalPaylinkQRCode.png)
+
+Now we have reached the end of the first part where we let the customer scan the QR code. The customer will be redirected to the `nin` page where can add their information and complete the purchase.
+
 
 ## Create a paylink through the API
 
@@ -30,6 +64,7 @@
             "country": "SE",
             "orderid": "1234567890-a1",
             "bankid": "true",
+            "autocancel": "2880",
             "accepturl": "https://example.com/accept",
             "cancelurl": "https://example.com/cancel",
             "callbackurl": "https://example.com/callback"
@@ -105,6 +140,7 @@
             "country": "SE",
             "orderid": "1234567890-a2",
             "bankid": "true",
+            "autocancel": "2880",
             "accepturl": "https://example.com/accept",
             "cancelurl": "https://example.com/cancel",
             "callbackurl": "https://example.com/callback",
@@ -135,7 +171,15 @@
 </tab>
 </tabs>
 
-#### Response with paylink
+#### Method 256
+
+The `method` parameter is set to 256 which means that the payment method will ba a paylink.
+
+#### Autocancel
+
+The `autocancel` parameter is the number of minutes before the paylink is automatically canceled. Normally the default value is 2880 minutes (48 hours) but since we more or less just create a payment we have to set the value ourselves.
+
+### Response with paylink
 <code-block lang="json">
 {
    {
@@ -152,9 +196,11 @@
 }
 </code-block>
 
+When we've received the response we can use the `url` to redirect the customer to the paylink. More on how to redirect the customer in the next step.
+
 ### Step 2 - Redirect the customer to the paylink
 
-#### Choose nin or pay?
+#### Choose nin, pay or nothing?
 
 > nin stands for **n**o **in**formation.
 
