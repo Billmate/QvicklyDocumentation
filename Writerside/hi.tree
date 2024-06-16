@@ -180,6 +180,7 @@
         <toc-element topic="Create-a-paylink.md"/>
         <toc-element topic="Description-of-URL.md"/>
         <toc-element topic="Paylink-endpoints.md">
+            <toc-element topic="Root.md"/>
             <toc-element topic="paylink-address.md"/>
             <toc-element topic="paylink-nin.md"/>
             <toc-element topic="paylink-pay.md"/>
@@ -195,6 +196,7 @@
         <toc-element topic="Paylink-Examples.md">
             <toc-element topic="Create-paylink-with-all-information.md"/>
         </toc-element>
+        <toc-element topic="Cancelled-vs-canceled.md"/>
         <toc-element topic="Paylink-API-Changelog.md"/>
     </toc-element>
     <toc-element topic="Portal-API.md">

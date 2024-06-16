@@ -23,6 +23,8 @@ Q->M: Receive payment
 
 ## Paylink Flow using API
 
+### Normal Flow
+
 ```plantuml
 
 @startuml
@@ -33,6 +35,27 @@ participant "Customer" as C
 
 M->Q: Add payment with method 256
 Q->M: Paylink URL
+M->C: Display Paylink URL
+C->Q: Pay
+Q->M: Receive payment
+
+@enduml
+
+```
+
+### Specify payment method
+
+```plantuml
+
+@startuml
+
+participant "Merchant" as M
+participant "Qvickly" as Q
+participant "Customer" as C
+
+M->Q: Add payment with method 256
+Q->M: Paylink URL
+M->Q: Update payment with the method to use
 M->C: Display Paylink URL
 C->Q: Pay
 Q->M: Receive payment

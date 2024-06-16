@@ -19,7 +19,7 @@ https://pay.qvickly.io/12345/20240510abcdef0123456789abcdef0123456789/pay
 
 ### address
 
-Enter address information.
+Show address information.
 
 More information about the address action can be found in the [address](paylink-address.md) topic.
 
@@ -37,37 +37,37 @@ More information about the pay action can be found in the [pay](paylink-pay.md) 
 
 ### bankid
 
-Authenticate with BankID.
+Callback for authenticate with BankID.
 
 More information about the bankid action can be found in the [bankid](paylink-bankid.md) topic.
 
 ### swish-cancel
 
-Cancel swish payment.
+Callback for cancel swish payment.
 
 More information about the swish-cancel action can be found in the [swish-cancel](paylink-swish-cancel.md) topic.
 
 ### swish-status
 
-Get swish status.
+Callback for get swish status.
 
 More information about the swish-status action can be found in the [swish-status](paylink-swish-status.md) topic.
 
 ### swish-pay
 
-Begin swish payment.
+Callback for swish payment.
 
 More information about the swish-pay action can be found in the [swish-pay](paylink-swish-pay.md) topic.
 
 ### swedbankpay-cancel
 
-Cancel SwedbankPay card payment.
+Callback for cancel SwedbankPay card payment.
 
 More information about the swedbankpay-cancel action can be found in the [swedbankpay-cancel](paylink-swedbankpay-cancel.md) topic.
 
 ### swedbankpay-pay
 
-Begin SwedbankPay card payment.
+Callback for SwedbankPay card payment.
 
 More information about the swedbankpay-pay action can be found in the [swedbankpay-pay](paylink-swedbankpay-pay.md) topic.
 
@@ -79,7 +79,7 @@ More information about the thankyou action can be found in the [thankyou](paylin
 
 ### canceled
 
-Show canceled page.
+Show cancelled page.
 
-More information about the canceled action can be found in the [canceled](paylink-canceled.md) topic.
+More information about the cancelled action can be found in the [canceled](paylink-canceled.md) topic.
 

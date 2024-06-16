@@ -177,7 +177,7 @@ The `method` parameter is set to 256 which means that the payment method will ba
 
 #### Autocancel
 
-The `autocancel` parameter is the number of minutes before the paylink is automatically canceled. Normally the default value is 2880 minutes (48 hours) but since we more or less just create a payment we have to set the value ourselves.
+The `autocancel` parameter is the number of minutes before the paylink is automatically cancelled. Normally the default value is 2880 minutes (48 hours) but since we more or less just create a payment we have to set the value ourselves.
 
 ### Response with paylink
 <code-block lang="json">

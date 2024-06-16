@@ -36,6 +36,7 @@ paymentPayload = {
         "accepturl": "https://example.com/accept",
         "cancelurl": "https://example.com/cancel",
         "callbackurl": "https://example.com/callback",
+        "autocancel": "2880",
     },
     "Customer": {
         "pno": "550101-1018",
