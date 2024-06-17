@@ -2,4 +2,4 @@
 
 <include from="Snippets-PortalAPI.md" element-id="snippet-header" />
 
-Start typing here...
+<api-doc openapi-path="../../api.yaml" tag="orders"></api-doc>
