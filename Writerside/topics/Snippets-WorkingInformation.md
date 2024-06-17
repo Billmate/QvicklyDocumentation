@@ -70,3 +70,11 @@
 
 </snippet>
 
+<snippet id="snippet-interim-solution">
+
+> **Interim solution**
+> 
+> This documentation is an interim solution. We are working hard to provide you with the information you need to get started with our products.
+> {style="note"}
+
+</snippet>
