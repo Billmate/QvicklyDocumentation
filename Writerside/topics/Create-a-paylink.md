@@ -208,7 +208,7 @@ If the customer has all the information needed, the customer should be redirecte
 
 If the customer needs to add more information, the customer should be redirected to the nin page. This is done by adding `/nin` to the URL.
 
-If nothing is added to the URL, the customer will be redirected to a partially filled nin page.
+If nothing is added to the URL, the system will check the address and if it is complete the customer will be redirected to the pay page, otherwise the customer will be redirected to the nin page.
 
 > Please note that if the customer is sent to the pay page and some information is missing, the page might not show properly and the customer can end up in a situation where they can't complete the purchase.
 > {style="warning"}
