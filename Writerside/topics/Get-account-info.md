@@ -191,7 +191,7 @@ print(Dumper($api->call("getAccountinfo", $values)));
 ]]>
 </code-block>
 
-Full example can be found [here](https://github.com/Billmate/QvicklyAPISamples/blob/main/Perl/examples/PaymentAPI/getAccountInfo.py)
+Full example can be found [here](https://github.com/Billmate/QvicklyAPISamples/blob/main/Perl/examples/PaymentAPI/getAccountinfo.pl)
 
 </tab>
 
