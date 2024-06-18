@@ -98,6 +98,14 @@ The Bun code examples are based on Bun v1.1.x.
 
 > The code for Bun and Node.js is almost identical. This code is just adapted for Bun to make it run.
 
+### Perl
+The Perl code examples are based on Perl 5.x.
+
+| Type        | Link                                                                   | Status  | Description |
+|-------------|------------------------------------------------------------------------|---------|-------------|
+| Payment API | [GitHub](https://github.com/Billmate/QvicklyAPISamples/tree/main/Perl) | Started |             |
+| Module      |                                                                        | Planned |             |
+
 ### Rust
 The Rust code examples are based on Rust 1.76.
 

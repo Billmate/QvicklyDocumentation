@@ -160,6 +160,41 @@ print(json.dumps(account, indent=4))
 Full example can be found [here](https://github.com/Billmate/QvicklyAPISamples/blob/main/Python/examples/PaymentAPI/getAccountInfo.py)
 
   </tab>
+
+<tab title="%code-perl%">
+<code-block lang="perl">
+<![CDATA[
+#!/usr/bin/perl
+use strict;
+use warnings;
+use JSON::PP;
+use Data::Dumper;
+use lib '../..';
+require "PaymentAPI.pl";
+require "LoadEnv.pl";
+LoadEnv('../../.env');
+
+my $test = 0;
+my $debug = 0;
+
+# Credentials for Auth
+my $id = $ENV{"EID"};
+my $key = $ENV{"SECRET"};
+
+my $api = PaymentAPI->new($id, $key, $test, $debug);
+my $values = {
+    'comingFromPF2' => "1"
+};
+print(Dumper($api->call("getAccountinfo", $values)));
+
+1;
+]]>
+</code-block>
+
+Full example can be found [here](https://github.com/Billmate/QvicklyAPISamples/blob/main/Perl/examples/PaymentAPI/getAccountInfo.py)
+
+</tab>
+
 </tabs>
 
 ## Response from server
