@@ -3,7 +3,7 @@
 This is an internal project for Qvickly containing a collection of documentation for all products.
 
 ## About this documentation
-The documentation is built using [Writerside](https://www.jetbrains.com/writerside/) and is written mainly in markdown. The documentation is built and hosted on GitHub Pages.
+The documentation is built using [Writerside](https://www.jetbrains.com/writerside/), from JetBrains, and is written mainly in markdown. The documentation is built and hosted on GitHub Pages.
 
 ## Example code
 All example code used in this documentation can be found in the public repository [Billmate/QvicklyAPISamples](https://github.com/Billmate/QvicklyAPISamples/tree/main)
@@ -64,17 +64,43 @@ To avoid this information being included in the documentation, internal variable
 
 The following internal variables are available:
 
-- `%PAYMENT_API_VERSION%` - The current Payment API version
-- `%PAYMENT_API_CLIENT_NAME%` - The client name for Payment API
-- `%NUMBER_OF_PAYMENT_API_EXAMPLES%` - Number of available Payment API examples
-- `%CHECKOUT_API_VERSION%` - The current Checkout API version
-- `%AUTH_API_VERSION%` - The current Auth API version
-- `%PAYLINK_API_VERSION%` - The current Paylink API version
-- `%PORTAL_API_VERSION%` - The current Portal API version
-- `%MYQVICKLY_API_VERSION%` - The current MyQvickly API version
-- `%MERCHANT_ID%` - Merchant ID to use in examples and documentation
-- `%MERCHANT_KEY%` - Secret key to use in examples and documentation
-- `%DEVELOPER_MAIL_ADDRESS%` - The email address we wish to show for developer contact
+| Variable                             | Description                                             |
+|--------------------------------------|---------------------------------------------------------|
+| `%PAYMENT_API_VERSION%`              | The current Payment API version                         |
+| `%PAYMENT_API_CLIENT_NAME%`          | The client name for Payment API                         |
+| `%NUMBER_OF_PAYMENT_API_EXAMPLES%`   | Number of available Payment API examples                |
+| `%CHECKOUT_API_VERSION%`             | The current Checkout API version                        |
+| `%NUMBER_OF_CHECKOUT_API_EXAMPLES%`  | Number of available Checkout API examples               |
+| `%AUTH_API_VERSION%`                 | The current Auth API version                            |
+| `%NUMBER_OF_AUTH_API_EXAMPLES%`      | Number of available Auth API examples                   |
+| `%PAYLINK_API_VERSION%`              | The current Paylink API version                         |
+| `%NUMBER_OF_PAYLINK_API_EXAMPLES%`   | Number of available Paylink API examples                |
+| `%PORTAL_API_VERSION%`               | The current Portal API version                          |
+| `%NUMBER_OF_PORTAL_API_EXAMPLES%`    | Number of available Portal API examples                 |
+| `%MYQVICKLY_API_VERSION%`            | The current MyQvickly API version                       |
+| `%NUMBER_OF_MYQVICKLY_API_EXAMPLES%` | Number of available MyQvickly API examples              |
+| `%MERCHANT_ID%`                      | Merchant ID to use in examples and documentation        |
+| `%MERCHANT_KEY%`                     | Secret key to use in examples and documentation         |
+| `%DEVELOPER_MAIL_ADDRESS%`           | The email address we wish to show for developer contact |
+
+Programming languages also use variables to make it easier to adjust the displayed name for a specific language. This is more or less used due to the fact that we have an older legacy code written in PHP5 and a newer code written in PHP8. So to make changes easier they are called `PHP Legacy`and `PHP`. But if we feel that we need to change this in the future we can do so by changing the variable instead of changing all the code.
+
+The following internal variables are available for programming languages:
+
+| Variable           | Description |
+|--------------------|-------------|
+| `%code-json%`      | JSON        |
+| `%code-phplegacy%` | PHP Legacy  |
+| `%code-php%`       | PHP         |
+| `%code-python%`    | Python      |
+| `%code-csharp%`    | C#          |
+| `%code-node%`      | Node.JS     |
+| `%code-deno%`      | Deno        |
+| `%code-bun%`       | Bun         |
+| `%code-go%`        | Go          |
+| `%code-perl%`      | Perl        |
+| `%code-rust%`      | Rust        |
+| `%code-java%`      | Java        |
 
 ### Hashes are never valid in examples
 
