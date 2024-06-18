@@ -10,6 +10,7 @@
         <toc-element topic="Qvickly-vs-Billmate.md"/>
         <toc-element topic="Downloadable-code.md"/>
         <toc-element topic="Public-packages.md"/>
+        <toc-element topic="Integration-requirements.md"/>
     </toc-element>
     <toc-element topic="Qvickly-API.md">
         <toc-element topic="The-basics.md"/>

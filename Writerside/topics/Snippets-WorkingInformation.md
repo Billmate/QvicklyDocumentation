@@ -6,7 +6,7 @@
 
 > **Work hasn't started yet**
 >
-> This documentation is not yet started. We are working hard to provide you with the information you need to get started with our products.
+> This section is not yet started. We are working hard to provide you with the information you need to get started with our products.
 >
 > Any information provided here is subject to change.
 >
@@ -18,7 +18,7 @@
 
 > **Work has just started**
 >   
-> This documentation has just started. We are working hard to provide you with the information you need to get started with our products.
+> This section has just started. We are working hard to provide you with the information you need to get started with our products.
 > 
 > Any information provided here is subject to change.
 > {style="warning"}
@@ -29,7 +29,7 @@
 
 > **Work in progress**
 >
-> This documentation is a work in progress and may be incomplete. We are working hard to provide you with the information you need to get started with our products.
+> This section is a work in progress and may be incomplete. We are working hard to provide you with the information you need to get started with our products.
 >
 > Any information provided here is subject to change.
 >
@@ -41,7 +41,7 @@
 
 > **Finalizing**
 > 
-> This documentation is currently being finalized. We are working hard to provide you with the information you need to get started with our products.
+> This section is currently being finalized. We are working hard to provide you with the information you need to get started with our products.
 > 
 > Any information provided here is subject to change.
 > {style="information"}
@@ -52,7 +52,7 @@
 
 > **Proofreading**
 >
-> This documentation is currently being proofread. We are working hard to provide you with the information you need to get started with our products.
+> This section is currently being proofread. We are working hard to provide you with the information you need to get started with our products.
 >
 > Any information provided here might be subject to change.
 > {style="information"}
@@ -63,7 +63,7 @@
 
 > **Release candidate**
 >
-> This documentation is currently our release candidate. We are working hard to provide you with the information you need to get started with our products.
+> This section is currently our release candidate. We are working hard to provide you with the information you need to get started with our products.
 >
 > Any information provided here might be subject to change.
 > {style="information"}
@@ -74,7 +74,9 @@
 
 > **Interim solution**
 > 
-> This documentation is an interim solution. We are working hard to provide you with the information you need to get started with our products.
+> This section is an interim solution. We are working hard to provide you with the information you need to get started with our products.
+>
+> Any information provided here is subject to change.
 > {style="note"}
 
 </snippet>

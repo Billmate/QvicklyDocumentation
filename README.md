@@ -34,6 +34,12 @@ At the time of this writing, the following documentation parts exist:
 
 At the end of the list of the products there is a list of integrations. Most of these integrations are external and is not documented here. But since they are an extended part of the Qvickly product they can be listed here. Mainly this contains basic information about the integrations, some how-to guides and some cases a shorter FAQ.
 
+### Semantic markup or markdown?
+
+The documentation should be written in markdown. This is to make it easier to write and maintain the documentation.
+
+But if there are cases where markdown is not enough, semantic markup can be used. Code readability is important, so if semantic markup is used, it should be used sparingly.
+
 ### Header for all pages
 In the code there should always be an included header for the current documentation part.
 
@@ -125,11 +131,15 @@ As many languages as possible should be used in the examples. The main languages
 
 For basic code examples as many languages as possible should be used. For more advanced examples, the main languages should be used.
 
-Extended languages:
+Semi-prioritized languages that can be used:
 - C#
 - Java
-- Ruby
 - Go
+
+Languages that are not prioritized but might come along every now and then are:
+- Rust
+- Perl
+- Ruby
 
 If needed this list should be extended.
 
