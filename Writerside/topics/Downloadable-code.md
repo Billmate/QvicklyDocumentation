@@ -114,6 +114,6 @@ Go implementations are unfortunately all but pretty. This is due to the fact tha
 | Type        | Link                                                                 | Status  | Description                      |
 |-------------|----------------------------------------------------------------------|---------|----------------------------------|
 | Payment API | [GitHub](https://github.com/Billmate/QvicklyAPISamples/tree/main/Go) | Planned | GitHub link is for upcoming code |
-| Module      |                                                  | Planned |                                  |
+| Module      |                                                                      | Planned |                                  |
 
 

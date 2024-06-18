@@ -54,6 +54,38 @@ The snippet should in turn include a status reference for the current documentat
 
 The reason for this is to make it easier to display a uniform status for all documentation parts.
 
+### Use internal variables for sensitive and dynamic information
+
+There are some information that should not be included in the documentation.
+This includes sensitive information such as credentials
+dynamic information version information such as API versions.
+
+To avoid this information being included in the documentation, internal variables should be used.
+
+The following internal variables are available:
+
+- `%PAYMENT_API_VERSION%` - The current Payment API version
+- `%PAYMENT_API_CLIENT_NAME%` - The client name for Payment API
+- `%NUMBER_OF_PAYMENT_API_EXAMPLES%` - Number of available Payment API examples
+- `%CHECKOUT_API_VERSION%` - The current Checkout API version
+- `%AUTH_API_VERSION%` - The current Auth API version
+- `%PAYLINK_API_VERSION%` - The current Paylink API version
+- `%PORTAL_API_VERSION%` - The current Portal API version
+- `%MYQVICKLY_API_VERSION%` - The current MyQvickly API version
+- `%MERCHANT_ID%` - Merchant ID to use in examples and documentation
+- `%MERCHANT_KEY%` - Secret key to use in examples and documentation
+- `%DEVELOPER_MAIL_ADDRESS%` - The email address we wish to show for developer contact
+
+### Hashes are never valid in examples
+
+Since we use variables for *MERCHANT_ID* and *MERCHANT_KEY* and in the examples we use proper data stored in a .env file, the hash value are never correct.
+
+To inform about this the following include should be added to the footer of all example pages.
+
+```markdown
+<include from="Snippets-Examples.md" element-id="snippet-footer"></include>
+```
+
 ### Example code
 
 As much code as possible should be included as examples in the documentation. This is to make it easier for the user to understand how the API works.

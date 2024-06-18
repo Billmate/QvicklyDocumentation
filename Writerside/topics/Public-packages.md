@@ -12,62 +12,74 @@ Third-party packages that has obvious issues and/or is not maintained will be re
 ## Javascript / Typescript
 ### JSR
 
-Status: Planned
+**Status**: Planned
 
-Link: [JSR](https://jsr.io/)
+**Link**: [JSR](https://jsr.io/)
 
 ### NPM
 
-Status: Planned
+**Status**: Planned
 
-Link: [NPM](https://www.npmjs.com/)
+**Link**: [NPM](https://www.npmjs.com/)
+
+#### External packages on NPM
+
+##### PaymentAPI by Emil Isaksson
+
+**Status**: Mature
+
+**Description**: Old but working. Covers the basic functionality.
+
+**Link**: [https://www.npmjs.com/package/billmate](https://www.npmjs.com/package/billmate)
+
+**Homepage**: [https://github.com/emilisaksson/billmate](https://github.com/emilisaksson/billmate)
 
 ## PHP
 ### Packagist
 
-Status: Suggested
+**Status**: Suggested
 
-Link: [Packagist](https://packagist.org/)
+**Link**: [Packagist](https://packagist.org/)
 
 ## .NET
 ### NuGet
 
-Status: Suggested
+**Status**: Suggested
 
-Link: [NuGet](https://www.nuget.org/)
+**Link**: [NuGet](https://www.nuget.org/)
 
 ## Python
 ### PyPI
 
-Status: Suggested
+**Status**: Suggested
 
-Link: [PyPI](https://pypi.org/)
+**Link**: [PyPI](https://pypi.org/)
 
 ## Ruby
 ### RubyGems
 
-Status: Unlikely
+**Status**: Unlikely
 
-Link: [RubyGems](https://rubygems.org/)
+**Link**: [RubyGems](https://rubygems.org/)
 
 ## Rust
 ### Cargo
 
-Status: Unlikely
+**Status**: Unlikely
 
-Link: [Cargo](https://crates.io/)
+**Link**: [Cargo](https://crates.io/)
 
 ## Perl
 ### CPAN
 
-Status: Unlikely
+**Status**: Unlikely
 
-Link: [CPAN](https://www.cpan.org/)
+**Link**: [CPAN](https://www.cpan.org/)
 
 ## Java
 ### Maven
 
-Status: Unlikely
+**Status**: Unlikely
 
-Link: [Maven](https://mvnrepository.com/)
+**Link**: [Maven](https://mvnrepository.com/)
 
