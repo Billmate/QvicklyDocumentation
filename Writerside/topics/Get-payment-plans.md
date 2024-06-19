@@ -202,6 +202,45 @@ print(json.dumps(plans, indent=4))
 Full example can be found [here](https://github.com/Billmate/QvicklyAPISamples/blob/main/Python/examples/PaymentAPI/getPaymentPlans.py)
 
   </tab>
+
+<tab title="%code-perl%">
+<code-block lang="perl">
+<![CDATA[
+#!/usr/bin/perl
+use strict;
+use warnings;
+use JSON::PP;
+use Data::Dumper;
+use lib '../..';
+require "PaymentAPI.pl";
+require "LoadEnv.pl";
+LoadEnv('../../.env');
+
+my $test = 1;
+my $debug = 0;
+
+# Credentials for Auth
+my $id = $ENV{"EID"};
+my $key = $ENV{"SECRET"};
+
+my $api = PaymentAPI->new($id, $key, $test, $debug);
+my $values = {
+    "PaymentData" => {
+        "country" => "SE",
+        "currency" => "SEK",
+        "language" => "sv",
+    },
+};
+print(Dumper($api->call("getPaymentPlans", $values)));
+
+1;
+]]>
+</code-block>
+
+Full example can be found [here](https://github.com/Billmate/QvicklyAPISamples/blob/main/Perl/examples/PaymentAPI/getPaymentplans.pl)
+
+</tab>
+
 </tabs>
 
 ## Response from server

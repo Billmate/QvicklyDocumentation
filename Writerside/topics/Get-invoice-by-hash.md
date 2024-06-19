@@ -119,6 +119,40 @@ Full example can be found [here](https://github.com/Billmate/QvicklyAPISamples/b
 
 </tab>
 
+<tab title="%code-perl%">
+<code-block lang="perl">
+<![CDATA[
+#!/usr/bin/perl
+use strict;
+use warnings;
+use JSON::PP;
+use Data::Dumper;
+use lib '../..';
+require "PaymentAPI.pl";
+require "LoadEnv.pl";
+LoadEnv('../../.env');
+
+my $test = 1;
+my $debug = 0;
+
+# Credentials for Auth
+my $id = $ENV{"EID"};
+my $key = $ENV{"SECRET"};
+
+my $api = PaymentAPI->new($id, $key, $test, $debug);
+my $values = {
+    "hash" => "123456abc123456abc123456abc12345",
+};
+print(Dumper($api->call("getInvoiceByHash", $values)));
+
+1;
+]]>
+</code-block>
+
+Full example can be found [here](https://github.com/Billmate/QvicklyAPISamples/blob/main/Perl/examples/PaymentAPI/getInvoiceByHash.pl)
+
+</tab>
+
 </tabs>
 
 ## Response from server
