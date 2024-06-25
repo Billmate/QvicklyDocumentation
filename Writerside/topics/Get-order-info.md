@@ -24,6 +24,19 @@
 </code-block>
 </tab>
 
+<tab title="%code-php%">
+<code-block lang="php">
+<![CDATA[
+<?php
+]]>
+</code-block>
+
+Full example can be found [here](https://github.com/Billmate/qvickly-php-module/blob/main/examples/PaymentAPI/getAddress.php)
+
+Please note that the examples for %code-php% are based on the PHP module and not the PaymentAPI class.
+
+</tab>
+
 <tab title="%code-phplegacy%">
 <code-block lang="PHP">
 <![CDATA[
