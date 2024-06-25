@@ -63,7 +63,7 @@ print_r($terms);
 ]]>
 </code-block>
 
-Full example can be found [here](https://github.com/Billmate/qvickly-php-module/blob/main/examples/PaymentAPI/getAddress.php)
+Full example can be found [here](https://github.com/Billmate/qvickly-php-module/blob/main/examples/PaymentAPI/getTerms.php)
 
 Please note that the examples for %code-php% are based on the PHP module and not the PaymentAPI class.
 
