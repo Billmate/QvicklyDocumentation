@@ -141,6 +141,7 @@ Now we have reached the end of the first part where we let the customer scan the
             "orderid": "1234567890-a2",
             "bankid": "true",
             "autocancel": "2880",
+            "returnmethod": "POST",
             "accepturl": "https://example.com/accept",
             "cancelurl": "https://example.com/cancel",
             "callbackurl": "https://example.com/callback",

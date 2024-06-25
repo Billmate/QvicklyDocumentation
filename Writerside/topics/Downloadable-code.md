@@ -40,7 +40,7 @@ The newer PHP code examples are adopted for PHP 8.x. They are however based on t
 | Type        | Link                                                                  | Status  | Description |
 |-------------|-----------------------------------------------------------------------|---------|-------------|
 | Payment API | [GitHub](https://github.com/Billmate/QvicklyAPISamples/tree/main/PHP) | Started |             |
-| Module      |                                                                       | Planned |             |
+| Module      | [GitHub](https://github.com/Billmate/qvickly-php-module)              | Started |             |
 
 ### PHP Legacy
 The original PHP code example was written in early PHP 5.x. This code has been rewritten and updated to work with PHP 8.x but without any bells and whistles.

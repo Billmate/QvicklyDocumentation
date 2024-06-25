@@ -9,6 +9,15 @@ Third-party packages that has obvious issues and/or is not maintained will be re
 > This list is currently a suggestion and will be updated as the project progresses.
 > {style="note"}
 
+## PHP
+### Packagist
+
+**Status**: Testing
+
+**Link**: [Packagist](https://packagist.org/packages/qvickly/api)
+
+We are currently testing a module package for PHP.
+
 ## Javascript / Typescript
 ### JSR
 
@@ -33,13 +42,6 @@ Third-party packages that has obvious issues and/or is not maintained will be re
 **Link**: [https://www.npmjs.com/package/billmate](https://www.npmjs.com/package/billmate)
 
 **Homepage**: [https://github.com/emilisaksson/billmate](https://github.com/emilisaksson/billmate)
-
-## PHP
-### Packagist
-
-**Status**: Suggested
-
-**Link**: [Packagist](https://packagist.org/)
 
 ## .NET
 ### NuGet
