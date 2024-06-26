@@ -29,10 +29,31 @@
 <code-block lang="php">
 <![CDATA[
 <?php
+declare(strict_types=1);
+
+require '../../vendor/autoload.php';
+
+use Dotenv\Dotenv;
+
+$dotenv = Dotenv::createImmutable(__DIR__ . '/../..');
+$dotenv->load();
+
+use Qvickly\Api\Payment\PaymentAPI;
+use Qvickly\Api\Payment\DataObjects\Data;
+
+$paymentAPI = new PaymentAPI($_ENV['EID'], $_ENV['SECRET']);
+$data = new Data(
+    [
+        "pno" => "5501011018",
+        "status" => "Sent,Paid",
+    ]
+);
+$invoices = $paymentAPI->getInvoicesByPno($data);
+print_r($invoices);
 ]]>
 </code-block>
 
-Full example can be found [here](https://github.com/Billmate/qvickly-php-module/blob/main/examples/PaymentAPI/getAddress.php)
+Full example can be found [here](https://github.com/Billmate/qvickly-php-module/blob/main/examples/PaymentAPI/getInvoicesByPno.php)
 
 Please note that the examples for %code-php% are based on the PHP module and not the PaymentAPI class.
 
