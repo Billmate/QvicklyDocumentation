@@ -133,7 +133,7 @@ Articles are an array of objects with the following properties:
 
 | Property | Required | Type                     | Description              |
 |----------|----------|--------------------------|--------------------------|
-| total    | true     | [object](#cart-total)    | Total summary of payment |
+| Total    | true     | [object](#cart-total)    | Total summary of payment |
 | Handling | false    | [object](#cart-handling) | Cost for handling        |
 | Shipping | false    | [object](#cart-shipping) | Cost for shipping        |
 
