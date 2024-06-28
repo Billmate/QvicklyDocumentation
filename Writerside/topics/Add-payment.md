@@ -70,11 +70,11 @@
 <?php
 declare(strict_types=1);
 
-require '../../vendor/autoload.php';
+require '../../../vendor/autoload.php';
 
 use Dotenv\Dotenv;
 
-$dotenv = Dotenv::createImmutable(__DIR__ . '/../..');
+$dotenv = Dotenv::createImmutable(__DIR__ . '/../../..');
 $dotenv->load();
 
 use Qvickly\Api\Payment\DataObjects\Customer;
@@ -138,7 +138,7 @@ print_r($payment);
 ]]>
 </code-block>
 
-Full example can be found [here](https://github.com/Billmate/qvickly-php-module/blob/main/examples/PaymentAPI/addPayment.php)
+Full example can be found [here](https://github.com/Billmate/qvickly-php-module/blob/main/examples/PaymentAPI/Simple/addPayment.php)
 
 Please note that the examples for %code-php% are based on the PHP module and not the PaymentAPI class.
 
