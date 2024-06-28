@@ -162,3 +162,17 @@ It is possible to mix the numerical and string values.
     }
 }
 ```
+
+### Trying to credit a created invoice
+```json
+{
+  "credentials": {
+    "hash": "36961fea06f6031ccc4ca10df664c9930f6e805731e9c1e617c68e776f0d0b3d7a540018aef546ecb6cccfd6b9be673b86ccdb6ac48b62e8bf86d43cd622c24c"
+  },
+  "data": {
+    "code": "5205",
+    "message": "Kan inte kreditera en skapad faktura eller delbetalnings faktura.",
+    "logid": "123456789"
+  }
+}
+```

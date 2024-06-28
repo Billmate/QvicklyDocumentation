@@ -60,3 +60,32 @@ activatePayment is used for activating payments and get payout from Qvickly shor
 }
 ```
 
+### Response where the invoice doesn't exist
+
+```json
+{
+  "credentials": {
+    "hash": "54c3928bd58ea07eec2b82b6f3075df85f9bc5846f737feee5e497dcf96df26097258b30447df4627f97fcd4100fa86f7dbe9dd4a753da29939d34c9afae013f"
+  },
+  "data": {
+    "code": "5201",
+    "message": "Faktura med nummer 12345 som du efterfrågade existerar inte.",
+    "logid": "123456789"
+  }
+}
+```
+
+### Response for unknown payment method
+
+```json
+{
+  "credentials": {
+    "hash": "54c3928bd58ea07eec2b82b6f3075df85f9bc5846f737feee5e497dcf96df26097258b30447df4627f97fcd4100fa86f7dbe9dd4a753da29939d34c9afae013f"
+  },
+  "data": {
+    "code": "5207",
+    "message": "Okänd betalningsmetod. Undefined method: 2048",
+    "logid": "123456789"
+  }
+}
+```

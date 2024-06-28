@@ -160,7 +160,7 @@ Articles is an array of objects containing information about the articles in the
 {
     "credentials": {
         "hash":"0b2d1c4d31228a6dc845a16d57b782b97a5e111db2348324be42f5a91e88c8bd35fa62f0e6240b5680e17da03bb9301c5bd0ed755db7fa62ba6054ee21cdde88"
-    }
+    },
     "data": {
         "number":"12345",
         "status":"Created",

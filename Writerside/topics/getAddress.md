@@ -3,8 +3,11 @@
 <include from="Snippets-PaymentAPI.md" element-id="snippet-header"></include>
 
 getAddress is used for retrieving a person/company’s address from a personal or organization number.
+
 getAddress API is only permitted to be used together with Qvickly payments.
+
 The return is an array in JSON format with the values of the person/company details or an error.
+
 To use addPayment methods factoring or part payment, the person/company who purchase the product must have the same invoice address and delivery address as the address returned from getAddress.
 
 *An example can be found here [Get address example](Get-address.md)*
@@ -91,8 +94,65 @@ To use addPayment methods factoring or part payment, the person/company who purc
     "city": "City",
     "country": "SE",
     "phone": "467012345678",
-    "email": "test@testcompany.se"
+    "email": "test@testcompany.se",
+    "type": "company"
   }
 }
 ```
 
+## Response for alladdresses
+
+```json
+{
+  "credentials": {
+    "hash": "edbbb1411422ac0d1cbc5e3a1b8948d01edaa4553ea7a78c1aad823db9f49acbc0b6f9d02769cae8975fe5f44bba13050a5b9c2e19f0f488b9faa7df66029520"
+  },
+  "data": {
+    "company": "Test Company",
+    "street": "Streetname",
+    "zip": "12345",
+    "city": "City",
+    "country": "SE",
+    "phone": "467012345678",
+    "email": "test@testcompany.se",
+    "type": "company",
+    "alladdresses": [
+      {
+        "company": "Test Company",
+        "street": "Streetname",
+        "zip": "12345",
+        "city": "City",
+        "country": "SE",
+        "phone": "467012345678",
+        "email": "test@testcompany.se",
+        "type": "company",
+      }, {
+        "company": "Test Company 2",
+        "street": "Streetname",
+        "zip": "12345",
+        "city": "City",
+        "country": "SE",
+        "phone": "467012345678",
+        "email": "test@testcompany.se",
+        "type": "company",
+      }
+
+    ]
+  }
+}
+```
+
+## Response for engagements
+
+```json
+{
+  "credentials": {
+    "hash": "edbbb1411422ac0d1cbc5e3a1b8948d01edaa4553ea7a78c1aad823db9f49acbc0b6f9d02769cae8975fe5f44bba13050a5b9c2e19f0f488b9faa7df66029520"
+  },
+  "data": {
+    "5555555555": "Test Company",
+    "6666666666": "Test Company 2"
+  }
+}
+
+```
