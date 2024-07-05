@@ -222,6 +222,14 @@
             <toc-element topic="users.md"/>
             <toc-element topic="whitelists.md"/>
         </toc-element>
+        <toc-element topic="Filters.md">
+            <toc-element topic="PortalAPI-Articles-Filters.md"/>
+            <toc-element topic="PortalAPI-Customers-Filters.md"/>
+            <toc-element topic="PortalAPI-Invoices-Filters.md"/>
+            <toc-element topic="PortalAPI-Reports-Filters.md"/>
+            <toc-element topic="PortalAPI-Users-Filters.md"/>
+        </toc-element>
+        <toc-element topic="PortalAPI-Examples.md"/>
         <toc-element topic="Portal-API-Changelog.md"/>
     </toc-element>
     <toc-element topic="MyQvickly-API.md"/>
