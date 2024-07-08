@@ -7,6 +7,75 @@
 ## Request
 
 <tabs>
+<tab title="%code-php%">
+<code-block lang="php">
+<![CDATA[
+<?php
+declare(strict_types=1);
+
+include(__DIR__ . '/../vendor/autoload.php');
+
+use Qvickly\Api\Payment\PaymentAPI;
+use Qvickly\Api\Payment\RequestDataObjects\Data;
+use Qvickly\Api\Payment\RequestDataObjects\PaymentData;
+
+use Dotenv\Dotenv;
+
+$dotenv = Dotenv::createImmutable(__DIR__ . '/../..');
+$dotenv->load();
+
+$paymentAPI = new PaymentAPI($_ENV['EID'], $_ENV['SECRET']);
+$payload = [
+    "PaymentData" => [
+        "method" => "256",
+        "currency" => "SEK",
+        "language" => "sv",
+        "country" => "SE",
+        "orderid" => "123456",
+        "bankid" => "true",
+        "accepturl" => "https://example.com/accept",
+        "cancelurl" => "https://example.com/cancel",
+        "callbackurl" => "https://example.com/callback",
+        "autocancel" => "120",
+    ],
+    "Customer" => [
+        "pno" => "550101-1018",
+        "Billing" => [
+            "firstname" => "Tess T",
+            "lastname" => "Person",
+            "street" => "Testvägen 1",
+            "zip" => "12345",
+            "city" => "Testinge",
+            "country" => "SE",
+            "phone" => "0700000000",
+            "email" => "test@example.com",
+        ]
+    ],
+    "Articles" => [
+        [
+            "artnr" => "1",
+            "title" => "Test",
+            "aprice" => "10000",
+            "taxrate" => "25",
+            "quantity" => "1",
+            "withouttax" => "10000",
+        ]
+    ],
+    "Cart" => [
+        "Total" => [
+            "withouttax" => "10000",
+            "tax" => "2500",
+            "withtax" => "12500",
+        ],
+    ],
+];
+$payment = $paymentAPI->addPayment($payload);
+
+echo json_encode($payment, JSON_PRETTY_PRINT);
+]]>
+</code-block>
+</tab>
+
 <tab title="%code-python%">
 <code-block lang="python">
 <![CDATA[
