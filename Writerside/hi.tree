@@ -175,6 +175,12 @@
             </toc-element>
             <toc-element topic="auth-merchant.md"/>
         </toc-element>
+        <toc-element topic="Auth-Examples.md">
+            <toc-element topic="Auth-Example-Login.md"/>
+            <toc-element topic="Auth-Example-me.md"/>
+            <toc-element topic="Auth-Example-address.md"/>
+            <toc-element topic="Auth-Example-bankidLogin.md"/>
+        </toc-element>
         <toc-element topic="Auth-API-Changelog.md"/>
     </toc-element>
     <toc-element topic="Paylink.md">
