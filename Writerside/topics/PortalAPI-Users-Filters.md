@@ -1,5 +1,7 @@
 # Users
 
+<include from="Snippets-PortalAPI.md" element-id="snippet-header" />
+
 ## isActivated
 
 | Property  | Required | Default value | Description                                  |

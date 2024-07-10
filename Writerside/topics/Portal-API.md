@@ -3,6 +3,8 @@
 <include from="Snippets-PortalAPI.md" element-id="snippet-header" />
 
 > The PortalAPI is currently an OpenAPI based documentation. Until we have converted it to fit the common documentation format, you can view the converted OpenAPI documentation in this section.
+> 
+> Please note that some information may be missing or incomplete.
 > {style="information"}
 
 The portal is a web application that allow merchants to manage their invoices, customers, and products. The API is used to interact with the portal.

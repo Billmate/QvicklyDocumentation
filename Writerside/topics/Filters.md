@@ -1,5 +1,7 @@
 # Filters
 
+<include from="Snippets-PortalAPI.md" element-id="snippet-header" />
+
 The filter engine for the PortalAPI is powerful and flexible. It allows you to filter the results of a request based on a wide range of criteria.
 
 The way to trigger a filter is to add a query parameter to the URL called `filter`. The value of the `filter` parameter is a name of the filter you want to apply.

@@ -1,5 +1,7 @@
 # Customers
 
+<include from="Snippets-PortalAPI.md" element-id="snippet-header" />
+
 ## search
 
 | Property | Required | Default value | Description             |

@@ -235,7 +235,21 @@
             <toc-element topic="PortalAPI-Reports-Filters.md"/>
             <toc-element topic="PortalAPI-Users-Filters.md"/>
         </toc-element>
-        <toc-element topic="PortalAPI-Examples.md"/>
+        <toc-element topic="PortalAPI-Examples.md">
+            <toc-element topic="Portal-Example-getArticles.md"/>
+            <toc-element topic="Portal-Example-getConversationss.md"/>
+            <toc-element topic="Portal-Example-getCountries.md"/>
+            <toc-element topic="Portal-Example-getCreditflow.md"/>
+            <toc-element topic="Portal-Example-getCurrencies.md"/>
+            <toc-element topic="Portal-Example-getCustomers.md"/>
+            <toc-element topic="Portal-Example-getInvoices.md"/>
+            <toc-element topic="Portal-Example-getLanguages.md"/>
+            <toc-element topic="Portal-Example-getlogos.md"/>
+            <toc-element topic="Portal-Example-getMerchant.md"/>
+            <toc-element topic="Portal-Example-getReports.md"/>
+            <toc-element topic="Portal-Example-getUsers.md"/>
+            <toc-element topic="Portal-Example-getWhitelists.md"/>
+        </toc-element>
         <toc-element topic="Portal-API-Changelog.md"/>
     </toc-element>
     <toc-element topic="MyQvickly-API.md"/>

@@ -1,6 +1,33 @@
 # Invoices
 
+<include from="Snippets-PortalAPI.md" element-id="snippet-header" />
+
 ## search
+
+| Property | Required | Default value | Description        |
+|----------|----------|---------------|--------------------|
+| search   | Yes      |               | Text to search for |
+
+```
+/invoices/?filter=search&search=test
+```
+
+The search filter covers the following fields:
+- invoiceid_real
+- yourorder
+- customername
+- customerno
+- street
+- postalcode
+- city
+- yourreference
+- ourreference
+- projectname
+- orgnum
+- address2
+- email
+- phonenumber
+- ocr
 
 ## rangeByDate
 
@@ -466,25 +493,139 @@ This filter does not have any parameters.
 
 ## flags
 
+| Property | Required | Default value | Description          |
+|----------|----------|---------------|----------------------|
+| flag     | Yes      |               | Flag value to filter |
+
+
+```
+/invoices/?filter=flags&flag=128
+```
+
 ## flagsOR
+
+| Property | Required | Default value | Description          |
+|----------|----------|---------------|----------------------|
+| flagOR   | Yes      |               | Flag value to filter |
+
+
+```
+/invoices/?filter=flagsOR&flagOR=128
+```
 
 ## payoutPaid
 
+| Property   | Required | Default value | Description                             |
+|------------|----------|---------------|-----------------------------------------|
+| payoutPaid | No       | 1             | Filter invoices that has been paid out. |
+
+
+```
+/invoices/?filter=payoutPaid&payoutPaid=1
+```
+
 ## payoutNextPayout
+
+| Property         | Required | Default value | Description                                         |
+|------------------|----------|---------------|-----------------------------------------------------|
+| payoutNextPayout | No       | 1             | Filter invoices that will be paid out next pay out. |
+
+
+```
+/invoices/?filter=payoutNextPayout&payoutNextPayout=1
+```
 
 ## payoutUnpaid
 
+| Property     | Required | Default value | Description                                 |
+|--------------|----------|---------------|---------------------------------------------|
+| payoutUnpaid | No       | 1             | Filter invoices that has not been paid out. |
+
+
+```
+/invoices/?filter=payoutUnpaid&payoutUnpaid=1
+```
+
 ## payoutOverdue
+
+| Property      | Required | Default value | Description                                   |
+|---------------|----------|---------------|-----------------------------------------------|
+| payoutOverdue | No       | 1             | Filter invoices that are overdue for pay out. |
+
+
+```
+/invoices/?filter=payoutOverdue&payoutOverdue=1
+```
 
 ## payoutCredited
 
+| Property       | Required | Default value | Description                             |
+|----------------|----------|---------------|-----------------------------------------|
+| payoutCredited | No       | 1             | Filter invoices that has been credited. |
+
+
+```
+/invoices/?filter=payoutCredited&payoutCredited=1
+```
+
 ## payouts
+
+| Property         | Required | Default value | Description                                         |
+|------------------|----------|---------------|-----------------------------------------------------|
+| payoutPaid       | No       | 0             | Filter invoices that has been paid out.             |
+| payoutNextPayout | No       | 0             | Filter invoices that will be paid out next pay out. |
+| payoutUnpaid     | No       | 0             | Filter invoices that has not been paid out.         |
+| payoutOverdue    | No       | 0             | Filter invoices that are overdue for pay out.       |
+| payoutCredited   | No       | 0             | Filter invoices that has been credited.             |
+
+
+```
+/invoices/?filter=payouts&payoutPaid=1&payoutNextPayout=1&payoutUnpaid=1&payoutOverdue=1&payoutCredited=1
+```
+
+This is a combined filter that can be used to search for payouts. The parameters `payoutPaid`, `payoutNextPayout`, `payoutUnpaid`, `payoutOverdue` and `payoutCredited` can be used to filter payout status for invoices. The value of each parameter can be either `0` or `1`. The sub-filters are combined with an `OR` operator.
 
 ## isTypeInvoice
 
+| Property           | Required | Default value | Description      |
+|--------------------|----------|---------------|------------------|
+
+This filter does not have any parameters.
+
+```
+/invoices/?filter=isTypeInvoice
+```
+
 ## isTypePaylink
+
+| Property           | Required | Default value | Description      |
+|--------------------|----------|---------------|------------------|
+
+This filter does not have any parameters.
+
+```
+/invoices/?filter=isTypePaylink
+```
 
 ## paylinkPaid
 
+| Property           | Required | Default value | Description      |
+|--------------------|----------|---------------|------------------|
+
+This filter does not have any parameters.
+
+```
+/invoices/?filter=paylinkPaid
+```
+
 ## paylinkUnpaid
+
+| Property           | Required | Default value | Description      |
+|--------------------|----------|---------------|------------------|
+
+This filter does not have any parameters.
+
+```
+/invoices/?filter=paylinkUnpaid
+```
 

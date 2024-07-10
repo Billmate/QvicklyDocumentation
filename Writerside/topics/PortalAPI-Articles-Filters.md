@@ -1,5 +1,7 @@
 # Articles
 
+<include from="Snippets-PortalAPI.md" element-id="snippet-header" />
+
 ## searchArticleNumber
 
 | Property  | Required | Default value | Description                       |
