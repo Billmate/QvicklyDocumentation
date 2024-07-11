@@ -11,10 +11,15 @@ return by echo JSON string.
 
 {type="narrow"}
 Endpoint
-: /ajax.php?isPaid
+: /public/ajax.php?isPaid
 
 Method
-: GET
+: POST
+
+## Request
+
+| Property | Type   | Description |
+|----------|--------|-------------|
 
 ## Repsonse
 

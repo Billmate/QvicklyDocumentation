@@ -24,7 +24,7 @@ credentials
 data
 function
 
-#### checkoutdata
+#### CheckoutData
 | Property             | Required | Type    | Description                                                                       |
 |----------------------|----------|---------|-----------------------------------------------------------------------------------|
 | terms                | false    | string  | Url to the terms and conditions page for the store.                               |
@@ -107,7 +107,7 @@ function
         "test": "true"
     },
     "data": {
-        "checkoutdata":{
+        "CheckoutData":{
           "terms": "http://qvickly.io/terms",
           "privacyPolicy": "http://qvickly.io/privacy-policy",
           "companyview": "false",
