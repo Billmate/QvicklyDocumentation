@@ -2,6 +2,8 @@
 
 <include from="Snippets-PaymentAPI.md" element-id="snippet-header"></include>
 
+This is the example for createInvoiceFromOrderHash. The documentation for can be found [here](createInvoiceFromOrder.md)
+
 <tabs>
     <tab title="%code-json%">
 <code-block lang="json">
@@ -54,7 +56,7 @@ print_r($invoice);
 
 Full example can be found [here](https://github.com/Billmate/qvickly-php-module/blob/main/examples/PaymentAPI/Simple/createInvoiceFromOrderHash.php)
 
-Please note that the examples for %code-php% are based on the PHP module and not the PaymentAPI class.
+<include from="Snippets-PHP-Module.md" element-id="snippet-composer-require" />
 
 </tab>
 

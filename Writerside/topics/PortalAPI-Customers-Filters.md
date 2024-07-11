@@ -4,6 +4,8 @@
 
 ## search
 
+Search for a customer by its name, customer ID, address, postcode (zip), post office (city), or company number.
+
 | Property | Required | Default value | Description             |
 |----------|----------|---------------|-------------------------|
 | search   | Yes      |               | The text to search for. |
@@ -21,6 +23,8 @@ The search filter covers the following fields:
 
 ## rangeByDate
 
+Search for customers by the date they were created.
+
 | Property | Required | Default value | Description         |
 |----------|----------|---------------|---------------------|
 | from     | Yes      |               | From date to search |
@@ -31,6 +35,10 @@ The search filter covers the following fields:
 ```
 
 ## searchInInvoiceForm
+
+Search for a customer by its name, customer ID, or company number.
+
+This filter is mainly used in the invoice form.
 
 | Property             | Required | Default value | Description             |
 |----------------------|----------|---------------|-------------------------|
@@ -47,6 +55,8 @@ The search filter covers the following fields:
 
 ## isPrivate
 
+Search for private persons.
+
 | Property  | Required | Default value | Description          |
 |-----------|----------|---------------|----------------------|
 | isPrivate | No       | 1             | Find private persons |
@@ -56,6 +66,9 @@ The search filter covers the following fields:
 ```
 
 ## isCompany
+
+Search for companies.
+
 | Property  | Required | Default value | Description  |
 |-----------|----------|---------------|--------------|
 | isCompany | No       | 1             | Find company |
@@ -66,6 +79,8 @@ The search filter covers the following fields:
 
 ## isUnknown
 
+Search for customers that are not private or company.
+
 | Property  | Required | Default value | Description                                    |
 |-----------|----------|---------------|------------------------------------------------|
 | isUnknown | No       | 1             | Find customers that are not private or company |
@@ -75,6 +90,9 @@ The search filter covers the following fields:
 ```
 
 ## isCustomerType
+
+Search for customers based on their type.
+
 | Property  | Required | Default value | Description                                    |
 |-----------|----------|---------------|------------------------------------------------|
 | isPrivate | No       | 0             | Find private persons                           |
@@ -89,6 +107,8 @@ This is a combined filter that can be used to search for customers based on thei
 
 ## isEFaktura
 
+Search for customers that are setup for EFaktura.
+
 | Property    | Required | Default value | Description                                |
 |-------------|----------|---------------|--------------------------------------------|
 | isEFaktura  | No       | 1             | Find customers that are setup for EFaktura |
@@ -99,6 +119,8 @@ This is a combined filter that can be used to search for customers based on thei
 
 ## isReverseTax
 
+Search for customers that are setup for reverse tax.
+
 | Property      | Required | Default value | Description                                   |
 |---------------|----------|---------------|-----------------------------------------------|
 | isReverseTax  | No       | 1             | Find customers that are setup for reverse tax |
@@ -108,6 +130,8 @@ This is a combined filter that can be used to search for customers based on thei
 ```
 
 ## isTitle
+
+Search for customers that are setup for EFaktura or reverse tax.
 
 | Property     | Required | Default value | Description                                   |
 |--------------|----------|---------------|-----------------------------------------------|

@@ -2,6 +2,8 @@
 
 <include from="Snippets-PaymentAPI.md" element-id="snippet-header"></include>
 
+This is the example for getAPICredentials. The documentation for can be found [here](getAPICredentials.md)
+
 <tabs>
     <tab title="%code-json%">
 <code-block lang="json">
@@ -55,7 +57,7 @@ print_r($credentials);
 
 Full example can be found [here](https://github.com/Billmate/qvickly-php-module/blob/main/examples/PaymentAPI/Simple/getAddress.php)
 
-Please note that the examples for %code-php% are based on the PHP module and not the PaymentAPI class.
+<include from="Snippets-PHP-Module.md" element-id="snippet-composer-require" />
 
 </tab>
 

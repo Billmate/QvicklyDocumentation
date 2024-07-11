@@ -4,6 +4,8 @@
 
 ## searchArticleNumber
 
+Search for an article by its article number.
+
 | Property  | Required | Default value | Description                       |
 |-----------|----------|---------------|-----------------------------------|
 | articlenr | Yes      |               | The article number to search for. |
@@ -14,6 +16,8 @@
 
 ## searchArticleName
 
+Search for an article by its article name.
+
 | Property    | Required | Default value | Description                     |
 |-------------|----------|---------------|---------------------------------|
 | articlename | Yes      |               | The article name to search for. |
@@ -23,6 +27,8 @@
 ```
 
 ## searchArticle
+
+Search for an article by its article number or article name.
 
 | Property       | Required | Default value | Description                               |
 |----------------|----------|---------------|-------------------------------------------|
@@ -37,6 +43,8 @@ This is a combined search that in the background uses both `searchArticleNumber`
 
 ## articleByCurrency
 
+Search for articles by currency. This will also return articles with no defined currency.
+
 | Property | Required | Default value | Description                 |
 |----------|----------|---------------|-----------------------------|
 | currency | Yes      |               | The currency to search for. |
@@ -46,6 +54,8 @@ This is a combined search that in the background uses both `searchArticleNumber`
 ```
 
 ## articlesByCurrencyStrict
+
+Search for articles by currency. This will only return articles with a defined currency.
 
 | Property | Required | Default value | Description                 |
 |----------|----------|---------------|-----------------------------|
@@ -57,6 +67,8 @@ This is a combined search that in the background uses both `searchArticleNumber`
 
 ## articlesByTaxrate
 
+Search for articles by taxrate.
+
 | Property | Required | Default value | Description                |
 |----------|----------|---------------|----------------------------|
 | taxrate  | Yes      |               | The taxrate to search for. |
@@ -66,6 +78,8 @@ This is a combined search that in the background uses both `searchArticleNumber`
 ```
 
 ## articlesWithNoTaxrate
+
+Search for articles with no defined taxrate. (Taxrate is null)
 
 | Property | Required | Default value | Description                 |
 |----------|----------|---------------|-----------------------------|
@@ -77,6 +91,8 @@ This filter does not have any parameters.
 ```
 
 ## rangeByDate
+
+Search for articles by date range.
 
 | Property | Required | Default value | Description               |
 |----------|----------|---------------|---------------------------|

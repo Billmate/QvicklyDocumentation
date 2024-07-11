@@ -4,6 +4,8 @@
 
 ## search
 
+Search for an invoice by its invoice ID, customer name, customer number, street, postal code, city, your reference, our reference, project name, organization number, address 2, email, phone number, or OCR number.
+
 | Property | Required | Default value | Description        |
 |----------|----------|---------------|--------------------|
 | search   | Yes      |               | Text to search for |
@@ -31,6 +33,8 @@ The search filter covers the following fields:
 
 ## rangeByDate
 
+Search for invoices by the date they were last updated.
+
 | Property | Required | Default value | Description         |
 |----------|----------|---------------|---------------------|
 | from     | Yes      |               | From date to search |
@@ -43,6 +47,8 @@ The search filter covers the following fields:
 
 ## rangeByDeliveryDate
 
+Search for invoices by the delivery date.
+
 | Property         | Required | Default value | Description         |
 |------------------|----------|---------------|---------------------|
 | deliverydatefrom | Yes      |               | From date to search |
@@ -53,6 +59,8 @@ The search filter covers the following fields:
 ```
 
 ## rangeByDueDate
+
+Search for invoices by the due date.
 
 | Property      | Required | Default value | Description         |
 |---------------|----------|---------------|---------------------|
@@ -65,6 +73,8 @@ The search filter covers the following fields:
 
 ## rangeByInvoiceDate
 
+Search for invoices by the invoice date.
+
 | Property         | Required | Default value | Description         |
 |------------------|----------|---------------|---------------------|
 | invoicedatefrom  | Yes      |               | From date to search |
@@ -75,6 +85,8 @@ The search filter covers the following fields:
 ```
 
 ## rangeByDatePaid
+
+Search for invoices by the date they were paid.
 
 | Property      | Required | Default value | Description         |
 |---------------|----------|---------------|---------------------|
@@ -87,6 +99,8 @@ The search filter covers the following fields:
 
 ## rangeByDateSent
 
+Search for invoices by the date they were sent.
+
 | Property      | Required | Default value | Description         |
 |---------------|----------|---------------|---------------------|
 | sentdatefrom  | Yes      |               | From date to search |
@@ -97,6 +111,8 @@ The search filter covers the following fields:
 ```
 
 ## isCard
+
+Search for card payments.
 
 | Property       | Required | Default value | Description                                    |
 |----------------|----------|---------------|------------------------------------------------|
@@ -112,6 +128,8 @@ If either `isDirect` or `isOwnAgreement` is set to 0, the search will return all
 
 ## isSwish
 
+Search for swish payments.
+
 | Property       | Required | Default value | Description                                    |
 |----------------|----------|---------------|------------------------------------------------|
 | isDirect       | No       | 1             | Find payments without own agreement            |
@@ -125,6 +143,8 @@ If either `isDirect` or `isOwnAgreement` is set to 0, the search will return all
 If either `isDirect` or `isOwnAgreement` is set to 0, the search will return all swish payments where these are omitted.
 
 ## isBank
+
+Search for bank payments.
 
 | Property       | Required | Default value | Description                                    |
 |----------------|----------|---------------|------------------------------------------------|
@@ -140,6 +160,8 @@ If either `isDirect` or `isOwnAgreement` is set to 0, the search will return all
 
 ## isCash
 
+Search for cash payments.
+
 | Property       | Required | Default value | Description                                    |
 |----------------|----------|---------------|------------------------------------------------|
 | isDirect       | No       | 1             | Find payments without own agreement            |
@@ -154,6 +176,8 @@ If either `isDirect` or `isOwnAgreement` is set to 0, the search will return all
 
 ## isPartPayment
 
+Search for part payments.
+
 | Property      | Required | Default value | Description                                    |
 |---------------|----------|---------------|------------------------------------------------|
 | isPartPayment | No       | 1             | Activate this filter. (1 = activate, 0 = skip) |
@@ -165,6 +189,8 @@ If either `isDirect` or `isOwnAgreement` is set to 0, the search will return all
 
 ## isInvoice
 
+Search for invoices.
+
 | Property   | Required | Default value | Description                                    |
 |------------|----------|---------------|------------------------------------------------|
 | isInvoice  | No       | 1             | Activate this filter. (1 = activate, 0 = skip) |
@@ -175,6 +201,8 @@ If either `isDirect` or `isOwnAgreement` is set to 0, the search will return all
 ```
 
 ## isPayment
+
+Search for payments.
 
 | Property       | Required | Default value | Description                         |
 |----------------|----------|---------------|-------------------------------------|
@@ -193,6 +221,8 @@ This is a combined filter that can be used to search for payments based on their
 
 ## hasCredit
 
+Search for invoices that has an credit invoice.
+
 | Property  | Required | Default value | Description                                    |
 |-----------|----------|---------------|------------------------------------------------|
 | hasCredit | No       | 1             | Activate this filter. (1 = activate, 0 = skip) |
@@ -203,6 +233,8 @@ This is a combined filter that can be used to search for payments based on their
 ```
 
 ## creditCheckApproved
+
+Search for invoices that has been approved by a credit check.
 
 | Property             | Required | Default value | Description                                    |
 |----------------------|----------|---------------|------------------------------------------------|
@@ -215,6 +247,8 @@ This is a combined filter that can be used to search for payments based on their
 
 ## creditCheckPending
 
+Search for invoices that has a pending credit check.
+
 | Property           | Required | Default value | Description                                    |
 |--------------------|----------|---------------|------------------------------------------------|
 | creditCheckPending | No       | 1             | Activate this filter. (1 = activate, 0 = skip) |
@@ -225,6 +259,8 @@ This is a combined filter that can be used to search for payments based on their
 ```
 
 ## creditCheckRejected
+
+Search for invoices that has been rejected by a credit check.
 
 | Property             | Required | Default value | Description                                    |
 |----------------------|----------|---------------|------------------------------------------------|
@@ -237,6 +273,8 @@ This is a combined filter that can be used to search for payments based on their
 
 ## creditCheckDenied
 
+Search for invoices that has been denied by a credit check.
+
 | Property          | Required | Default value | Description                                    |
 |-------------------|----------|---------------|------------------------------------------------|
 | creditCheckDenied | No       | 1             | Activate this filter. (1 = activate, 0 = skip) |
@@ -247,6 +285,8 @@ This is a combined filter that can be used to search for payments based on their
 ```
 
 ## creditCheckManual
+
+Search for invoices that has a manual credit check.
 
 | Property          | Required | Default value | Description                                    |
 |-------------------|----------|---------------|------------------------------------------------|
@@ -259,6 +299,8 @@ This is a combined filter that can be used to search for payments based on their
 
 ## creditCheckFactoringWithoutRegress
 
+Search for invoices that has factoring without regress.
+
 | Property                           | Required | Default value | Description                                    |
 |------------------------------------|----------|---------------|------------------------------------------------|
 | creditCheckFactoringWithoutRegress | No       | 1             | Activate this filter. (1 = activate, 0 = skip) |
@@ -269,6 +311,8 @@ This is a combined filter that can be used to search for payments based on their
 ```
 
 ## creditCheckFactoringWithRegress
+
+Search for invoices that has factoring with regress.
 
 | Property                        | Required | Default value | Description                                    |
 |---------------------------------|----------|---------------|------------------------------------------------|
@@ -281,6 +325,8 @@ This is a combined filter that can be used to search for payments based on their
 
 ## creditCheckEmpty
 
+Search for invoices that has an empty credit check.
+
 | Property         | Required | Default value | Description                                    |
 |------------------|----------|---------------|------------------------------------------------|
 | creditCheckEmpty | No       | 1             | Activate this filter. (1 = activate, 0 = skip) |
@@ -292,6 +338,8 @@ This is a combined filter that can be used to search for payments based on their
 
 ## creditCheckNull
 
+Search for invoices that has a null credit check.
+
 | Property        | Required | Default value | Description                                    |
 |-----------------|----------|---------------|------------------------------------------------|
 | creditCheckNull | No       | 1             | Activate this filter. (1 = activate, 0 = skip) |
@@ -302,6 +350,8 @@ This is a combined filter that can be used to search for payments based on their
 ```
 
 ## creditCheck
+
+Search for invoices based on their credit check status.
 
 | Property                           | Required | Default value | Description                                    |
 |------------------------------------|----------|---------------|------------------------------------------------|
@@ -324,6 +374,8 @@ This is a combined filter that can be used to search for invoices based on their
 
 ## customerNo
 
+Search for invoices by customer number.
+
 | Property   | Required | Default value | Description                |
 |------------|----------|---------------|----------------------------|
 | customerno | Yes      |               | Search for customer number |
@@ -334,6 +386,8 @@ This is a combined filter that can be used to search for invoices based on their
 ```
 
 ## invoiceType
+
+Search for invoices by invoice type.
 
 | Property    | Required | Default value | Description     |
 |-------------|----------|---------------|-----------------|
@@ -351,6 +405,8 @@ Valid values are:
 
 ## paymentterms
 
+Search for invoices by payment terms.
+
 | Property     | Required | Default value | Description                     |
 |--------------|----------|---------------|---------------------------------|
 | paymentterms | Yes      |               | Payment terms in number of days |
@@ -361,6 +417,8 @@ Valid values are:
 ```
 
 ## isPaymentType
+
+Search for invoices based on their payment type.
 
 | Property       | Required | Default value | Description                                    |
 |----------------|----------|---------------|------------------------------------------------|
@@ -379,6 +437,8 @@ This is a combined filter that can be used to search for invoices based on their
 
 ## isService
 
+Search for service invoices.
+
 | Property       | Required | Default value | Description                                    |
 |----------------|----------|---------------|------------------------------------------------|
 | isService      | No       | 1             | Activate this filter. (1 = activate, 0 = skip) |
@@ -388,6 +448,8 @@ This is a combined filter that can be used to search for invoices based on their
 ```
 
 ## isFactoring
+
+Search for factoring invoices.
 
 | Property    | Required | Default value | Description                                    |
 |-------------|----------|---------------|------------------------------------------------|
@@ -399,6 +461,8 @@ This is a combined filter that can be used to search for invoices based on their
 
 ## isDirect
 
+Search for direct invoices.
+
 | Property  | Required | Default value | Description                                    |
 |-----------|----------|---------------|------------------------------------------------|
 | isDirect  | No       | 1             | Activate this filter. (1 = activate, 0 = skip) |
@@ -408,6 +472,8 @@ This is a combined filter that can be used to search for invoices based on their
 ```
 
 ## isOwnAgreement
+
+Search for invoices with own agreement.
 
 | Property       | Required | Default value | Description                                    |
 |----------------|----------|---------------|------------------------------------------------|
@@ -419,8 +485,10 @@ This is a combined filter that can be used to search for invoices based on their
 
 ## isConverted
 
-| Property       | Required | Default value | Description                                    |
-|----------------|----------|---------------|------------------------------------------------|
+Search for converted invoices.
+
+| Property    | Required | Default value | Description                                    |
+|-------------|----------|---------------|------------------------------------------------|
 | isConverted | No       | 1             | Activate this filter. (1 = activate, 0 = skip) |
 
 ```
@@ -428,6 +496,8 @@ This is a combined filter that can be used to search for invoices based on their
 ```
 
 ## status
+
+Search for invoices by status.
 
 | Property | Required | Default value | Description      |
 |----------|----------|---------------|------------------|
@@ -439,6 +509,8 @@ This is a combined filter that can be used to search for invoices based on their
 
 ## distributor_status
 
+Search for invoices by distributor status.
+
 | Property           | Required | Default value | Description      |
 |--------------------|----------|---------------|------------------|
 | distributor_status | Yes      |               | Status to filter |
@@ -448,6 +520,8 @@ This is a combined filter that can be used to search for invoices based on their
 ```
 
 ## statusCreated
+
+Search for invoices that are created.
 
 | Property           | Required | Default value | Description      |
 |--------------------|----------|---------------|------------------|
@@ -460,6 +534,8 @@ This filter does not have any parameters.
 
 ## statusActivated
 
+Search for invoices that are activated.
+
 | Property           | Required | Default value | Description      |
 |--------------------|----------|---------------|------------------|
 
@@ -470,6 +546,8 @@ This filter does not have any parameters.
 ```
 
 ## statusNotCreated
+
+Search for invoices that are not created.
 
 | Property           | Required | Default value | Description      |
 |--------------------|----------|---------------|------------------|
@@ -482,6 +560,8 @@ This filter does not have any parameters.
 
 ## country
 
+Search for invoices by country.
+
 | Property | Required | Default value | Description       |
 |----------|----------|---------------|-------------------|
 | country  | Yes      |               | Country to filter |
@@ -492,6 +572,8 @@ This filter does not have any parameters.
 ```
 
 ## flags
+
+Search for invoices by flag. If this filter occurs more than once, the flags are combined with an `AND` operator.
 
 | Property | Required | Default value | Description          |
 |----------|----------|---------------|----------------------|
@@ -504,6 +586,8 @@ This filter does not have any parameters.
 
 ## flagsOR
 
+Search for invoices by flag. If this filter occurs more than once, the flags are combined with an `OR` operator.
+
 | Property | Required | Default value | Description          |
 |----------|----------|---------------|----------------------|
 | flagOR   | Yes      |               | Flag value to filter |
@@ -514,6 +598,8 @@ This filter does not have any parameters.
 ```
 
 ## payoutPaid
+
+Search for invoices that has been paid out.
 
 | Property   | Required | Default value | Description                             |
 |------------|----------|---------------|-----------------------------------------|
@@ -526,6 +612,8 @@ This filter does not have any parameters.
 
 ## payoutNextPayout
 
+Search for invoices that will be paid out next pay out.
+
 | Property         | Required | Default value | Description                                         |
 |------------------|----------|---------------|-----------------------------------------------------|
 | payoutNextPayout | No       | 1             | Filter invoices that will be paid out next pay out. |
@@ -536,6 +624,8 @@ This filter does not have any parameters.
 ```
 
 ## payoutUnpaid
+
+Search for invoices that has not been paid out.
 
 | Property     | Required | Default value | Description                                 |
 |--------------|----------|---------------|---------------------------------------------|
@@ -548,6 +638,8 @@ This filter does not have any parameters.
 
 ## payoutOverdue
 
+Search for invoices that are overdue for pay out.
+
 | Property      | Required | Default value | Description                                   |
 |---------------|----------|---------------|-----------------------------------------------|
 | payoutOverdue | No       | 1             | Filter invoices that are overdue for pay out. |
@@ -559,6 +651,8 @@ This filter does not have any parameters.
 
 ## payoutCredited
 
+Search for invoices that has been credited.
+
 | Property       | Required | Default value | Description                             |
 |----------------|----------|---------------|-----------------------------------------|
 | payoutCredited | No       | 1             | Filter invoices that has been credited. |
@@ -569,6 +663,8 @@ This filter does not have any parameters.
 ```
 
 ## payouts
+
+Search for invoices based on their payout status.
 
 | Property         | Required | Default value | Description                                         |
 |------------------|----------|---------------|-----------------------------------------------------|
@@ -587,6 +683,8 @@ This is a combined filter that can be used to search for payouts. The parameters
 
 ## isTypeInvoice
 
+Search for invoices that are of type invoice.
+
 | Property           | Required | Default value | Description      |
 |--------------------|----------|---------------|------------------|
 
@@ -597,6 +695,8 @@ This filter does not have any parameters.
 ```
 
 ## isTypePaylink
+
+Search for invoices that are of type paylink.
 
 | Property           | Required | Default value | Description      |
 |--------------------|----------|---------------|------------------|
@@ -609,6 +709,8 @@ This filter does not have any parameters.
 
 ## paylinkPaid
 
+Search for paylink invoices that has been paid.
+
 | Property           | Required | Default value | Description      |
 |--------------------|----------|---------------|------------------|
 
@@ -619,6 +721,8 @@ This filter does not have any parameters.
 ```
 
 ## paylinkUnpaid
+
+Search for paylink invoices that has not been paid.
 
 | Property           | Required | Default value | Description      |
 |--------------------|----------|---------------|------------------|

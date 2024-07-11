@@ -261,4 +261,7 @@
         <toc-element topic="PrestaShop.md"/>
         <toc-element topic="Magento.md"/>
     </toc-element>
+    <toc-element topic="API-Interaction.md">
+        <toc-element topic="API-Interaction-PHP.md"/>
+    </toc-element>
 </instance-profile>

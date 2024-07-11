@@ -4,6 +4,8 @@
 
 ## isActivated
 
+Search for users by activation status.
+
 | Property  | Required | Default value | Description                                  |
 |-----------|----------|---------------|----------------------------------------------|
 | activated | Yes      |               | Is user activated (valid values are 0 and 1) |
@@ -13,6 +15,8 @@
 ```
 
 ## username
+
+Search for users by username.
 
 | Property  | Required | Default value | Description                  |
 |-----------|----------|---------------|------------------------------|
@@ -24,6 +28,8 @@
 
 ## emailExact
 
+Search for users by email address. This search is exact.
+
 | Property    | Required | Default value | Description                       |
 |-------------|----------|---------------|-----------------------------------|
 | emailexact  | Yes      |               | Exact email address to search for |
@@ -33,6 +39,8 @@
 ```
 
 ## email
+
+Search for users by email address. This search may be a partial match.
 
 | Property | Required | Default value | Description                                 |
 |----------|----------|---------------|---------------------------------------------|

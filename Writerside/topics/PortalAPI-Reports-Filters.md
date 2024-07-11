@@ -4,6 +4,8 @@
 
 ## search
 
+Search for a report by its `mexcCustomerjournalsid` or `filename`.
+
 | Property | Required | Default value | Description             |
 |----------|----------|---------------|-------------------------|
 | search   | Yes      |               | The text to search for. |
@@ -17,6 +19,8 @@ The search filter covers the following fields:
 
 ## rangeByDate
 
+Search for reports by the date they were created.
+
 | Property | Required | Default value | Description         |
 |----------|----------|---------------|---------------------|
 | from     | Yes      |               | From date to search |
@@ -27,6 +31,8 @@ The search filter covers the following fields:
 ```
 
 ## notEmptyReport
+
+Search for reports that are not empty.
 
 | Property | Required | Default value | Description                 |
 |----------|----------|---------------|-----------------------------|
@@ -39,6 +45,8 @@ This filter does not have any parameters.
 
 ## isCard
 
+Search for reports that are card payments.
+
 | Property | Required | Default value | Description                 |
 |----------|----------|---------------|-----------------------------|
 
@@ -49,6 +57,8 @@ This filter does not have any parameters.
 ```
 
 ## isPaid
+
+Search for reports of invoices that are paid.
 
 | Property | Required | Default value | Description                 |
 |----------|----------|---------------|-----------------------------|
@@ -61,6 +71,8 @@ This filter does not have any parameters.
 
 ## invalidReportTypes
 
+Search for reports that have invalid report types.
+
 | Property | Required | Default value | Description                 |
 |----------|----------|---------------|-----------------------------|
 
@@ -72,6 +84,8 @@ This filter does not have any parameters.
 
 ## manualReport
 
+Search for reports that are manual.
+
 | Property     | Required | Default value | Description                                                  |
 |--------------|----------|---------------|--------------------------------------------------------------|
 | manualReport | No       | 1             | If set to 1 then this activates search for type = \'Manual\' |
@@ -81,6 +95,8 @@ This filter does not have any parameters.
 ```
 
 ## monthlyReport
+
+Search for reports that are monthly.
 
 | Property      | Required | Default value | Description                                                 |
 |---------------|----------|---------------|-------------------------------------------------------------|
@@ -92,6 +108,8 @@ This filter does not have any parameters.
 
 ## factoringReport
 
+Search for reports that are factoring.
+
 | Property         | Required | Default value | Description                                                     |
 |------------------|----------|---------------|-----------------------------------------------------------------|
 | factoringReport  | No       | 1             | If set to 1 then this activates search for type = \'Factoring\' |
@@ -102,6 +120,8 @@ This filter does not have any parameters.
 
 ## handlingReport
 
+Search for reports that are handling.
+
 | Property       | Required | Default value | Description                                                    |
 |----------------|----------|---------------|----------------------------------------------------------------|
 | handlingReport | No       | 1             | If set to 1 then this activates search for type = \'Handling\' |
@@ -111,6 +131,8 @@ This filter does not have any parameters.
 ```
 
 ## type
+
+Search for reports by type. This filter can be combined with the `manualReport`, `monthlyReport`, `factoringReport`, and `handlingReport` filters.
 
 | Property        | Required | Default value | Description                                                     |
 |-----------------|----------|---------------|-----------------------------------------------------------------|

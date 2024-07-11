@@ -4,7 +4,7 @@
 
 Get the available fees for the merchant.
 
-*An example can be found here [Get fees example](Get-address.md)*
+*An example can be found here [Get fees example](Get-fees.md)*
 
 ## Request
 

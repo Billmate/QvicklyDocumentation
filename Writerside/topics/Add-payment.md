@@ -2,6 +2,8 @@
 
 <include from="Snippets-PaymentAPI.md" element-id="snippet-header"></include>
 
+This is the example for addPayment. The documentation for can be found [here](addPayment.md)
+
 <tabs>
   <tab title="%code-json%">
 <code-block lang="json">
@@ -140,7 +142,7 @@ print_r($payment);
 
 Full example can be found [here](https://github.com/Billmate/qvickly-php-module/blob/main/examples/PaymentAPI/Simple/addPayment.php)
 
-Please note that the examples for %code-php% are based on the PHP module and not the PaymentAPI class.
+<include from="Snippets-PHP-Module.md" element-id="snippet-composer-require" />
 
 </tab>
 
