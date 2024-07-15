@@ -257,8 +257,9 @@
         <toc-element topic="WooCommerce.md">
             <toc-element topic="WooCommerce-FAQ.md"/>
         </toc-element>
-        <toc-element topic="OpenCart.md"/>
         <toc-element topic="PrestaShop.md"/>
+        <toc-element topic="OpenCart.md">
+        </toc-element>
         <toc-element topic="Magento.md"/>
     </toc-element>
     <toc-element topic="API-Interaction.md">
