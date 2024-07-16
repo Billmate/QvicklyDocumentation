@@ -5,10 +5,12 @@
 > This is an internal function used by the checkout
 {style="warning"}
 
+Reset the current session on the server.
+
 {type="narrow"}
 Endpoint
-: /\{eid}/\{hash}/reset
-: /\{eid}/\{hash}/test/reset (Test mode)
+: ```/{eid}/{hash}/reset```
+: ```/{eid}/{hash}/test/reset``` (Test mode)
 
 Method
 : GET
@@ -16,4 +18,4 @@ Method
 
 ## Response
 
-No response will be returned, but the order will be reset.
+No response will be returned, but the session on the server will be reset.

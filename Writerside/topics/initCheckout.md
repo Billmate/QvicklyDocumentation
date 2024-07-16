@@ -7,7 +7,7 @@ InitCheckout is used for initiating a Checkout payment through Qvickly Checkout 
 > This function is a part of [Qvickly Payment API](Qvickly-API.md)
 
  
-For an example please see the [initCheckout example](Init-checkout.md) page.
+For examples, please see the examples under the [CheckoutAPI example page](CheckoutAPI-Examples.md).
 
 ## Request
 

@@ -107,6 +107,7 @@
         <toc-element topic="Checkout-Functions.md">
             <toc-element topic="initCheckout.md"/>
             <toc-element topic="updateCheckout.md"/>
+            <toc-element topic="version.md"/>
             <toc-element topic="reset.md"/>
             <toc-element topic="isPaid.md"/>
             <toc-element topic="checkoutStatus.md"/>
@@ -134,13 +135,26 @@
             <toc-element topic="terms.md"/>
             <toc-element topic="isRedirectedOnSuccess.md"/>
         </toc-element>
+        <toc-element topic="CheckoutAPI-Examples.md">
+            <toc-element topic="Init-checkout.md"/>
+            <toc-element topic="Update-checkout.md"/>
+            <toc-element topic="getCheckoutVersion.md"/>
+            <toc-element topic="createCheckout.md"/>
+            <toc-element topic="setPersonalInformation.md"/>
+            <toc-element topic="CheckoutAPI-Example-updateShippingAddress.md"/>
+            <toc-element topic="CheckoutAPI-Example-updateBillingAddress.md"/>
+            <toc-element topic="CheckoutAPI-Example-getpaymentplans.md"/>
+            <toc-element topic="CheckoutAPI-Example-getPaymentMethods.md"/>
+            <toc-element topic="CheckoutAPI-Example-setPaymentMethod.md"/>
+            <toc-element topic="CheckoutAPI-Example-get.md"/>
+            <toc-element topic="CheckoutAPI-Example-validate.md"/>
+            <toc-element topic="CheckoutAPI-Example-confirm.md"/>
+        </toc-element>
         <toc-element topic="Accept-URL.md"/>
         <toc-element topic="Callback-URL.md"/>
         <toc-element topic="Cancel-URL.md"/>
         <toc-element topic="Example-flow.md"/>
         <toc-element topic="Checkout-Examples.md">
-            <toc-element topic="Update-checkout.md"/>
-            <toc-element topic="Init-checkout.md"/>
         </toc-element>
         <toc-element topic="Javascript-events.md">
             <toc-element topic="update.md"/>
