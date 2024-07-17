@@ -1,3 +1,0 @@
-# Examples
-
-Start typing here...

@@ -2,4 +2,10 @@
 
 <include from="Snippets-CheckoutAPI.md" element-id="snippet-header" />
 
-Not yet started
+## 2024-07-15
+
+- Added examples for Checkout API
+
+## 2024-07-01
+
+- Added basic documentation for the Checkout API

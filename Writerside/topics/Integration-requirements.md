@@ -21,6 +21,9 @@ Using the API without approval and with non-approved integrations may result in 
 - No excessive use of resources.
 - No excessive use of the API.
 
+> Even though the API's might be unrestricted in terms of usage, Qvickly reserves the right to block access to the API if the usage is deemed excessive.
+> {style="note"}
+ 
 ## Testing for approval
 
 The integration must be tested by Qvickly before it can be approved.

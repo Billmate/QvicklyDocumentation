@@ -2,6 +2,8 @@
 
 <include from="Snippets-CheckoutAPI.md" element-id="snippet-header" />
 
+Based on the current client implementation of the checkout, the following flow is used. The flow is based on the client (server) making requests to the Qvickly Checkout API and the client (browser) receiving JS events.
+
 <list type="decimal">
   <li>Client (server) makes a initCheckout request</li>
   <li>Qvickly replies with a number and url.

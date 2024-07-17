@@ -135,6 +135,10 @@
             <toc-element topic="terms.md"/>
             <toc-element topic="isRedirectedOnSuccess.md"/>
         </toc-element>
+        <toc-element topic="Accept-URL.md"/>
+        <toc-element topic="Callback-URL.md"/>
+        <toc-element topic="Cancel-URL.md"/>
+        <toc-element topic="Example-flow.md"/>
         <toc-element topic="CheckoutAPI-Examples.md">
             <toc-element topic="Init-checkout.md"/>
             <toc-element topic="Update-checkout.md"/>
@@ -149,12 +153,7 @@
             <toc-element topic="CheckoutAPI-Example-get.md"/>
             <toc-element topic="CheckoutAPI-Example-validate.md"/>
             <toc-element topic="CheckoutAPI-Example-confirm.md"/>
-        </toc-element>
-        <toc-element topic="Accept-URL.md"/>
-        <toc-element topic="Callback-URL.md"/>
-        <toc-element topic="Cancel-URL.md"/>
-        <toc-element topic="Example-flow.md"/>
-        <toc-element topic="Checkout-Examples.md">
+            <toc-element topic="CheckoutAPI-Example-reset.md"/>
         </toc-element>
         <toc-element topic="Javascript-events.md">
             <toc-element topic="update.md"/>
@@ -218,6 +217,7 @@
         </toc-element>
         <toc-element topic="Paylink-Examples.md">
             <toc-element topic="Create-paylink-with-all-information.md"/>
+            <toc-element topic="Create-paylink-without-personal-information.md"/>
         </toc-element>
         <toc-element topic="Paylink-API-Changelog.md"/>
     </toc-element>

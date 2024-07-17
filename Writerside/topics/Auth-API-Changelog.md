@@ -4,8 +4,8 @@
 
 ## 2024-07-09
 
-Added examples for Auth API
+- Added examples for Auth API
 
 ## 2024-07-08
 
-Basic information about the Auth API
+- Basic information about the Auth API

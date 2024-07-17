@@ -10,10 +10,28 @@ If you have any questions regarding the code examples, please contact us at [sup
 LICENSE: The source code is part of respective Qvickly product, that is fully owned by Billmate AB 
 This is not open source. For licensing queries, please contact Qvickly at [support@qvickly.io](mailto:support@qvickly.io)
 
-GitHub repository: [Billmate/QvicklyAPISamples](https://github.com/Billmate/QvicklyAPISamples)
+## Code examples
 
-> Please note that the example codes are a work in progress and might not be fully functional.
-{style="warning"}
+{type="narrow"}
+GitHub repository
+: [Billmate/QvicklyAPISamples](https://github.com/Billmate/QvicklyAPISamples)
+
+The code examples contains both a simple package to communicate with the API's as well as examples on how to use the API's. The examples are the same as the ones found in this documentation.
+
+## Modules
+
+Currently there are only one module available.
+
+### PHP module
+
+The Qvickly PHP module is a more advanced module that is built on top of the API code. The module is built to make it easier to use the API. It covers all of Qvickly's public API's. There are also some examples on how to best use the module.
+
+{type="narrow"}
+GitHub repository
+: [Billmate/qvickly-php-module](https://github.com/Billmate/qvickly-php-module)
+
+Packagist
+: [qvickly/api](https://packagist.org/packages/qvickly/api)
 
 ## API vs module
 The API code is a bare minimum example of how to use the API.
@@ -37,10 +55,10 @@ The different statuses are as follows
 ### PHP
 The newer PHP code examples are adopted for PHP 8.x. They are however based on the same principles as the original PHP code examples and might therefore not always be cutting edge.
 
-| Type        | Link                                                                  | Status  | Description |
-|-------------|-----------------------------------------------------------------------|---------|-------------|
-| Payment API | [GitHub](https://github.com/Billmate/QvicklyAPISamples/tree/main/PHP) | Started |             |
-| Module      | [GitHub](https://github.com/Billmate/qvickly-php-module)              | Started |             |
+| Type        | Link                                                                  | Status      | Description |
+|-------------|-----------------------------------------------------------------------|-------------|-------------|
+| Payment API | [GitHub](https://github.com/Billmate/QvicklyAPISamples/tree/main/PHP) | Testing     |             |
+| Module      | [GitHub](https://github.com/Billmate/qvickly-php-module)              | Nearly done |             |
 
 ### PHP Legacy
 The original PHP code example was written in early PHP 5.x. This code has been rewritten and updated to work with PHP 8.x but without any bells and whistles.

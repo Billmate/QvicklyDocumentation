@@ -7,3 +7,5 @@ Most of the changes are cosmetic from an API standpoint, but there are some chan
 In the code we have started to change some class names and method names in our example codes, but we have not yet completed this work. We will update relevant pages as we make changes.
 
 But no functions has been altered or removed, so your code should continue to work as before as long as they send the requests to the correct URL.
+
+The name Billmate will probably live on for a while in the code, in some parts of the documentation and in external resources created before the name changed.

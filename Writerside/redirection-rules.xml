@@ -38,4 +38,8 @@
         <description>Created after removal of "Perl" from Qvickly Product Documentation</description>
         <accepts>Perl-advanced-examples.html</accepts>
     </rule>
+    <rule id="4d0df6a8">
+        <description>Created after removal of "Examples" from Product Docs</description>
+        <accepts>Checkout-Examples.html</accepts>
+    </rule>
 </rules>
