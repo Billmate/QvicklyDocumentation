@@ -42,4 +42,8 @@
         <description>Created after removal of "Examples" from Product Docs</description>
         <accepts>Checkout-Examples.html</accepts>
     </rule>
+    <rule id="6b872862">
+        <description>Created after removal of "Programming languages" from Product Docs</description>
+        <accepts>Programming-languages.html</accepts>
+    </rule>
 </rules>

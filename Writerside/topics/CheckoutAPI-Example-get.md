@@ -21,7 +21,7 @@ use Qvickly\Api\Checkout\CheckoutAPI;
 use function Qvickly\Api\Payment\Helpers\exampleCheckout;
 use Qvickly\Api\Enums\PaymentMethod;
 
-$checkoutAPI = new CheckoutAPI($_ENV['EID'], $_ENV['SECRET'], true);
+$checkoutAPI = new CheckoutAPI($_ENV['EID'], $_ENV['SECRET']);
 
 echo "Create checkout\n";
 $payload = exampleCheckout();
