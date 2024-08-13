@@ -52,6 +52,11 @@
 
 ## Test cards
 
+> Test cards can only be used in test mode
+> {style="warning"}
+
+If you enter card information that fails, you may encounter problems with changing the card information. If you encounter problems, please start over from the beginning.
+
 ### Authorization approved (Visa - with 3DSecure simulator)
 |             |                          |
 |-------------|--------------------------|
@@ -62,13 +67,13 @@
 | CVV         | 123                      |
 
 ### Authorization failure (Visa)
-|             |                      |
-|-------------|----------------------|
-| Card type   | Visa                 |
-| Card number | 4761 7390 0101 0416  |
-| Name        | Any                  |
-| Expiry Date | 12/22                |
-| CVV         | 123                  |
+|             |                         |
+|-------------|-------------------------|
+| Card type   | Visa                    |
+| Card number | 4761 7390 0101 0416     |
+| Name        | Any                     |
+| Expiry Date | After the current month |
+| CVV         | 123                     |
 
 ### Authorization approved (MC - without 3DSecure simulator)
 |             |                         |
@@ -80,6 +85,9 @@
 | CVV         | 123                     |
 
 ### Authorization approved (AMEX - with 3DSecure simulator)
+
+> Please note that AMEX is not supported by all merchant accounts.
+
 |             |                         |
 |-------------|-------------------------|
 | Card type   | American express        |
