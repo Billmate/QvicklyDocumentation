@@ -4,4 +4,4 @@
 
 > The latest version of the Checkout API is %CHECKOUT_API_VERSION%
 
-![Qvickly Checkout](../images/checkout.png)
+![Qvickly Checkout](../images/Checkout.png)
