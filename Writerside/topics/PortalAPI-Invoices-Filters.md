@@ -733,3 +733,29 @@ This filter does not have any parameters.
 /invoices/?filter=paylinkUnpaid
 ```
 
+## show2048
+
+Show invoices with method 2048.
+
+| Property           | Required | Default value | Description      |
+|--------------------|----------|---------------|------------------|
+
+This filter does not have any parameters.
+
+```
+/invoices/?filter=show2048
+```
+
+## hide2048
+
+Hide invoices with method 2048.
+
+| Property           | Required | Default value | Description      |
+|--------------------|----------|---------------|------------------|
+
+This filter does not have any parameters.
+
+```
+/invoices/?filter=hide2048
+```
+
