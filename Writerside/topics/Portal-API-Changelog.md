@@ -2,6 +2,10 @@
 
 <include from="Snippets-PortalAPI.md" element-id="snippet-header" />
 
+## 2024-08-19
+
+Added hide2048 and show2048 filters
+
 ## 2024-07-06
 
 Added documentation about filters

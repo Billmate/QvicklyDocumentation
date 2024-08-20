@@ -119,6 +119,9 @@ Now we have reached the end of the first part where we let the customer scan the
     }
 }
 </code-block>
+
+[Here](Create-paylink-with-all-information.md) is an example of how to create a paylink with customer information.
+
 </tab>
 <tab title="Without customer information">
 <code-block lang="json">
@@ -169,6 +172,9 @@ Now we have reached the end of the first part where we let the customer scan the
     },
 }
 </code-block>
+
+[Here](Create-paylink-without-personal-information.md) is an example of how to create a paylink with customer information.
+
 </tab>
 </tabs>
 

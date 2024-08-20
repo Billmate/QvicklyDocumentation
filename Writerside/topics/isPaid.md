@@ -18,8 +18,9 @@ Method
 
 ## Request
 
-| Property | Type   | Description |
-|----------|--------|-------------|
+| Property | Type   | Description             |
+|----------|--------|-------------------------|
+| hash     | string | The hash for the order. |
 
 ## Repsonse
 

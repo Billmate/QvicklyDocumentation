@@ -26,6 +26,20 @@
 
     <var name="MERCHANT_ID" value="12345"/>
     <var name="MERCHANT_KEY" value="123451234512"/>
+    <var name="MERCHANT_COMPANY" value="Qvickly Usability &amp; Testing AB"/>
+    <var name="MERCHANT_EMAIL" value="merchant@example.com"/>
+    <var name="SERVICE_ID" value="12345"/>
+    <var name="ACCOUNT_ID" value="12345"/>
+    <var name="EXAMPLE_NAME" value="Tess T Person"/>
+    <var name="EXAMPLE_FIRSTNAME" value="Tess T"/>
+    <var name="EXAMPLE_LASTNAME" value="Person"/>
+    <var name="EXAMPLE_USERNAME" value="tesstperson"/>
+    <var name="EXAMPLE_PHONE" value="46700000000"/>
+    <var name="EXAMPLE_ADDRESS" value="Testvägen 1"/>
+    <var name="EXAMPLE_CITY" value="Testinge"/>
+    <var name="EXAMPLE_ZIP" value="12345"/>
+    <var name="EXAMPLE_PNO" value="5501011018"/>
+    <var name="EXAMPLE_EMAIL" value="tess.t.person@example.com"/>
     <var name="DEVELOPER_MAIL_ADDRESS" value="support@qvickly.io"/>
 
     <var name="code-json" value="JSON"/>

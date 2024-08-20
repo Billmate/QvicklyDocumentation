@@ -2,6 +2,10 @@
 
 <include from="Snippets-PaylinkAPI.md" element-id="snippet-header" />
 
+## 2024-08-19
+
+Polished the text and corrected a few things.
+
 ## 2024-07-06
 
 Added examples for Paylink API

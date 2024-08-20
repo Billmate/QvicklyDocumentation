@@ -15,6 +15,7 @@ participant "Customer" as C
 M->Q: Add payment with method 256
 Q->C: Paylink URL via email or QR code
 C->Q: Pay
+Q->C: Redirect customer to accept link
 Q->M: Receive payment
 
 @enduml
@@ -37,6 +38,7 @@ M->Q: Add payment with method 256
 Q->M: Paylink URL
 M->C: Display Paylink URL
 C->Q: Pay
+M->C: Redirect customer to accept link
 Q->M: Receive payment
 
 @enduml
@@ -58,6 +60,7 @@ Q->M: Paylink URL
 M->Q: Update payment with the method to use
 M->C: Display Paylink URL
 C->Q: Pay
+M->C: Redirect customer to accept link
 Q->M: Receive payment
 
 @enduml

@@ -1,4 +1,4 @@
-# Create paylink with all information
+# Create paylink without personal information
 
 <include from="Snippets-PaylinkAPI.md" element-id="snippet-header" />
 
