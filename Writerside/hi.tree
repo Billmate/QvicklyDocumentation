@@ -252,7 +252,7 @@
         </toc-element>
         <toc-element topic="PortalAPI-Examples.md">
             <toc-element topic="Portal-Example-getArticles.md"/>
-            <toc-element topic="Portal-Example-getConversationss.md"/>
+            <toc-element topic="Portal-Example-getConversations.md"/>
             <toc-element topic="Portal-Example-getCountries.md"/>
             <toc-element topic="Portal-Example-getCreditflow.md"/>
             <toc-element topic="Portal-Example-getCurrencies.md"/>

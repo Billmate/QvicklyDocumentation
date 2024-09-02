@@ -2,7 +2,7 @@
 
 <include from="Snippets-PortalAPI.md" element-id="snippet-header" />
 
-Start typing here...
+Get customers from the portal.
 
 <tabs>
 <tab title="%code-php%"> 

@@ -1,12 +1,13 @@
-# getConversationss
+# getConversations
 
 <include from="Snippets-PortalAPI.md" element-id="snippet-header" />
 
-Start typing here...
+Get conversations from the portal.
 
 <tabs>
 <tab title="%code-php%"> 
 <code-block lang="php">
+
 <![CDATA[
 <?php
 declare(strict_types=1);
@@ -31,7 +32,7 @@ echo "Found " . count($conversations) . " conversations\n";
 if(count($conversations) > 0) {
     $oneConversation = array_pop($conversations);
     $oneConversationId = $oneConversation['mexcParamvaluesetsid'];
-    $conversation = $portalAPI->get('conversations/' . $oneConversation);
+    $conversation = $portalAPI->get('conversations/' . $oneConversationId);
     echo "And the last conversation is:\n";
     echo json_encode($conversation, JSON_PRETTY_PRINT);
 }
@@ -39,6 +40,7 @@ if(count($conversations) > 0) {
 
 
 ]]>
+
 </code-block>
 
 <include from="Snippets-PHP-Module.md" element-id="snippet-composer-require" />

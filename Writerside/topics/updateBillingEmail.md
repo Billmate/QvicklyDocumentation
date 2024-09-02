@@ -5,4 +5,11 @@
 > This is an internal function used by the checkout
 {style="warning"}
 
+{type="narrow"}
+Endpoint
+: /public/ajax.php?updateBillingEmail
+
+Method
+: POST
+
 Start typing here...

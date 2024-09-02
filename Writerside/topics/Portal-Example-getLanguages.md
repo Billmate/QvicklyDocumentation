@@ -1,7 +1,7 @@
 # getLanguages
 <include from="Snippets-PortalAPI.md" element-id="snippet-header" />
 
-Start typing here...
+Get languages from the portal.
 
 <tabs>
 <tab title="%code-php%"> 

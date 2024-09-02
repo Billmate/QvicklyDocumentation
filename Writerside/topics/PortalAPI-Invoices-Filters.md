@@ -14,7 +14,7 @@ Search for an invoice by its invoice ID, customer name, customer number, street,
 /invoices/?filter=search&search=test
 ```
 
-The search filter covers the following fields:
+The search filter includes these fields in a fragment search:
 - invoiceid_real
 - yourorder
 - customername

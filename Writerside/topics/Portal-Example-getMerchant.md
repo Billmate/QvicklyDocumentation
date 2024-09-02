@@ -2,7 +2,7 @@
 
 <include from="Snippets-PortalAPI.md" element-id="snippet-header" />
 
-Start typing here...
+Get merchant information from the portal.
 
 <tabs>
 <tab title="%code-php%"> 

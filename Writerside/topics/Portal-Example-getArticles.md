@@ -2,6 +2,8 @@
 
 <include from="Snippets-PortalAPI.md" element-id="snippet-header" />
 
+Get articles from the portal.
+
 <tabs>
 <tab title="%code-php%"> 
 <code-block lang="php">

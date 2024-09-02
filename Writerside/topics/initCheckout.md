@@ -20,9 +20,26 @@ For examples, please see the examples under the [CheckoutAPI example page](Check
 
 ### Body
 
-credentials
-data
-function
+| Property   | Required | Type   | Description |
+|------------|----------|--------|-------------|
+| credentials| true     | object |             |
+| data       | true     | object |             |
+| function   | true     | string |             |
+
+#### Credentials
+
+See [Credentials](API-Credentials.md)
+
+#### Data section
+
+| Property     | Required | Type   | Description                                  |
+|--------------|----------|--------|----------------------------------------------|
+| CheckoutData | true     | object | See [CheckoutData](#checkoutdata)            |
+| PaymentData  | true     | object | See [PaymentData](#paymentdata)              |
+| PaymentInfo  | true     | object | See [Paymentinfo](#paymentinfo)              |
+| Articles     | true     | array  | Array of articles. See [Articles](#articles) |
+| Cart         | true     | object | See [Cart](#cart)                            |
+
 
 #### CheckoutData
 | Property             | Required | Type    | Description                                                                       |
