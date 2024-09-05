@@ -60,6 +60,7 @@
             <toc-element topic="getOrderInfo.md"/>
             <toc-element topic="getOrderByHash.md"/>
             <toc-element topic="getInvoiceByHash.md"/>
+            <toc-element topic="updateStatusLogOfInvoiceByHash.md"/>
             <toc-element topic="createInvoiceFromOrder.md"/>
             <toc-element topic="getAPICredentials.md"/>
         </toc-element>
@@ -90,6 +91,7 @@
             <toc-element topic="Get-order-info.md"/>
             <toc-element topic="Get-order-by-hash.md"/>
             <toc-element topic="Get-invoice-by-hash.md"/>
+            <toc-element topic="Update-Status-Log-Of-Invoice-By-Hash.md"/>
             <toc-element topic="Create-invoice-from-order.md"/>
             <toc-element topic="Get-API-Credentials.md"/>
             <toc-element topic="Advanced-examples.md">
@@ -258,6 +260,7 @@
             <toc-element topic="Portal-Example-getCurrencies.md"/>
             <toc-element topic="Portal-Example-getCustomers.md"/>
             <toc-element topic="Portal-Example-getInvoices.md"/>
+            <toc-element topic="Portal-Example-getStatuslogs.md"/>
             <toc-element topic="Portal-Example-getLanguages.md"/>
             <toc-element topic="Portal-Example-getlogos.md"/>
             <toc-element topic="Portal-Example-getMerchant.md"/>

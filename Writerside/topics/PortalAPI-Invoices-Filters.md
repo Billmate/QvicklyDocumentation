@@ -31,6 +31,39 @@ The search filter includes these fields in a fragment search:
 - phonenumber
 - ocr
 
+If the query parameter search contains a space, the search will be split into multiple words and the search will be performed on each word separately. The search will return all invoices that contain all the words in the search query.
+
+## searchPhrase
+
+Search for an invoice by its invoice ID, customer name, customer number, street, postal code, city, your reference, our reference, project name, organization number, address 2, email, phone number, or OCR number.
+
+| Property      | Required | Default value | Description        |
+|---------------|----------|---------------|--------------------|
+| searchPhrase  | Yes      |               | Text to search for |
+
+```
+/invoices/?filter=searchPhrase&searchPhrase=test+test
+```
+
+The search filter includes these fields in a fragment search:
+- invoiceid_real
+- yourorder
+- customername
+- customerno
+- street
+- postalcode
+- city
+- yourreference
+- ourreference
+- projectname
+- orgnum
+- address2
+- email
+- phonenumber
+- ocr
+
+The search will return all invoices that contain the exact phrase in the search query.
+
 ## rangeByDate
 
 Search for invoices by the date they were last updated.
