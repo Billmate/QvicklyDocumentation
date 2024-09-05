@@ -39,5 +39,7 @@ foreach($invoices as $invoice) {
 ]]>
 </code-block>
 
+Full example can be found [here](https://github.com/Billmate/qvickly-php-module/blob/main/examples/Interactions/getInfoOnNonActivatedInvoices.php)
+
 <include from="Snippets-PHP-Module.md" element-id="snippet-composer-require" />
 
