@@ -78,21 +78,23 @@ $debug = false;
 
 /* Credentials for Auth */
 
-$id = "%MERCHANT_ID%";
-$key = "%MERCHANT_KEY%";
-define("QVICKLY_SERVER", "%PAYMENT_API_VERSION%"); // API version
-define("QVICKLY_CLIENT", "%PAYMENT_API_CLIENT_NAME%");
+$id = "12345";
+$key = "123451234512";
+define("QVICKLY_SERVER", "2.5.0");    /* API version */
+define("QVICKLY_CLIENT", "Pluginname:Qvickly:1.0");
 define("QVICKLY_LANGUAGE", "sv");
 $api = new PaymentAPI($id, $key, $test, $debug);
 $values = array();
 
 $values["hash"] = "123456abc123456abc123456abc12345";
+$values["body"] = array();
+$values["body"]["text"] = "Updated status log from API";
 
-echo json_encode($api->getInvoiceByHash($values), JSON_PRETTY_PRINT);
+echo json_encode($api->updateStatusLogOfInvoiceByHash($values), JSON_PRETTY_PRINT);
 ]]>
 </code-block>
 
-Full example can be found [here](https://github.com/Billmate/QvicklyAPISamples/blob/main/PHP.Legacy/examples/getInvoiceByHash.php)
+Full example can be found [here](https://github.com/Billmate/QvicklyAPISamples/blob/main/PHP.Legacy/examples/updateStatusLogOfInvoiceByHash.php)
 
 </tab>
 
@@ -102,14 +104,18 @@ Full example can be found [here](https://github.com/Billmate/QvicklyAPISamples/b
 import { QvicklyPaymentAPI } from "../../PaymentAPI.js";
 
 const paymentAPI = new QvicklyPaymentAPI(process.env.EID, process.env.SECRET);
-const invoice = await paymentAPI.call("getInvoiceByHash", {
+const result = await paymentAPI.call("updateStatusLogOfInvoiceByHash", {
     hash: "123456abc123456abc123456abc12345",
+    body: {
+        text: "Updated status log from API",
+    },
 });
-console.log(invoice);
+console.log(result);
+
 ]]>
 </code-block>
 
-Full example can be found [here](https://github.com/Billmate/QvicklyAPISamples/blob/main/Node.JS/examples/PaymentAPI/getInvoiceByHash.js)
+Full example can be found [here](https://github.com/Billmate/QvicklyAPISamples/blob/main/Node.JS/examples/PaymentAPI/updateStatusLogOfInvoiceByHash.js)
 
 </tab>
 
@@ -119,14 +125,18 @@ Full example can be found [here](https://github.com/Billmate/QvicklyAPISamples/b
 import {QvicklyPaymentAPI, env} from "../../PaymentAPI.ts";
 
 const paymentAPI = new QvicklyPaymentAPI(env["EID"], env["SECRET"]);
-const invoice = await paymentAPI.call("getInvoiceByHash", {
+const result = await paymentAPI.call("updateStatusLogOfInvoiceByHash", {
     hash: "123456abc123456abc123456abc12345",
+    body: {
+        text: "Status log updated by API"
+    }
 });
-console.log(invoice);
+console.log(result);
+
 ]]>
 </code-block>
 
-Full example can be found [here](https://github.com/Billmate/QvicklyAPISamples/blob/main/Deno/examples/PaymentAPI/getInvoiceByHash.ts)
+Full example can be found [here](https://github.com/Billmate/QvicklyAPISamples/blob/main/Deno/examples/PaymentAPI/updateStatusLogOfInvoiceByHash.ts)
 
 </tab>
 
@@ -136,14 +146,18 @@ Full example can be found [here](https://github.com/Billmate/QvicklyAPISamples/b
 import QvicklyPaymentAPI from "../../PaymentAPI";
 
 const paymentAPI = new QvicklyPaymentAPI(Bun.env.EID, Bun.env.SECRET);
-const invoice = await paymentAPI.call("getInvoiceByHash", {
+const result = await paymentAPI.call("updateStatusLogOfInvoiceByHash", {
     hash: "123456abc123456abc123456abc12345",
+    body: {
+        text: "Status log updated by API"
+    },
 });
-console.log(invoice);
+console.log(result);
+
 ]]>
 </code-block>
 
-Full example can be found [here](https://github.com/Billmate/QvicklyAPISamples/blob/main/Bun/examples/PaymentAPI/getInvoiceByHash.ts)
+Full example can be found [here](https://github.com/Billmate/QvicklyAPISamples/blob/main/Bun/examples/PaymentAPI/updateStatusLogOfInvoiceByHash.ts)
 
 </tab>
 
@@ -154,12 +168,12 @@ from PaymentAPI import PaymentAPI
 
 # Create a PaymentAPI object
 api = PaymentAPI(eid, secret)
-invoice = api.call(function="getInvoiceByHash", data={"hash":"123456abc123456abc123456abc12345"})
+invoice = api.call(function="updateStatusLogOfInvoiceByHash", data={"hash":"123456abc123456abc123456abc12345","body":{"text":"Updated status log from API"}})
 print(json.dumps(invoice, indent=4))
 ]]>
 </code-block>
 
-Full example can be found [here](https://github.com/Billmate/QvicklyAPISamples/blob/main/Python/examples/PaymentAPI/getInvoiceByHash.py)
+Full example can be found [here](https://github.com/Billmate/QvicklyAPISamples/blob/main/Python/examples/PaymentAPI/updateStatusLogOfInvoiceByHash.py)
 
 </tab>
 
@@ -186,14 +200,17 @@ my $key = $ENV{"SECRET"};
 my $api = PaymentAPI->new($id, $key, $test, $debug);
 my $values = {
     "hash" => "123456abc123456abc123456abc12345",
+    "body" => {
+        "text" => "Status log updated by API",
+    }
 };
-print(Dumper($api->call("getInvoiceByHash", $values)));
+print(Dumper($api->call("updateStatusLogOfInvoiceByHash", $values)));
 
 1;
 ]]>
 </code-block>
 
-Full example can be found [here](https://github.com/Billmate/QvicklyAPISamples/blob/main/Perl/examples/PaymentAPI/getInvoiceByHash.pl)
+Full example can be found [here](https://github.com/Billmate/QvicklyAPISamples/blob/main/Perl/examples/PaymentAPI/updateStatusLogOfInvoiceByHash.pl)
 
 </tab>
 
