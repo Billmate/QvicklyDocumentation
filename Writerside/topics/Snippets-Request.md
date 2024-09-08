@@ -18,6 +18,7 @@
 | cancelurl     | false    | string | Url to which the customer is redirected after a failed or cancelled payment. See [cancelurl](cancelurl.md)                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
 | callbackurl   | false    | string | Url to which callback data is sent after the customer has succesfully completed a card or bank payment. Callback is initiated at the same time as accepturl, thus it can’t be assumed that callback data will arrive before accepturl data. No response is required to a callback request, the data just has to be received. If callback data is not received, Qvickly server will try to send callback data again once a minute first 10 minutes, once an hour first 10 hours, once a day first 7 days, then finally once a month for next 3 months. See [callbackurl](callbackurl.md) |
 | bankid        | false    | string | Support BankID. If set to true, the plugin supports the use of BankID for identification. Default is false. If the account has force                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| feeid         | false    | string | Fee id of the fee to add.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
 
 > Note: The `accepturl`, `cancelurl` and `callbackurl` used to reside in the Card section. But since they became common for other payment methods, they are now part of the PaymentData section.
 
@@ -111,6 +112,31 @@ Articles are an array of objects with the following properties:
 | quantity   | false    | dec    | Article quantity.                                                                                                                                                                                                                                                                                                                                                                          |
 | aprice     | false    | dec    | Article unit price without tax in 1/100 of currency (i.e. öre if currency is SEK, cent if currency is EUR).                                                                                                                                                                                                                                                                                |
 | discount   | false    | dec    | Article discount in %.                                                                                                                                                                                                                                                                                                                                                                     |
+| unit       | false    | enum   | Article unit. Defaults to 'st' if none given.                                                                                                                                                                                                                                                                                                                                              |
+
+Unit enum
+* dag
+* km
+* kr
+* pkt
+* st
+* tim
+* m
+* ton
+* m2
+* m3
+* kbm
+* pall
+* kolli
+* mil
+* l
+* kg
+* box
+* dosa
+* [empty string]
+* kvm
+* nok
+* cm
 
 > If artnr is *--freetext--* then the article is a free text article and the title is used as description. In that case the article must not have a quantity, aprice, discount, taxrate or withouttax.
 

@@ -6,7 +6,9 @@ This is the example for getPaymentPlans. The documentation for can be found [her
 
 <tabs>
     <tab title="%code-json%">
+
 <code-block lang="json">
+
 <![CDATA[
 {
     "credentials": {
@@ -31,7 +33,9 @@ This is the example for getPaymentPlans. The documentation for can be found [her
     </tab>
 
 <tab title="%code-php%">
+
 <code-block lang="php">
+
 <![CDATA[
 <?php
 declare(strict_types=1);
@@ -62,6 +66,7 @@ $data = new Data(
 $plans = $paymentAPI->getPaymentPlans($data);
 print_r($plans);
 ]]>
+
 </code-block>
 
 Full example can be found [here](https://github.com/Billmate/qvickly-php-module/blob/main/examples/PaymentAPI/Simple/getPaymentPlans.php)
@@ -71,7 +76,9 @@ Full example can be found [here](https://github.com/Billmate/qvickly-php-module/
 </tab>
 
   <tab title="%code-phplegacy%">
+
 <code-block lang="PHP">
+
 <![CDATA[
 <?php
 include('../PaymentAPI.php');
