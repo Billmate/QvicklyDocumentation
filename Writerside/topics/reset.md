@@ -7,6 +7,8 @@
 
 Reset the current session on the server.
 
+An example of how to use this function can be found [here](CheckoutAPI-Example-reset.md)
+
 {type="narrow"}
 Endpoint
 : ```/{eid}/{hash}/reset```

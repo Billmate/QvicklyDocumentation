@@ -5,9 +5,11 @@
 > This is an internal function used by the checkout
 {style="warning"}
 
+An example of how to use this function can be found [here](CheckoutAPI-Example-updatePayemntMethod.md)
+
 {type="narrow"}
 Endpoint
-: /public/ajax.php?updatePaymentmethod
+: /public/ajax.php?updatePaymentMethod
 
 Method
 : POST

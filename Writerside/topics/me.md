@@ -4,6 +4,13 @@
 
 Find the information about the current logged in person from the token.
 
+{type="narrow"}
+Endpoint
+: ```/me```
+
+Method
+: POST
+
 For an example see [here](Auth-Example-me.md)
 
 ## Response

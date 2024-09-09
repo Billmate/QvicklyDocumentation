@@ -4,11 +4,30 @@
 
 There isn't real function to get the version of the Checkout API, but you can get the version by adding the key `version` to the payload with another value than the current version.
 
+An example of how to use this function can be found [here](getCheckoutVersion.md)
+
+{type="narrow"}
+Endpoint
+: ```any```
+
+Method
+: POST
+
+
+```json
+{
+    "version.compare": "0.0.0",
+    "version.post": "%CHECKOUT_API_VERSION%",
+    "code": "checkout_version"
+}
+```
 ## Request
 
 | Property | Type   | Description                    |
 |----------|--------|--------------------------------|
 | version  | string | The version you want to check. |
+
+If value of `version` different from the current version, the response will contain the current version of the Checkout API. If the value is the same as the current version, the request will continue as normal.
 
 ## Response
 

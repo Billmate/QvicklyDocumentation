@@ -8,6 +8,8 @@
 > Please note that this function does not do any external lookups which means that it can return an empty string for valid zipcodes.
 > {style="warning"}
 
+An example of how to use this function can be found [here](CheckoutAPI-Example-getCityFromZipcode.md)
+
 {type="narrow"}
 Endpoint
 : /ajax.php?getCityFromZipcode

@@ -49,7 +49,7 @@ echo "URL to use: " . $checkout['url'] . "\n";
 ]]>
 </code-block>
 
-Full example can be found [here](https://github.com/Billmate/qvickly-php-module/blob/main/examples/CheckoutAPI/9-reset.php)
+Full example can be found [here](https://github.com/Billmate/qvickly-php-module/blob/main/examples/CheckoutAPI/A-checkoutStatus.php)
 
 <include from="Snippets-PHP-Module.md" element-id="snippet-composer-require" />
 

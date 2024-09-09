@@ -7,6 +7,8 @@
 
 Get the current payment data for the order.
 
+An example of how to use this function can be found [here](CheckoutAPI-Example-get.md)
+
 {type="narrow"}
 Endpoint
 : /public/ajax.php?get

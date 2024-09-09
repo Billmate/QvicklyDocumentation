@@ -9,6 +9,8 @@ Check if Checkout order is paid and when paid, return status is_paid with callba
 so checkout can simulate a callback to the store
 return by echo JSON string.
 
+An example of how to use this function can be found [here](CheckoutAPI-Example-isPaid.md)
+
 {type="narrow"}
 Endpoint
 : /public/ajax.php?isPaid

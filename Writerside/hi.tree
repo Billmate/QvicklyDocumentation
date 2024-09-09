@@ -157,6 +157,7 @@
             <toc-element topic="CheckoutAPI-Example-confirm.md"/>
             <toc-element topic="CheckoutAPI-Example-reset.md"/>
             <toc-element topic="CheckoutAPI-Example-checkoutStatus.md"/>
+            <toc-element topic="CheckoutAPI-Example-terms.md"/>
         </toc-element>
         <toc-element topic="Javascript-events.md">
             <toc-element topic="update.md"/>

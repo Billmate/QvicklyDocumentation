@@ -5,6 +5,8 @@
 > This is an internal function used by the checkout
 {style="warning"}
 
+An example of how to use this function can be found [here](CheckoutAPI-Example-step1.md)
+
 {type="narrow"}
 Endpoint
 : /ajax.php?step1
