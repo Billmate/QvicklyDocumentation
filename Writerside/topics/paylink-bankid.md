@@ -5,8 +5,23 @@
 > This is an internal endpoint for bankid.
 > {style="warning"}
 
-## POST
+{type="narrow"}
+Endpoint
+: /bankid
 
-## POST with key
+Method
+: POST
 
-## DELETE
+{type="narrow"}
+Endpoint
+: /bankid/{key}
+
+Method
+: POST
+
+{type="narrow"}
+Endpoint
+: /bankid
+
+Method
+: DELETE

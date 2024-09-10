@@ -2,7 +2,7 @@
 
 <include from="Snippets-CheckoutAPI.md" element-id="snippet-header" />
 
-InitCheckout is used for initiating a Checkout payment through Qvickly Checkout payment gateway ( https://checkout.qvickly.io/).
+InitCheckout is used for initiating a Checkout payment through Qvickly Checkout payment gateway (https://checkout.qvickly.io/).
 
 > This function is a part of [Qvickly Payment API](Qvickly-API.md)
 

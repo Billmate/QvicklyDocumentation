@@ -5,7 +5,12 @@
 > This is an internal endpoint for swish status.
 > {style="warning"}
 
-## GET
+{type="narrow"}
+Endpoint
+: /swish-status
+
+Method
+: GET
 
 ### Cancelled paylink
 If the paylink has been cancelled, an JSON error message will be returned.

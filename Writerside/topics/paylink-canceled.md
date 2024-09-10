@@ -5,4 +5,9 @@
 > This is an internal endpoint for cancelled paylinks.
 > {style="warning"}
 
-## GET
+{type="narrow"}
+Endpoint
+: /canceled
+
+Method
+: GET

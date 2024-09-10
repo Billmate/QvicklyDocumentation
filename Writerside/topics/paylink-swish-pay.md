@@ -5,4 +5,10 @@
 > This is an internal endpoint for swish payment.
 > {style="warning"}
 
-## POST
+## {type="narrow"}
+Endpoint
+: /swish-pay
+
+Method
+: POST
+

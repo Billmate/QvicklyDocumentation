@@ -2,7 +2,14 @@
 
 <include from="Snippets-PaylinkAPI.md" element-id="snippet-header" />
 
-## GET
+Calls to the root endpoint will redirect the client to the suitable endpoint based on the status of the paylink.
+
+{type="narrow"}
+Endpoint
+: /
+
+Method
+: GET
 
 ### Cancelled paylink
 If the paylink has been cancelled, the user will be sent to the [canceled page](paylink-canceled.md).

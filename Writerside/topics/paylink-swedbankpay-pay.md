@@ -5,5 +5,11 @@
 > This is an internal endpoint for card payment.
 > {style="warning"}
 
-## POST
+{type="narrow"}
+Endpoint
+: /swedbankpay-pay
+
+Method
+: POST
+
 
