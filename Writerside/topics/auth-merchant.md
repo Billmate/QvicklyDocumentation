@@ -2,11 +2,22 @@
 
 <include from="Snippets-AuthAPI.md" element-id="snippet-header" />
 
+Get the merchant credentials.
+
+<include from="Snippets-Misc.md" element-id="endpoint-not-implemented" />
+
 {type="narrow"}
 Endpoint
-: ```/merchant```
+: ```/merchant/:id```
 
 Method
 : POST
 
-Start typing here...
+### Parameters
+
+| Parameter | Required | Type | Description     |
+|-----------|----------|------|-----------------|
+| id        | yes      | int  | The merchant id |
+
+For an example see [here](Auth-Example-merchant.md)
+

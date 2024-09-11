@@ -1,10 +1,11 @@
-# address
+# merchant
 
 <include from="Snippets-AuthAPI.md" element-id="snippet-header" />
 
-This call will return the registered address information for the user of the active token.
+Get the merchant credentials.
 
-> This call required that the token has `personalNumber` set
+<include from="Snippets-Misc.md" element-id="endpoint-not-implemented" />
+
 
 <tabs>
 <tab title="%code-php%">
@@ -25,8 +26,9 @@ $dotenv->load();
 $authAPI = new AuthAPI();
 $auth = $authAPI->login($_ENV['USERNAME'], $_ENV['PASSWORD']);
 
-$address = $authAPI->address($auth);
-var_dump($address);
+$merchant = $authAPI->merchant($auth, $_ENV['EID']);
+var_dump($merchant);
+
 ]]>
 </code-block>
 

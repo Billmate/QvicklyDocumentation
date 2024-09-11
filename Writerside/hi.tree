@@ -183,7 +183,12 @@
         <toc-element topic="Checkout-API-Credentials.md"/>
         <toc-element topic="Auth-Endpoints.md">
             <toc-element topic="bankid.md"/>
-            <toc-element topic="bankidV6.md"/>
+            <toc-element topic="bankidV6.md">
+                <toc-element topic="AuthAPI-bankidv6-orderRef.md"/>
+                <toc-element topic="AuthAPI-bankidv6-sign.md">
+                    <toc-element topic="AuthAPI-bankidv6-sign-collect.md"/>
+                </toc-element>
+            </toc-element>
             <toc-element topic="login.md">
                 <toc-element topic="token.md"/>
             </toc-element>
@@ -197,6 +202,8 @@
             <toc-element topic="Auth-Example-me.md"/>
             <toc-element topic="Auth-Example-address.md"/>
             <toc-element topic="Auth-Example-bankidLogin.md"/>
+            <toc-element topic="Auth-Example-bankidSign.md"/>
+            <toc-element topic="Auth-Example-merchant.md"/>
         </toc-element>
         <toc-element topic="Auth-API-Changelog.md"/>
     </toc-element>

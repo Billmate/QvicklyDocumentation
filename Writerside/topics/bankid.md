@@ -2,12 +2,7 @@
 
 <include from="Snippets-AuthAPI.md" element-id="snippet-header" />
 
-{type="narrow"}
-Endpoint
-: ```/bankid```
+> The `bankid` endpoint is obsolete and replaced with the `bankidV6` endpoint.
+> {style="warning"}
 
-Method
-: POST
-
-
-Start typing here...
+Please continue to the [bankidV6](bankidV6.md) endpoint.

@@ -19,7 +19,7 @@
 | 1024    | Swish                | No       |                                |
 | 2048    | myQvickly            | No       |                                |
 
-> Please note that most methods myst be activated by Qvickly before they can be used.
+> Please note that most methods must be activated by Qvickly before they can be used.
 > {style="note"}
 
 ## Multiple
