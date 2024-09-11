@@ -8,7 +8,6 @@ Starting a bankid login
 <tab title="%code-php%">
 
 <code-block lang="php">
-```php
 <![CDATA[
 <?php
 declare(strict_types=1);
