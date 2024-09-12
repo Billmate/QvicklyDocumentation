@@ -42,6 +42,7 @@
             <toc-element topic="updatePayment.md"/>
             <toc-element topic="cancelPayment.md"/>
             <toc-element topic="creditPayment.md"/>
+            <toc-element topic="duplicatePayment.md"/>
             <toc-element topic="getAccountinfo.md"/>
             <toc-element topic="getTerms.md"/>
             <toc-element topic="getPaymentplans.md"/>
@@ -71,6 +72,7 @@
             <toc-element topic="Activate-payment.md"/>
             <toc-element topic="Update-payment.md"/>
             <toc-element topic="Cancel-payment.md"/>
+            <toc-element topic="Duplicate-payment.md"/>
             <toc-element topic="Credit-payment.md"/>
             <toc-element topic="Get-account-info.md">
             </toc-element>

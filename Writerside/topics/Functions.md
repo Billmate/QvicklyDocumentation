@@ -10,6 +10,7 @@
 | [updatePayment](updatePayment.md)                                   | updatePayment is used for updating payments.                                             |
 | [cancelPayment](cancelPayment.md)                                   | cancelPayment is used for cancelling payments.                                           |
 | [creditPayment](creditPayment.md)                                   | creditPayment is used for crediting payments.                                            |
+| [duplicatePayment](duplicatePayment.md)                                     | duplicatePayment is used for duplicating payments.                                       |
 | [getAccountinfo](getAccountinfo.md)                                 | getAccountinfo is used for getting account information.                                  |
 | [getTerms](getTerms.md)                                             | getTerms is used for getting terms.                                                      |
 | [getPaymentplans](getPaymentplans.md)                               | getPaymentplans is used for getting payment plans.                                       |

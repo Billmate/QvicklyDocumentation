@@ -51,20 +51,21 @@ $dotenv->load();
 
 use Qvickly\Api\Payment\PaymentAPI;
 use Qvickly\Api\Payment\RequestDataObjects\Data;
+use Qvickly\Api\Payment\RequestDataObjects\PaymentData;
 use \Qvickly\Api\Payment\RequestDataObjects\KalpForm;
 
 $paymentAPI = new PaymentAPI($_ENV['EID'], $_ENV['SECRET']);
 
 $kalpData = new KalpForm(
-[
-    "monthlyIncome" => "32000",
-    "nbrOfPerson" => "2",
-    "typeOfAccommodation" => "rental",
-    "monthlyExpenses" => "2300",
-    "monthlyLoans" => "2500",
-]
+    [
+        "monthlyIncome" => "32000",
+        "nbrOfPerson" => "2",
+        "typeOfAccommodation" => "rental",
+        "monthlyExpenses" => "2300",
+        "monthlyLoans" => "2500",
+    ]
 );
-$paymentData = new \Qvickly\Api\Payment\RequestDataObjects\PaymentData((
+$paymentData = new PaymentData((
     [
         "paymentplanid" => "1",
     ]
@@ -99,7 +100,17 @@ Full example can be found [here](https://github.com/Billmate/qvickly-php-module/
         "logid": 1234567
     },
     "data": {
-        "result": "OK"
+        "kalpData": {
+            "monthlyIncome": "32000",
+            "nbrOfPerson": "2",
+            "typeOfAccommodation": "rental",
+            "monthlyExpenses": "2300",
+            "monthlyLoans": "2500",
+            "monthlyCost": "0",
+            "result": "23630",
+            "date": "2024-09-12 10:21:14",
+            "status": "Passed"
+        }
     }
 }
 ]]>

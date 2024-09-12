@@ -2,7 +2,7 @@
 
 <include from="Snippets-PaymentAPI.md" element-id="snippet-header"></include>
 
-Update KALP data.
+Upload KALP form and assign it to the payment.
 
 *An example can be found [here](Upload-KALP-form.md)*
 
@@ -10,10 +10,17 @@ Update KALP data.
 
 ### Data
 
-| Property | Required | Type   | Description          |
-|----------|----------|--------|----------------------|
-| number   | yes      | string | The invoice number   |
-| kalpData | true     | object | The KALP data.       |
+| Property    | Required | Type   | Description          |
+|-------------|----------|--------|----------------------|
+| number      | yes      | string | The invoice number   |
+| PaymentData | yes      | object | The payment data     |
+| kalpData    | true     | object | The KALP data.       |
+
+#### PaymentData
+
+| Property      | Required | Type   | Description          |
+|---------------|----------|--------|----------------------|
+| paymentplanid | yes      | string | The payment plan id  |
 
 #### KALP data
 
@@ -42,9 +49,17 @@ Update KALP data.
     "test": false
   },
   "data": {
-    "hash" : "20240510123456789abcdef123456789abcdef123456789abcdef123456789abcdef",
-    "method" : "2048",
-    "time" : 1714743718003
+    "number" : "123456",
+    "PaymentData": {
+      "paymentplanid": "1"
+    },
+    "kalpData": {
+      "monthlyIncome": "32000",
+      "nbrOfPerson": "2",
+      "typeOfAccommodation": "rental",
+      "monthlyExpenses": "2300",
+      "monthlyLoans": "2500"
+    }
   }
 ,
   "function": "uploadKalpForm"

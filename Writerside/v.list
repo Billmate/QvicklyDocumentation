@@ -7,7 +7,7 @@
 
     <var name="PAYMENT_API_VERSION" value="2.5.0"/>
     <var name="PAYMENT_API_CLIENT_NAME" value="Pluginname:Qvickly:1.0"/>
-    <var name="NUMBER_OF_PAYMENT_API_EXAMPLES" value="28"/>
+    <var name="NUMBER_OF_PAYMENT_API_EXAMPLES" value="29"/>
 
     <var name="CHECKOUT_API_VERSION" value="1.7.27"/>
     <var name="NUMBER_OF_CHECKOUT_API_EXAMPLES" value="0"/>

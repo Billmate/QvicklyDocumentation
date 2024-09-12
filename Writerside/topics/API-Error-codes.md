@@ -20,7 +20,7 @@
 | 2553   | The date format is wrong.                                                                                         |
 | 2554   | The due date have expired for payment!                                                                            |
 | 4100   | Recurring number is not found                                                                                     |
-| 4102   | We were not able to debit the card. Please try again later or contact %brand% support.                            |
+| 4102   | We were not able to debit the card. Please try again later or contact billmate support.                           |
 | 4103   | Debiting the recurring payment is failed                                                                          |
 | 5000   | Invalid method                                                                                                    |
 | 5001   | Factoring is not activated for this account. Payment could not be made.                                           |
@@ -61,7 +61,7 @@
 | 5219   | Error has returned while crediting:                                                                               |
 | 5220   | Can not cancel an already cancelled payment.                                                                      |
 | 5221   | Can not activate a payment that is related with a test person in live mode                                        |
-| 5222   | Your account needs to be activated by %brand%. Please contact us!                                                 |
+| 5222   | Your account needs to be activated by Billmate. Please contact us!                                                |
 | 5223   | Cannot activate a credit invoice.                                                                                 |
 | 5224   | Swedbankpay key is not found                                                                                      |
 | 5250   | An error occurred when splitting the invoice. You can not have a negative value in delivered.                     |
@@ -73,8 +73,8 @@
 | 5290   | Credit failed: Could not refund payment. Please try again later.                                                  |
 | 5291   | Credit failed: Could not refund payment. Please try again later.                                                  |
 | 5292   | Credit failed: Could not refund payment. Please try again later.                                                  |
-| 5297   | Refunding can not be made. Please contact Qvickly support.                                                        |
-| 5298   | Batch could not be created. Please contact Qvickly support.                                                       |
+| 5297   | Refunding can not be made. Please contact Billmate support.                                                       |
+| 5298   | Batch could not be created. Please contact Billmate support.                                                      |
 | 5301   | No payment plans found.                                                                                           |
 | 5302   | Currency, Country and Language are mandatory.                                                                     |
 | 6009   | Order id can not be empty                                                                                         |
@@ -147,11 +147,16 @@
 | 9112   | Article tax rate is mandatory.                                                                                    |
 | 9113   | Rounding can not be bigger than 50 ore.                                                                           |
 | 9114   | Cart summary does not match article summary                                                                       |
-| 9120   | - RESERVED -                                                                                                      |
+| 9120   | NULL                                                                                                              |
 | 9121   | Auto cancel parameter should be given as numeric char.                                                            |
 | 9200   | Email is invalid                                                                                                  |
 | 9201   | Name is invalid                                                                                                   |
 | 9510   | Client side: CURL error                                                                                           |
+| 9997   | Missing payment plan                                                                                              |
+| 9998   | Missing KALP data                                                                                                 |
+| 9999   | Failed to save KALP                                                                                               |
+| 11111  | Duplicated invoice does not exist                                                                                 |
+| 11112  | Payment method does not match                                                                                     |
 | 20100  | Invalid method                                                                                                    |
 | 20101  | Factoring is disabled for this account                                                                            |
 | 20102  | Service is disabled for this account                                                                              |
@@ -198,7 +203,7 @@
 | 70013  | Old password is incorrect                                                                                         |
 | 70014  | New passwords does not match.                                                                                     |
 | 70015  | New password is empty.                                                                                            |
-| 500000 | You're not allowed to fetch credentials                                                                           |
+| 500000 | You are not allowed to fetch credentials                                                                          |
 | 500001 | Missing merchant id                                                                                               |
 | 500002 | Merchant id not found                                                                                             |
 | 500003 | Missing password                                                                                                  |
@@ -207,4 +212,3 @@
 | 500006 | Missing username and pno                                                                                          |
 | 500007 | Missing hash                                                                                                      |
 | 500008 | Hash not found                                                                                                    |
-
