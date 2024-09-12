@@ -24,92 +24,92 @@ Method
 
 ## Repsonse
 
-| Property               | Type   | Description                                          |
-|------------------------|--------|------------------------------------------------------|
-| PaymentData            | object | The payment data for the order.                      |
-| apiClient              | string | The client used for the request.                     |
-| Customer               | object | The customer data for the order.                     |
-| PaymentInfo            | object | The payment information for the order.               |
-| Cart                   | object | The cart data for the order.                         |
-| Articles               | array  | The articles in the cart.                            |
-| CheckoutData           | object | The checkout data for the order.                     |
+| Property     | Type   | Description                            |
+|--------------|--------|----------------------------------------|
+| PaymentData  | object | The payment data for the order.        |
+| apiClient    | string | The client used for the request.       |
+| Customer     | object | The customer data for the order.       |
+| PaymentInfo  | object | The payment information for the order. |
+| Cart         | object | The cart data for the order.           |
+| Articles     | array  | The articles in the cart.              |
+| CheckoutData | object | The checkout data for the order.       |
 
 
 ### PaymentData
 
 The payment data object contains the payment data for the order.
 
-| Property               | Type   | Description                               |
-|------------------------|--------|-------------------------------------------|
-| method                 | string | The payment method used for the purchase. |
-| number                 | string | The payments number                       |
-| paymentplanid          | string | The payment plan id                       |
-| currency               | string | The currency used for the purchase.       |
-| language               | string | The language used for the purchase.       |
-| country                | string | The country used for the purchase.        |
-| method_name            | string | The name of the payment method.           |
-| status                 | string | The current status of the checkout.       |
-| alladdresses           | array  | All addresses used in the checkout.       |
-| autoactivate           | string | Auto activate the payment.                |
-| orderid                | string | The orderid supplied in the payload.      |
-| logo                   | string | The logo used for this payment.           |
-| accepturl              | string | The url for the accept url.               |
-| cancelurl              | string | The url for the cancel url.               |
-| returnmethod           | string | The method used for the return.           |
-| callbackurl            | string | The url for the callback.                 |
-| url                    | string | The url for this checkout.                |
-| invoice                | array  | The invoice data.                         |
-| accountinfo            | object | The account information.                  |
-| meta                   | object | Meta data for the payment.                |
+| Property      | Type   | Description                               |
+|---------------|--------|-------------------------------------------|
+| method        | string | The payment method used for the purchase. |
+| number        | string | The payments number                       |
+| paymentplanid | string | The payment plan id                       |
+| currency      | string | The currency used for the purchase.       |
+| language      | string | The language used for the purchase.       |
+| country       | string | The country used for the purchase.        |
+| method_name   | string | The name of the payment method.           |
+| status        | string | The current status of the checkout.       |
+| alladdresses  | array  | All addresses used in the checkout.       |
+| autoactivate  | string | Auto activate the payment.                |
+| orderid       | string | The orderid supplied in the payload.      |
+| logo          | string | The logo used for this payment.           |
+| accepturl     | string | The url for the accept url.               |
+| cancelurl     | string | The url for the cancel url.               |
+| returnmethod  | string | The method used for the return.           |
+| callbackurl   | string | The url for the callback.                 |
+| url           | string | The url for this checkout.                |
+| invoice       | array  | The invoice data.                         |
+| accountinfo   | object | The account information.                  |
+| meta          | object | Meta data for the payment.                |
 
 ### Customer
 
 The customer object contains the customer data for the order.
 
-| Property               | Type   | Description                                          |
-|------------------------|--------|------------------------------------------------------|
-| pno                    | string | The personal number for the customer.                |
-| Billing                | object | The billing address for the customer.                |
-| Shipping               | object | The shipping address for the customer.               |
+| Property | Type   | Description                            |
+|----------|--------|----------------------------------------|
+| pno      | string | The personal number for the customer.  |
+| Billing  | object | The billing address for the customer.  |
+| Shipping | object | The shipping address for the customer. |
 
 
 ### PaymentInfo
 
 The payment info object contains the payment information for the order.
 
-| Property               | Type   | Description                                          |
-|------------------------|--------|------------------------------------------------------|
-| paymentdate            | string | The payment date for the order.                      |
-| yourreference          | string | The reference for the purchaser.                     |
-| ourreference           | string | The reference for the seller.                        |
-| projectname            | string | The project name for the order.                      |
-| deliverymethod         | string | The delivery method for the order.                   |
-| deliveryterms          | string | The delivery terms for the order.                    |
-| autocredit             | string | Auto credit the payment.                             |
+| Property       | Type   | Description                        |
+|----------------|--------|------------------------------------|
+| paymentdate    | string | The payment date for the order.    |
+| yourreference  | string | The reference for the purchaser.   |
+| ourreference   | string | The reference for the seller.      |
+| projectname    | string | The project name for the order.    |
+| deliverymethod | string | The delivery method for the order. |
+| deliveryterms  | string | The delivery terms for the order.  |
+| autocredit     | string | Auto credit the payment.           |
 
 ### Cart
 
 The cart object contains the cart data for the order.
 
-| Property               | Type   | Description                                          |
-|------------------------|--------|------------------------------------------------------|
-| Handling               | object | The handling data for the order.                     |
-| Shipping               | object | The shipping data for the order.                     |
-| Total                  | object | The total data for the order.                        |
+| Property | Type   | Description                      |
+|----------|--------|----------------------------------|
+| Handling | object | The handling data for the order. |
+| Shipping | object | The shipping data for the order. |
+| Total    | object | The total data for the order.    |
 
 ### Articles
 
 The articles array contains the articles in the cart.
 
-| Property               | Type   | Description                                          |
-|------------------------|--------|------------------------------------------------------|
-| artnr                  | string | The article number.                                  |
-| title                  | string | The article title.                                   |
-| quantity               | string | The article quantity.                                |
-| aprice                 | string | The article price.                                   |
-| discount               | string | The article discount.                                |
-| withouttax             | string | The article price without tax.                       |
-| taxrate                | string | The article tax rate.                                |
+| Property   | Type   | Description                    |
+|------------|--------|--------------------------------|
+| artnr      | string | The article number.            |
+| title      | string | The article title.             |
+| quantity   | string | The article quantity.          |
+| aprice     | string | The article price.             |
+| discount   | string | The article discount.          |
+| withouttax | string | The article price without tax. |
+| taxrate    | string | The article tax rate.          |
 
 ### CheckoutData
 
@@ -202,77 +202,77 @@ Currently, the checkout supports DISPLAY_MASTERCARD and DISPLAY_VISA.
 
 The billing object contains the billing address for the customer.
 
-| Property               | Type   | Description                         |
-|------------------------|--------|-------------------------------------|
-| firstname              | string | The first name of the customer.     |
-| lastname               | string | The last name of the customer.      |
-| street                 | string | The street address of the customer. |
-| zip                    | string | The zip code of the customer.       |
-| city                   | string | The city of the customer.           |
-| country                | string | The country of the customer.        |
-| phone                  | string | The phone number of the customer.   |
-| email                  | string | The email of the customer.          |
-| type                   | string | The type of the customer.           |
+| Property  | Type   | Description                         |
+|-----------|--------|-------------------------------------|
+| firstname | string | The first name of the customer.     |
+| lastname  | string | The last name of the customer.      |
+| street    | string | The street address of the customer. |
+| zip       | string | The zip code of the customer.       |
+| city      | string | The city of the customer.           |
+| country   | string | The country of the customer.        |
+| phone     | string | The phone number of the customer.   |
+| email     | string | The email of the customer.          |
+| type      | string | The type of the customer.           |
 
 ### Shipping (address)
 
 The shipping object contains the shipping address for the customer.
 
-| Property               | Type   | Description                         |
-|------------------------|--------|-------------------------------------|
-| firstname              | string | The first name of the customer.     |
-| lastname               | string | The last name of the customer.      |
-| street                 | string | The street address of the customer. |
-| zip                    | string | The zip code of the customer.       |
-| city                   | string | The city of the customer.           |
-| country                | string | The country of the customer.        |
-| phone                  | string | The phone number of the customer.   |
-| email                  | string | The email of the customer.          |
-| type                   | string | The type of the customer.           |
+| Property  | Type   | Description                         |
+|-----------|--------|-------------------------------------|
+| firstname | string | The first name of the customer.     |
+| lastname  | string | The last name of the customer.      |
+| street    | string | The street address of the customer. |
+| zip       | string | The zip code of the customer.       |
+| city      | string | The city of the customer.           |
+| country   | string | The country of the customer.        |
+| phone     | string | The phone number of the customer.   |
+| email     | string | The email of the customer.          |
+| type      | string | The type of the customer.           |
 
 ### Handling (fee)
 
 The handling object contains the handling fee for the order.
 
-| Property               | Type   | Description                         |
-|------------------------|--------|-------------------------------------|
-| withouttax             | string | The handling price without tax.     |
-| taxrate                | string | The handling tax rate.              |
+| Property   | Type   | Description                         |
+|------------|--------|-------------------------------------|
+| withouttax | string | The handling price without tax.     |
+| taxrate    | string | The handling tax rate.              |
 
 ### Shipping (fee)
 
 The shipping object contains the shipping fee for the order.
 
-| Property               | Type   | Description                         |
-|------------------------|--------|-------------------------------------|
-| withouttax             | string | The shipping price without tax.     |
-| taxrate                | string | The shipping tax rate.              |
+| Property   | Type   | Description                         |
+|------------|--------|-------------------------------------|
+| withouttax | string | The shipping price without tax.     |
+| taxrate    | string | The shipping tax rate.              |
 
 
 ### Total
 
 The total object contains the total data for the order.
 
-| Property               | Type   | Description                         |
-|------------------------|--------|-------------------------------------|
-| withouttax             | string | The total price without tax.        |
-| tax                    | string | The total tax for the order.        |
-| rounding               | string | The rounding for the order.         |
-| withtax                | string | The total price with tax.           |
+| Property   | Type   | Description                         |
+|------------|--------|-------------------------------------|
+| withouttax | string | The total price without tax.        |
+| tax        | string | The total tax for the order.        |
+| rounding   | string | The rounding for the order.         |
+| withtax    | string | The total price with tax.           |
 
 
 ### topayData
 
 The topayData object contains the data for the topay.
 
-| Property               | Type   | Description                         |
-|------------------------|--------|-------------------------------------|
-| totalWithHandling      | string | The total price with handling.      |
-| totalWithoutHandling   | string | The total price without handling.   |
-| totalWithHandlingFormatted | string | The total price with handling formatted. |
+| Property                      | Type   | Description                                 |
+|-------------------------------|--------|---------------------------------------------|
+| totalWithHandling             | string | The total price with handling.              |
+| totalWithoutHandling          | string | The total price without handling.           |
+| totalWithHandlingFormatted    | string | The total price with handling formatted.    |
 | totalWithoutHandlingFormatted | string | The total price without handling formatted. |
-| handling               | string | The handling price.                 |
-| handlingFormatted      | string | The handling price formatted.       |
+| handling                      | string | The handling price.                         |
+| handlingFormatted             | string | The handling price formatted.               |
 
 
 ```json

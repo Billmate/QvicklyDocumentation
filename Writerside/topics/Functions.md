@@ -31,3 +31,4 @@
 | [getInvoiceByHash](getInvoiceByHash.md)                             | getInvoiceByHash is used for getting invoice by hash.                                    |
 | [createInvoiceFromOrder](createInvoiceFromOrder.md)                 | createInvoiceFromOrder is used for creating invoice from order.                          |
 | [getAPICredentials](getAPICredentials.md)                           | getAPICredentials is used for getting API credentials.                                   |
+| [uploadKalpForm](uploadKalpForm.md)                                 | uploadKalpForm is used for updating KALP data.                                           |
