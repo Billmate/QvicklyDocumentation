@@ -65,6 +65,7 @@
             <toc-element topic="createInvoiceFromOrder.md"/>
             <toc-element topic="uploadKalpForm.md"/>
             <toc-element topic="getAPICredentials.md"/>
+            <toc-element topic="GetBankIdKeyFromAuthToken.md"/>
         </toc-element>
         <toc-element topic="Examples.md">
             <toc-element topic="Get-address.md"/>
@@ -98,6 +99,7 @@
             <toc-element topic="Upload-KALP-form.md"/>
             <toc-element topic="Create-invoice-from-order.md"/>
             <toc-element topic="Get-API-Credentials.md"/>
+            <toc-element topic="Get-BankIdKey-From-AuthToken.md"/>
             <toc-element topic="Advanced-examples.md">
                 <toc-element topic="PHP-advanced-examples.md"/>
                 <toc-element topic="Node-JS-advanced-examples.md"/>
