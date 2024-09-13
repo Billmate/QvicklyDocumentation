@@ -3,14 +3,21 @@
 <include from="Snippets-PaymentAPI.md" element-id="snippet-header"></include>
 
 ---
+## 2024-09-13
+
+The official release of PaymentAPI documentation.
+
+---
 ## 2024-06-13
 
 Released the first release candidate of PaymentAPI documentation.
 
+---
 ## 2024-06-01
 
 Released version 2.5.0 of the Payment API.
 
+---
 ## 2024-05-28
 
 Fixed typos and wrote supplementary texts.

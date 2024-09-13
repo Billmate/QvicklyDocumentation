@@ -101,6 +101,12 @@
 | 6502   | Unknown state from card provider                                                                                  |
 | 6503   | The merchant is not found with the given payment id                                                               |
 | 6504   | Payment data is not found                                                                                         |
+| 6661   | Invalid token                                                                                                     |
+| 6662   | Invalid hash                                                                                                      |
+| 6663   | Invalid company signer pno                                                                                        |
+| 6664   | Auth person does not match the pno of invoice                                                                     |
+| 6665   | Bankid session could not be generated                                                                             |
+| 6666   | Missing token                                                                                                     |
 | 7010   | Name can not be empty.                                                                                            |
 | 7015   | New password is empty                                                                                             |
 | 7020   | Customer No/Number can not be empty.                                                                              |

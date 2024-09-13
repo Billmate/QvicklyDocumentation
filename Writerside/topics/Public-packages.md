@@ -12,11 +12,11 @@ Third-party packages that has obvious issues and/or is not maintained will be re
 ## PHP
 ### Packagist
 
-**Status**: Testing
+**Status**: Published
 
 **Link**: [Packagist](https://packagist.org/packages/qvickly/api)
 
-We are currently testing a module package for PHP.
+The [Qvickly PHP Module](https://github.com/Billmate/qvickly-php-module) is available through Packagist.
 
 ## Javascript / Typescript
 ### JSR
