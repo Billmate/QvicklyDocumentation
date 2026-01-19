@@ -3,6 +3,7 @@
 <include from="Snippets-PaylinkAPI.md" element-id="snippet-header" />
 
 ## Create a paylink in the portal
+
 ![PortalNewPaylink.png](PortalNewPaylink.png)
 
 In the upper right corner, click on the **New paylink** (**Skapa betallänk**) button.
@@ -36,7 +37,6 @@ Now we can see a summary of the paylink. If everything looks good, click on the 
 ![PortalPaylinkQRCode.png](PortalPaylinkQRCode.png)
 
 Now we have reached the end of the first part where we let the customer scan the QR code. The customer will be redirected to the `nin` page where can add their information and complete the purchase.
-
 
 ## Create a paylink through the API
 
@@ -175,21 +175,39 @@ Now we have reached the end of the first part where we let the customer scan the
 
 [Here](Create-paylink-without-personal-information.md) is an example of how to create a paylink with customer information.
 
+See [here](addPayment.md) for more information about `addpayment` request.
+
 </tab>
 </tabs>
 
+
+
+
+
+#### Endpoint URL
+
+The API endpoint URL can be found in the documentation [here](The-basics.md).
+
+
+#### Information about credentials
+
+See [here](API-Credentials.md) for more information.
+
 #### Method 256
 
-The `method` parameter is set to 256 which means that the payment method will ba a paylink.
+The `method` parameter is set to 256 which means that the payment method will be a paylink.
+This request must be sent as an HTTP POST to the API endpoint.
 
 #### Autocancel
 
 The `autocancel` parameter is the number of minutes before the paylink is automatically cancelled. Normally the default value is 2880 minutes (48 hours) but since we more or less just create a payment we have to set the value ourselves.
 
+
+
 ### Response with paylink
+
 <code-block lang="json">
 {
-   {
     "credentials": {
         "hash": "fd7584f217a48dd101006bd85f3660f4e04ef72604838c3efd54b3b1af75317c8e519995a12ef5b279bf26cb23414b2df287db8f9b5e21b7b15d10187e6fb7c3",
         "logid": "1890112"
@@ -204,6 +222,15 @@ The `autocancel` parameter is the number of minutes before the paylink is automa
 </code-block>
 
 When we've received the response we can use the `url` to redirect the customer to the paylink. More on how to redirect the customer in the next step.
+
+#### Expected errors
+
+| Code | Message                                                                                       |
+| ---- | --------------------------------------------------------------------------------------------- |
+| 9011 | Invalid credentials.                                                                          |
+| 9013 | Authentication is failed. Please double check the key and the EID you are sending are correct |
+
+Other Error codes [here](API-error-codes.md).
 
 ### Step 2 - Redirect the customer to the paylink
 
