@@ -87,7 +87,7 @@ Now we have reached the end of the first part where we let the customer scan the
                 "street": "Testgatan 1",
                 "zip": "12345",
                 "city": "Teststad",
-                "country": "SE",
+                "country": "SE"
             }
         },
         "Cart": {
@@ -147,10 +147,10 @@ Now we have reached the end of the first part where we let the customer scan the
             "returnmethod": "POST",
             "accepturl": "https://example.com/accept",
             "cancelurl": "https://example.com/cancel",
-            "callbackurl": "https://example.com/callback",
+            "callbackurl": "https://example.com/callback"
         },
         "Customer": {
-            "dummy": "true",
+            "dummy": "true"
         },
         "Articles": [
             {
@@ -159,14 +159,14 @@ Now we have reached the end of the first part where we let the customer scan the
                 "aprice": "10000",
                 "taxrate": "25",
                 "quantity": "1",
-                "withouttax": "10000",
+                "withouttax": "10000"
             }
         ],
         "Cart": {
             "Total": {
                 "withouttax": "10000",
                 "tax": "2500",
-                "withtax": "12500",
+                "withtax": "12500"
             },
         },            
     },
