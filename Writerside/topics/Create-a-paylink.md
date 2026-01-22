@@ -175,23 +175,15 @@ Now we have reached the end of the first part where we let the customer scan the
 
 [Here](Create-paylink-without-personal-information.md) is an example of how to create a paylink with customer information.
 
-See [here](addPayment.md) for more information about `addpayment` request.
 
 </tab>
 </tabs>
 
-
-
-
+See [here](addPayment.md) for more information about `addpayment` request.
 
 #### Endpoint URL
 
 The API endpoint URL can be found in the documentation [here](The-basics.md).
-
-
-#### Information about credentials
-
-See [here](API-Credentials.md) for more information.
 
 #### Method 256
 
@@ -230,7 +222,7 @@ When we've received the response we can use the `url` to redirect the customer t
 | 9011 | Invalid credentials.                                                                          |
 | 9013 | Authentication is failed. Please double check the key and the EID you are sending are correct |
 
-Other Error codes [here](API-error-codes.md).
+Other Error codes [here](API-Error-codes.md).
 
 ### Step 2 - Redirect the customer to the paylink
 
