@@ -1,4 +1,4 @@
-# Activate payment
+a# Activate payment
 
 <include from="Snippets-PaymentAPI.md" element-id="snippet-header"></include>
 
