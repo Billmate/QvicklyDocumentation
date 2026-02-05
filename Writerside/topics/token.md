@@ -2,7 +2,7 @@
 
 <include from="Snippets-AuthAPI.md" element-id="snippet-header" />
 
-Internal login function for getting a JWT token.
+<!--Internal login function for getting a JWT token.
 
 {type="narrow"}
 Endpoint
@@ -10,6 +10,7 @@ Endpoint
 
 Method
 : POST
+-->
 
 ## Request
 
