@@ -150,6 +150,7 @@
         <toc-element topic="Callback-URL.md"/>
         <toc-element topic="Cancel-URL.md"/>
         <toc-element topic="Example-flow.md"/>
+        <toc-element topic="Pay-With-Qvickly-Flow.md"/>
         <toc-element topic="CheckoutAPI-Examples.md">
             <toc-element topic="Init-checkout.md"/>
             <toc-element topic="Update-checkout.md"/>
