@@ -171,7 +171,7 @@ It is possible to mix the numerical and string values.
   },
   "data": {
     "code": "5205",
-    "message": "Kan inte kreditera en skapad faktura eller delbetalnings faktura.",
+    "message": "Kan inte kreditera en skapad faktura.",
     "logid": "123456789"
   }
 }

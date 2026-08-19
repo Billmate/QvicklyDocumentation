@@ -46,4 +46,30 @@
         <description>Created after removal of "Programming languages" from Product Docs</description>
         <accepts>Programming-languages.html</accepts>
     </rule>
+    <rule id="qly435-01">
+        <description>Created after removal of "getPaymentplans" from Product Docs (QLY-435, part payment discontinued)</description>
+        <accepts>getPaymentplans.html</accepts>
+        <accepts>getpaymentplans.html</accepts>
+    </rule>
+    <rule id="qly435-02">
+        <description>Created after removal of "Get payment plans" from Product Docs (QLY-435, part payment discontinued)</description>
+        <accepts>Get-payment-plans.html</accepts>
+    </rule>
+    <rule id="qly435-03">
+        <description>Created after removal of Checkout API "getpaymentplans" example from Product Docs (QLY-435, part payment discontinued)</description>
+        <accepts>CheckoutAPI-Example-getpaymentplans.html</accepts>
+        <accepts>checkout-getpaymentplans.html</accepts>
+    </rule>
+    <rule id="qly435-04">
+        <description>Created after removal of Checkout API "updatePaymentPlan" from Product Docs (QLY-435, part payment discontinued)</description>
+        <accepts>updatePaymentPlan.html</accepts>
+    </rule>
+    <rule id="qly435-05">
+        <description>Created after removal of "uploadKalpForm" from Product Docs (QLY-435, part payment discontinued)</description>
+        <accepts>uploadKalpForm.html</accepts>
+    </rule>
+    <rule id="qly435-06">
+        <description>Created after removal of "Upload KALP form" from Product Docs (QLY-435, part payment discontinued)</description>
+        <accepts>Upload-KALP-form.html</accepts>
+    </rule>
 </rules>

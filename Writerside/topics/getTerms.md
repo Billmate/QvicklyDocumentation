@@ -19,8 +19,7 @@ getTerms is used for fetching our payment terms.
 
 | Property      | Required | Type   | Description                                                             |
 |---------------|----------|--------|-------------------------------------------------------------------------|
-| method        | true     | string | Payment method. Allowed values: 1 = Invoice, 4 = Part Payment, 8 = Card |
-| paymentplanid | false    | int    | Paymentplanid is only required if method is 4 (Part payment).           |
+| method        | true     | string | Payment method. Allowed values: 1 = Invoice, 8 = Card                   |
 
 ### Cart
 
@@ -49,8 +48,7 @@ getTerms is used for fetching our payment terms.
     },
     "data": {
         "PaymentData": {
-            "method": "1",
-            "paymentplanid": ""
+            "method": "1"
         },
         "Cart": {
             "Total": {
@@ -88,8 +86,6 @@ Du behöver aldrig lämna ut känslig information
 Alltid 14 dagars ångerrätt i enlighet med distans- och hemförsäljningslagen*
 
 Tillgång till dina fakturor via Qvickly Portal
-
-Möjlighet till delbetalning
 
 Vid försenad betalning tillkommer lagstadgad påminnelse-/förseningsavgift samt dröjsmålsränta om 2 % per månad. Vid utebliven betalning överlämnas fakturan till inkasso. För att kunna beställa mot faktura måste beställaren vara ett registrerat svenskt företag eller en person över 18 år, vara folkbokförd i Sverige samt godkännas i den kreditprövning som genomförs vid köpet. Kreditprövningen kan i vissa fall innebära att en kreditupplysning tas. I sådana fall kommer ni bli meddelade om detta postledes eller via e-post. Kreditupplysningen sköts via CreditSafe och är inget som belastar när man ansöker om kredit hos kreditinstitut.
 

@@ -207,19 +207,6 @@ Search for cash payments.
 
 If either `isDirect` or `isOwnAgreement` is set to 0, the search will return all cash payments where these are omitted.
 
-## isPartPayment
-
-Search for part payments.
-
-| Property      | Required | Default value | Description                                    |
-|---------------|----------|---------------|------------------------------------------------|
-| isPartPayment | No       | 1             | Activate this filter. (1 = activate, 0 = skip) |
-
-
-```
-/invoices/?filter=isPartPayment
-```
-
 ## isInvoice
 
 Search for invoices.
@@ -243,14 +230,13 @@ Search for payments.
 | isSwish        | No       | 0             | Find swish payments                 |
 | isBank         | No       | 0             | Find bank payments                  |
 | isCash         | No       | 0             | Find cash payments                  |
-| isPartPayment  | No       | 0             | Find part payments                  |
 | isInvoice      | No       | 0             | Find invoices                       |
 
 ```
-/invoices/?filter=isPayment&isCard=1&isSwish=1&isBank=1&isCash=1&isPartPayment=1&isInvoice=1
+/invoices/?filter=isPayment&isCard=1&isSwish=1&isBank=1&isCash=1&isInvoice=1
 ```
 
-This is a combined filter that can be used to search for payments based on their type. The parameters `isCard`, `isSwish`, `isBank`, `isCash`, `isPartPayment`, and `isInvoice` can be used to filter payments based on their type. The value of each parameter can be either `0` or `1`. The sub-filters are combined with an `OR` operator.
+This is a combined filter that can be used to search for payments based on their type. The parameters `isCard`, `isSwish`, `isBank`, `isCash`, and `isInvoice` can be used to filter payments based on their type. The value of each parameter can be either `0` or `1`. The sub-filters are combined with an `OR` operator.
 
 ## hasCredit
 

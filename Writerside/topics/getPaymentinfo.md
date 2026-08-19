@@ -86,7 +86,6 @@ getPaymentinfo is used for getting info about a payment.
    "data":{
       "PaymentData":{
          "method":"1",
-         "paymentplanid":"",
          "currency":"SEK",
          "country":"SE",
          "language":"sv",

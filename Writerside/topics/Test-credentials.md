@@ -7,7 +7,7 @@
 ### Person - Approved status
 |             |                       |
 |-------------|-----------------------|
-| Usage       | invoice/part payment  |
+| Usage       | invoice  |
 | PNO         | 195501011018          |
 | Name        | Testperson Approved   |
 | Postaddress | Testgatan 1           |
@@ -18,7 +18,7 @@
 ### Person - Denied status
 |             |                       |
 |-------------|-----------------------|
-| Usage       | invoice/part payment  |
+| Usage       | invoice  |
 | PNO         | 195505050558          |
 | Name        | Testperson Approved   |
 | Postaddress | Testgatan 2           |
@@ -31,7 +31,7 @@
 ### Company - Approved status
 |             |                      |
 |-------------|----------------------|
-| Usage       | invoice/part payment |
+| Usage       | invoice |
 | ORG         | 5566779988           |
 | Name        | Testcompany Approved |
 | Postaddress | Teststreet 2         |
@@ -42,7 +42,7 @@
 #### Company - Denied status
 |             |                       |
 |-------------|-----------------------|
-| Usage       | invoice/part payment  |
+| Usage       | invoice  |
 | ORG         | 5505050558            |
 | Name        | Testcompany Approved  |
 | Postaddress | Teststreet 1          |

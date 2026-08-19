@@ -6,7 +6,6 @@
 |---------|----------------------|----------|--------------------------------|
 | 1       | Invoice Factoring    | No       |                                |
 | 2       | Invoice Handling     | No       |                                |
-| 4       | Invoice Part Payment | No       |                                |
 | 8       | Card                 | Yes      | Can be combined with 16 (Bank) |
 | 16      | Bank                 | Yes      | Can be combined with 8 (Card)  |
 | 24      | Card/Bank            | No       |                                |

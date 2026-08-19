@@ -93,8 +93,7 @@ $values = array();
   */
 
 $values["PaymentData"] = array(
-    "method" => "1",
-    "paymentplanid" => ""
+    "method" => "1"
 );
 /**
 * @param array Cart Data : Cart details.
@@ -141,7 +140,6 @@ namespace GetTerms
                 bm.Language = "sv";
                 Dictionary<string, object> Paymentdata = new Dictionary<string, object>();
                 paymentdata["method"] = "1";
-                paymentdata["paymentplanid"] = "";
                 values["PaymentData"] = Paymentdata;
 
                 Dictionary<string, object> Cart = new Dictionary<string, object>();

@@ -36,7 +36,6 @@ Allow for dynamic keys in urls. This would allow for a more dynamic way of handl
   "data": {
     "PaymentData": {
       "method": "1",
-      "paymentplanid": "",
       "currency": "SEK",
       "language": "sv",
       "country": "SE",

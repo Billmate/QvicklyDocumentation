@@ -43,7 +43,6 @@ The payment data object contains the payment data for the order.
 |---------------|--------|-------------------------------------------|
 | method        | string | The payment method used for the purchase. |
 | number        | string | The payments number                       |
-| paymentplanid | string | The payment plan id                       |
 | currency      | string | The currency used for the purchase.       |
 | language      | string | The language used for the purchase.       |
 | country       | string | The country used for the purchase.        |
@@ -280,7 +279,6 @@ The topayData object contains the data for the topay.
     "PaymentData": {
         "method": "8",
         "number": "1234567",
-        "paymentplanid": "0",
         "currency": "SEK",
         "language": "sv",
         "country": "SE",

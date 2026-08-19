@@ -211,7 +211,6 @@ Full example can be found [here](https://github.com/Billmate/QvicklyAPISamples/b
             "orderid": "12345",
             "status": "Step2Loaded",
             "method": "2048",
-            "paymentplanid": "0",
             "currency": "SEK",
             "language": "sv",
             "country": "SE",

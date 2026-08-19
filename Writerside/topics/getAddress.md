@@ -8,7 +8,7 @@ getAddress API is only permitted to be used together with Qvickly payments.
 
 The return is an array in JSON format with the values of the person/company details or an error.
 
-To use addPayment methods factoring or part payment, the person/company who purchase the product must have the same invoice address and delivery address as the address returned from getAddress.
+To use addPayment method factoring, the person/company who purchase the product must have the same invoice address and delivery address as the address returned from getAddress.
 
 *An example can be found here [Get address example](Get-address.md)*
 

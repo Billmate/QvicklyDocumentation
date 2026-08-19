@@ -44,7 +44,7 @@
 | 5202   | Invalid status of payment                                                                                         |
 | 5203   | Order id is mandatory                                                                                             |
 | 5204   | Cannot credit more than balance due                                                                               |
-| 5205   | Cannot credit a created invoice or part payment invoice.                                                          |
+| 5205   | Cannot credit a created invoice.                                                                                  |
 | 5206   | Could not activate Factoring invoice. Person number was denied in credit check.                                   |
 | 5207   | Method is unknown.                                                                                                |
 | 5208   | Unable to activate a non created invoice.                                                                         |
@@ -114,7 +114,6 @@
 | 7030   | Method does not exist.                                                                                            |
 | 7031   | Country does not exist. Please verify that the country code is of correct ISO standard.                           |
 | 7032   | Country is mandatory.                                                                                             |
-| 7033   | Paymentplanid is required.                                                                                        |
 | 8010   | Personal/Organisation number can not be found in the system.                                                      |
 | 8011   | Organisation number can not be found in the system.                                                               |
 | 8012   | Personal number can not be found in the system.                                                                   |
@@ -146,9 +145,7 @@
 | 9105   | Article without tax is mandatory.                                                                                 |
 | 9106   | Total without tax, total with tax and total tax are mandatory.                                                    |
 | 9107   | Total Payment with Tax is not equal to Total Payment Excluding Tax + Total Tax + Rounding.                        |
-| 9108   | Paymentplanid is required                                                                                         |
 | 9109   | Missing articles                                                                                                  |
-| 9110   | Invalid paymentplanid.                                                                                            |
 | 9111   | You need to provide integer values for these fields: withtax, withouttax, tax.                                    |
 | 9112   | Article tax rate is mandatory.                                                                                    |
 | 9113   | Rounding can not be bigger than 50 ore.                                                                           |
@@ -159,15 +156,13 @@
 | 9201   | Name is invalid                                                                                                   |
 | 9510   | Client side: CURL error                                                                                           |
 | 9997   | Missing payment plan                                                                                              |
-| 9998   | Missing KALP data                                                                                                 |
-| 9999   | Failed to save KALP                                                                                               |
 | 11111  | Duplicated invoice does not exist                                                                                 |
 | 11112  | Payment method does not match                                                                                     |
 | 20100  | Invalid method                                                                                                    |
 | 20101  | Factoring is disabled for this account                                                                            |
 | 20102  | Service is disabled for this account                                                                              |
 | 20103  | Company/name, street, zip and city are mandatory                                                                  |
-| 20104  | Invoice and Partpayment is not available.                                                                         |
+| 20104  | Invoice is not available.                                                                                         |
 | 20616  | The credentials that was sent from the merchant is invalid. Please contact the merchant to solve this issue.      |
 | 50000  | Checkout: Service is not enabled for you account                                                                  |
 | 50010  | Checkout: You need to provide a zip code                                                                          |

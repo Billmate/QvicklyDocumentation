@@ -249,7 +249,6 @@ Full example can be found [here](https://github.com/Billmate/QvicklyAPISamples/b
    "data":{
       "PaymentData":{
          "method":"1",
-         "paymentplanid":"",
          "currency":"SEK",
          "country":"SE",
          "language":"sv",
