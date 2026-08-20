@@ -75,7 +75,6 @@
 | 5292   | Credit failed: Could not refund payment. Please try again later.                                                  |
 | 5297   | Refunding can not be made. Please contact Billmate support.                                                       |
 | 5298   | Batch could not be created. Please contact Billmate support.                                                      |
-| 5301   | No payment plans found.                                                                                           |
 | 5302   | Currency, Country and Language are mandatory.                                                                     |
 | 6009   | Order id can not be empty                                                                                         |
 | 6010   | Hash does not exist                                                                                               |
@@ -155,7 +154,6 @@
 | 9200   | Email is invalid                                                                                                  |
 | 9201   | Name is invalid                                                                                                   |
 | 9510   | Client side: CURL error                                                                                           |
-| 9997   | Missing payment plan                                                                                              |
 | 11111  | Duplicated invoice does not exist                                                                                 |
 | 11112  | Payment method does not match                                                                                     |
 | 20100  | Invalid method                                                                                                    |
