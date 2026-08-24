@@ -116,7 +116,6 @@ The response will contain the order.
 | Property      | Type   | Description                               |
 |---------------|--------|-------------------------------------------|
 | country       | string | The country for the payment data.         |
-| paymentplanid | string | The payment plan id for the payment data. |
 | method_name   | string | The method name for the payment data.     |
 | logo          | string | The logo for the payment data.            |
 | order         | object | The order status for the payment data.    |
@@ -206,7 +205,6 @@ The response will contain the order.
     "DateTime" : "2024-05-15 12:07:00",
     "PaymentData" : {
       "country" : "SE",
-      "paymentplanid" : "0",
       "method_name" : "Betala med Qvickly",
       "logo" : "",
       "order" : {

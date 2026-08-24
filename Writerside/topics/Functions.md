@@ -13,7 +13,6 @@
 | [duplicatePayment](duplicatePayment.md)                             | duplicatePayment is used for duplicating payments.                                       |
 | [getAccountinfo](getAccountinfo.md)                                 | getAccountinfo is used for getting account information.                                  |
 | [getTerms](getTerms.md)                                             | getTerms is used for getting terms.                                                      |
-| [getPaymentplans](getPaymentplans.md)                               | getPaymentplans is used for getting payment plans.                                       |
 | [getPaymentinfo](getPaymentinfo.md)                                 | getPaymentinfo is used for getting payment information.                                  |
 | [getDuePayments](getDuePayments.md)                                 | getDuePayments is used for getting due payments.                                         |
 | [getSettlements](getSettlements.md)                                 | getSettlements is used for getting settlements.                                          |
@@ -32,5 +31,4 @@
 | [getInvoiceByHash](getInvoiceByHash.md)                             | getInvoiceByHash is used for getting invoice by hash.                                    |
 | [createInvoiceFromOrder](createInvoiceFromOrder.md)                 | createInvoiceFromOrder is used for creating invoice from order.                          |
 | [getAPICredentials](getAPICredentials.md)                           | getAPICredentials is used for getting API credentials.                                   |
-| [uploadKalpForm](uploadKalpForm.md)                                 | uploadKalpForm is used for updating KALP data.                                           |
 | [getBankIdKeyFromAuthToken](GetBankIdKeyFromAuthToken.md)           | getBankIdKeyFromAuthToken is used for getting the bankidKey from auth token              |

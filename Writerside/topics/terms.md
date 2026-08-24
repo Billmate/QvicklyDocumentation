@@ -21,7 +21,7 @@ Method
 | hash          | string | Yes      | The hash for the order.                                                                |
 | amount        | cent   | No       | The amount for the order.                                                              |
 | method        | int    | No       | The payment method for the order.                                                      |
-| methodoptions | int    | No       | The payment method options for the order. FOr part payments this is the paymentplanid. |
+| methodoptions | int    | No       | The payment method options for the order.                                              |
 
 
 ## Response

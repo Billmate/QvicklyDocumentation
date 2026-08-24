@@ -171,7 +171,6 @@ $values = array();
 
 $values["PaymentData"] = array(
     "method" => "1",
-    "paymentplanid" => "",
     "currency" => "SEK",
     "language" => "sv",
     "country" => "SE",
@@ -701,7 +700,6 @@ tie %$values, 'Tie::IxHash' or die "tie(\%values, 'Tie::IxHash') failed!\n";
 
 $values->{"PaymentData"} = TieThisHash({
     "method" => "1",
-    "paymentplanid" => "",
     "currency" => "SEK",
     "language" => "sv",
     "country" => "SE",

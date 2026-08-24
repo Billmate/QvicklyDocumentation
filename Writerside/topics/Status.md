@@ -23,11 +23,6 @@ Activated / debited payment order
 Invoice
 Invoice that is activated and sent to the customer
 
-### PartPayment (status)
-
-Part Payment
-Part payment that is activated and sent to the customer
-
 ### Handling (status)
 
 Invoice Handling
@@ -83,10 +78,6 @@ The payment has been activated and sent to the customer as handling invoice.
 ### E-brev (GetPaymentInfo) (obsolete)
 
 ### E-brevsent (GetPaymentInfo) (obsolete)
-
-### Partpayment (GetPaymentInfo)
-
-The payment has been activated and sent to the customer as part payment.
 
 ## distributor_status - field
 
@@ -168,9 +159,6 @@ creditcheck is not a required field so it might contain null or empty
 | Handling    | Sent                                | - [<sup>2</sup>](#2-creditcheck) |                                                                                                                                                                                                                                 |
 | Handling    | Paid                                | - [<sup>2</sup>](#2-creditcheck) |                                                                                                                                                                                                                                 |
 | Handling    | null                                | - [<sup>2</sup>](#2-creditcheck) | Special case where the payment is created with status `Created` and thus not exported to the backend system but then converted to a handling invoice that will be exported to the backend system but has not yet been exported. |
-| PartPayment | Created                             | - [<sup>2</sup>](#2-creditcheck) |                                                                                                                                                                                                                                 |
-| PartPayment | Sent                                | - [<sup>2</sup>](#2-creditcheck) |                                                                                                                                                                                                                                 |
-| PartPayment | Paid                                | - [<sup>2</sup>](#2-creditcheck) |                                                                                                                                                                                                                                 |
 
 ### Export to backend system
 

@@ -1,6 +1,6 @@
 # Pay With Qvickly Flow
 
-Pay With Qvickly is one of the payment options a consumer can pick inside the Qvickly Checkout on a merchant's site. Picking it opens the MyQvickly payment page in a popup, where the consumer confirms who they are with BankID and finishes the payment by invoice, part payment, Swish, or card. The final outcome is returned to the checkout, and to the merchant if they have a callback configured.
+Pay With Qvickly is one of the payment options a consumer can pick inside the Qvickly Checkout on a merchant's site. Picking it opens the MyQvickly payment page in a popup, where the consumer confirms who they are with BankID and finishes the payment by invoice, Swish, or card. The final outcome is returned to the checkout, and to the merchant if they have a callback configured.
 
 The diagram below walks through each step.
 
@@ -80,20 +80,17 @@ The status returned depends on the chosen method and the **autoactivate** settin
 | Invoice | on | approved | `Factoring` |
 | Invoice | on | pending | `Pending` |
 | Invoice | off | n/a | `Created` |
-| Part Pay | on | approved | `Partpayment` |
-| Part Pay | on | pending | `Pending` |
-| Part Pay | off | n/a | `Created` |
 
 ### Pending Credit Check
 
-For Invoice and Part Pay, a credit check can return `Pending` regardless of the autoactivate setting. The order's status becomes `Pending` and the merchant cannot activate it until Qvickly approves it.
+For Invoice, a credit check can return `Pending` regardless of the autoactivate setting. The order's status becomes `Pending` and the merchant cannot activate it until Qvickly approves it.
 
 ### Visible in MyQvickly
 
 MyQvickly is for persons only, not companies. Within MyQvickly:
 
 - **Pågående** (ongoing): `Created`, `Pending`. No actions available yet.
-- **Genomförda** (completed): `Paid`, `Factoring`, `Handling`, `Partpayment`. Full actions available (extend, return, pay with Swish).
+- **Genomförda** (completed): `Paid`, `Factoring`, `Handling`. Full actions available (extend, return, pay with Swish).
 
 ### Callback #1: `UserSignedWithBankID`
 
@@ -128,7 +125,7 @@ The callback is not re-sent on returning visits.
 
 This is the standard post-payment callback. It fires after the consumer completes payment inside the PWQ popup.
 
-The payload uses the same `orderid` and `number` as Callback #1 but with the final `status` (`Paid`, `Created`, `Pending`, `Factoring`, `Partpayment`, etc.) matching the Step 5 matrix.
+The payload uses the same `orderid` and `number` as Callback #1 but with the final `status` (`Paid`, `Created`, `Pending`, `Factoring`, etc.) matching the Step 5 matrix.
 
 Callback #2 also fires for the other Qvickly Checkout payment methods, not just PWQ.
 

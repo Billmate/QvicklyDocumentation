@@ -36,7 +36,7 @@ Please note that not all properties in all sections are mandatory. See the docum
 
 ### Customer
 
-> Note: For Factoring and Part Payment, billing and shipping address must be same as registered address (swedish: bokföringsadress) to be approved.
+> Note: For Factoring, billing and shipping address must be same as registered address (swedish: bokföringsadress) to be approved.
 
 <include from="Snippets-Request.md" element-id="snippet-customer" />
 
@@ -78,7 +78,6 @@ Please note that not all properties in all sections are mandatory. See the docum
   "data": {
     "PaymentData": {
       "method": "1",
-      "paymentplanid": "",
       "currency": "SEK",
       "language": "sv",
       "country": "SE",

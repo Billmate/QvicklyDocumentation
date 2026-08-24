@@ -36,9 +36,6 @@ $personalInfo = $checkoutAPI->step1($checkout['hash'], [
     'phonenumber' => $_ENV['PHONENUMBER'],
 ]);
 
-echo "Payment plans\n";
-$paymentplans = $checkoutAPI->getpaymentplans($checkout['hash']);
-
 echo "Payment methods\n";
 $paymentMethods = $checkoutAPI->getPaymentMethods($checkout['hash']);
 

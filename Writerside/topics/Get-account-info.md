@@ -265,11 +265,6 @@ Full example can be found [here](https://github.com/Billmate/QvicklyAPISamples/b
                 "language": "sv,da,no,en"
             },
             {
-                "method": "4",
-                "currency": "SEK",
-                "language": "sv,da,no,en"
-            },
-            {
                 "method": "8",
                 "currency": "SEK,DKK,NOK,GBP,EUR,USD",
                 "language": "sv,da,no,en"
